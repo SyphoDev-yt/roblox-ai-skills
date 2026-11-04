@@ -17,7 +17,7 @@ Free, as promised at 1,000 subscribers. Thank you for watching.
 | `roblox-map` | Lays out maps from a spec and PROVES they are playable (reach, falls, sightlines) |
 | `roblox-3d-model` | Text or image to a game-ready MeshPart, through Blender |
 | `roblox-texture-gen` | Generates textures for your meshes and parts |
-| `roblox-vfx` | Harvests particle effects from packs you own into a searchable library |
+| `roblox-vfx` | Builds anime-style VFX in a browser simulator of Roblox's VFX, with generated textures and Blender meshes, then exports a Studio kit. Also harvests effects from packs you own |
 | `roblox-sfx` | Finds and wires sound effects |
 | `roblox-animation` | Authors R15/R6 animations headlessly in Blender from a pose spec |
 | `roblox-skills-setup` | Sets everything up on YOUR machine. Run this first |
@@ -71,10 +71,12 @@ through a Hugging Face Space, one at a time. Details at the top of
 
 - **Your keys stay yours.** Skills read API keys from environment variables.
   Nothing in this pack asks you to paste a key into a file or a chat.
-- **VFX ships empty on purpose.** `roblox-vfx` is a harvester. You take free
-  VFX packs into your own Roblox account and it builds your library from
-  them. The setup skill walks you through it. Check each pack's terms before
-  publishing a game with its effects.
+- **VFX: build the textures and meshes once.** `roblox-vfx` generates its
+  own texture library (2,000+ textures) and meshes on your machine, so they are
+  not in the download. Follow "First run" at the top of its SKILL.md (needs
+  Python with numpy, scipy and Pillow, and Blender). Its harvester ships empty: you
+  take free VFX packs into your own Roblox account and it builds your library
+  from them. Check each pack's terms before publishing a game with its effects.
 - **Model licences matter.** Read `skills/roblox-3d-model/references/licences.md`
   before generating models; some AI model licences exclude some regions or uses.
 - **`LOCAL.md` is personal.** If you share your own version of a skill, leave

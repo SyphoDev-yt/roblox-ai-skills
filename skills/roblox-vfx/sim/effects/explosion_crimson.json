@@ -1,0 +1,8946 @@
+{
+ "name": "CrimsonDetonation",
+ "note": "Original sky-circle detonation (R = 90 studs) on the measured KonoSuba skeleton: stacked circles, calm wide cut, point -> star -> ring, 1-frame flash, measured growth curve, squash + shock rings, held whiteout, cooling grade, burn, mushroom, embers. All textures and meshes are ours.",
+ "duration": 14.5,
+ "seed": 11,
+ "camera": {
+  "pos": [
+   31.499999999999996,
+   31.499999999999996,
+   198.00000000000003
+  ],
+  "at": [
+   0,
+   157.5,
+   0
+  ],
+  "fov": 62
+ },
+ "stage": {
+  "ground": "grass",
+  "sky": "night",
+  "dummy": false,
+  "fog": [
+   360.0,
+   1260.0,
+   [
+    0.08,
+    0.1,
+    0.16
+   ]
+  ]
+ },
+ "instances": [
+  {
+   "class": "Folder",
+   "name": "Circles",
+   "children": [
+    {
+     "class": "MeshPart",
+     "name": "C0outer",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      121.50000000000001,
+      0,
+      0,
+      0,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_outer",
+        "EmissiveMask": "sim:sigil_outer",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C0band",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      121.58000000000001,
+      0,
+      0,
+      0,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_band",
+        "EmissiveMask": "sim:sigil_band",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        },
+        "EmissiveStrength": 1.5,
+        "EmissiveTint": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C0inner",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      121.66000000000001,
+      0,
+      0,
+      0,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_inner",
+        "EmissiveMask": "sim:sigil_inner",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C0core",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      121.74000000000001,
+      0,
+      0,
+      0,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_core",
+        "EmissiveMask": "sim:sigil_core",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        },
+        "EmissiveStrength": 1.7,
+        "EmissiveTint": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C1outer",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      148.5,
+      0,
+      0,
+      17,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_outer",
+        "EmissiveMask": "sim:sigil_outer",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C1band",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      148.58,
+      0,
+      0,
+      17,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_band",
+        "EmissiveMask": "sim:sigil_band",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        },
+        "EmissiveStrength": 1.5,
+        "EmissiveTint": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C1inner",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      148.66,
+      0,
+      0,
+      17,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_inner",
+        "EmissiveMask": "sim:sigil_inner",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C1core",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      148.74,
+      0,
+      0,
+      17,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_core",
+        "EmissiveMask": "sim:sigil_core",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        },
+        "EmissiveStrength": 1.7,
+        "EmissiveTint": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C2outer",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      175.5,
+      0,
+      0,
+      34,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_outer",
+        "EmissiveMask": "sim:sigil_outer",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C2band",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      175.58,
+      0,
+      0,
+      34,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_band",
+        "EmissiveMask": "sim:sigil_band",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        },
+        "EmissiveStrength": 1.5,
+        "EmissiveTint": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C2inner",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      175.66,
+      0,
+      0,
+      34,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_inner",
+        "EmissiveMask": "sim:sigil_inner",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C2core",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      175.74,
+      0,
+      0,
+      34,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_core",
+        "EmissiveMask": "sim:sigil_core",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        },
+        "EmissiveStrength": 1.7,
+        "EmissiveTint": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C3outer",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      202.5,
+      0,
+      0,
+      51,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_outer",
+        "EmissiveMask": "sim:sigil_outer",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9529411764705882,
+          0.8352941176470589,
+          0.3058823529411765
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.9529411764705882,
+          0.8352941176470589,
+          0.3058823529411765
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C3band",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      202.58,
+      0,
+      0,
+      51,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_band",
+        "EmissiveMask": "sim:sigil_band",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9529411764705882,
+          0.8352941176470589,
+          0.3058823529411765
+         ]
+        },
+        "EmissiveStrength": 1.5,
+        "EmissiveTint": {
+         "Color3": [
+          0.9529411764705882,
+          0.8352941176470589,
+          0.3058823529411765
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C3inner",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      202.66,
+      0,
+      0,
+      51,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_inner",
+        "EmissiveMask": "sim:sigil_inner",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9529411764705882,
+          0.8352941176470589,
+          0.3058823529411765
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.9529411764705882,
+          0.8352941176470589,
+          0.3058823529411765
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C3core",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      202.74,
+      0,
+      0,
+      51,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_core",
+        "EmissiveMask": "sim:sigil_core",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9529411764705882,
+          0.8352941176470589,
+          0.3058823529411765
+         ]
+        },
+        "EmissiveStrength": 1.7,
+        "EmissiveTint": {
+         "Color3": [
+          0.9529411764705882,
+          0.8352941176470589,
+          0.3058823529411765
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C4outer",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      229.5,
+      0,
+      0,
+      68,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_outer",
+        "EmissiveMask": "sim:sigil_outer",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C4band",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      229.58,
+      0,
+      0,
+      68,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_band",
+        "EmissiveMask": "sim:sigil_band",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        },
+        "EmissiveStrength": 1.5,
+        "EmissiveTint": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C4inner",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      229.66,
+      0,
+      0,
+      68,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_inner",
+        "EmissiveMask": "sim:sigil_inner",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C4core",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      229.74,
+      0,
+      0,
+      68,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_core",
+        "EmissiveMask": "sim:sigil_core",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        },
+        "EmissiveStrength": 1.7,
+        "EmissiveTint": {
+         "Color3": [
+          0.9098039215686274,
+          0.5411764705882353,
+          0.5098039215686274
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C5outer",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      256.5,
+      0,
+      0,
+      85,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_outer",
+        "EmissiveMask": "sim:sigil_outer",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C5band",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      256.58,
+      0,
+      0,
+      85,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_band",
+        "EmissiveMask": "sim:sigil_band",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        },
+        "EmissiveStrength": 1.5,
+        "EmissiveTint": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C5inner",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      256.66,
+      0,
+      0,
+      85,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_inner",
+        "EmissiveMask": "sim:sigil_inner",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C5core",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      256.74,
+      0,
+      0,
+      85,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_core",
+        "EmissiveMask": "sim:sigil_core",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        },
+        "EmissiveStrength": 1.7,
+        "EmissiveTint": {
+         "Color3": [
+          0.7647058823529411,
+          0.33725490196078434,
+          0.45098039215686275
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C6outer",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      283.5,
+      0,
+      0,
+      102,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_outer",
+        "EmissiveMask": "sim:sigil_outer",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9725490196078431,
+          0.8431372549019608,
+          0.5725490196078431
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.9725490196078431,
+          0.8431372549019608,
+          0.5725490196078431
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C6band",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      283.58,
+      0,
+      0,
+      102,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_band",
+        "EmissiveMask": "sim:sigil_band",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9725490196078431,
+          0.8431372549019608,
+          0.5725490196078431
+         ]
+        },
+        "EmissiveStrength": 1.5,
+        "EmissiveTint": {
+         "Color3": [
+          0.9725490196078431,
+          0.8431372549019608,
+          0.5725490196078431
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C6inner",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      283.66,
+      0,
+      0,
+      102,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_inner",
+        "EmissiveMask": "sim:sigil_inner",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9725490196078431,
+          0.8431372549019608,
+          0.5725490196078431
+         ]
+        },
+        "EmissiveStrength": 1.3,
+        "EmissiveTint": {
+         "Color3": [
+          0.9725490196078431,
+          0.8431372549019608,
+          0.5725490196078431
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "class": "MeshPart",
+     "name": "C6core",
+     "MeshId": "sim:plane",
+     "Material": "SmoothPlastic",
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Transparency": 1,
+     "CFrame": [
+      0,
+      283.74,
+      0,
+      0,
+      102,
+      0
+     ],
+     "Size": [
+      0.4,
+      0.05,
+      0.4
+     ],
+     "props": {
+      "DoubleSided": true
+     },
+     "children": [
+      {
+       "class": "SurfaceAppearance",
+       "name": "Look",
+       "props": {
+        "ColorMap": "sim:sigil_core",
+        "EmissiveMask": "sim:sigil_core",
+        "AlphaMode": {
+         "Enum": "AlphaMode.Transparency"
+        },
+        "Color": {
+         "Color3": [
+          0.9725490196078431,
+          0.8431372549019608,
+          0.5725490196078431
+         ]
+        },
+        "EmissiveStrength": 1.7,
+        "EmissiveTint": {
+         "Color3": [
+          0.9725490196078431,
+          0.8431372549019608,
+          0.5725490196078431
+         ]
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "class": "Part",
+   "name": "Mana",
+   "Shape": "Ball",
+   "CFrame": [
+    0,
+    202.5,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    144.0,
+    144.0,
+    144.0
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "ParticleEmitter",
+     "name": "Sparks",
+     "props": {
+      "Texture": "sim:spark_needle",
+      "Shape": {
+       "Enum": "ParticleEmitterShape.Sphere"
+      },
+      "ShapeStyle": {
+       "Enum": "ParticleEmitterShapeStyle.Surface"
+      },
+      "ShapeInOut": {
+       "Enum": "ParticleEmitterShapeInOut.Inward"
+      },
+      "Rate": 0,
+      "Lifetime": {
+       "NumberRange": [
+        0.35,
+        0.6
+       ]
+      },
+      "Speed": {
+       "NumberRange": [
+        81.0,
+        125.99999999999999
+       ]
+      },
+      "Orientation": {
+       "Enum": "ParticleOrientation.VelocityParallel"
+      },
+      "Size": {
+       "NumberSequence": [
+        [
+         0,
+         2.25,
+         0.9
+        ],
+        [
+         1,
+         0.9
+        ]
+       ]
+      },
+      "Squash": {
+       "NumberSequence": [
+        [
+         0,
+         1.2
+        ],
+        [
+         1,
+         1.2
+        ]
+       ]
+      },
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          0.6235294117647059,
+          0.8313725490196079,
+          1.0
+         ]
+        ],
+        [
+         1,
+         [
+          0.27058823529411763,
+          0.4235294117647059,
+          0.788235294117647
+         ]
+        ]
+       ]
+      },
+      "LightEmission": 1,
+      "Brightness": 2.5,
+      "Transparency": {
+       "NumberSequence": [
+        [
+         0,
+         0.2
+        ],
+        [
+         0.8,
+         0.2
+        ],
+        [
+         1,
+         1
+        ]
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "Part",
+   "name": "Charge",
+   "CFrame": [
+    0,
+    110.70000000000002,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "Attachment",
+     "name": "A",
+     "children": [
+      {
+       "class": "ParticleEmitter",
+       "name": "Glow",
+       "props": {
+        "Texture": "sim:glow_soft",
+        "Rate": 0,
+        "Lifetime": {
+         "NumberRange": [
+          2.6,
+          2.6
+         ]
+        },
+        "Speed": {
+         "NumberRange": [
+          0,
+          0
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           4.5
+          ],
+          [
+           0.85,
+           24.750000000000004
+          ],
+          [
+           1,
+           2.25
+          ]
+         ]
+        },
+        "Transparency": {
+         "NumberSequence": [
+          [
+           0,
+           0.4
+          ],
+          [
+           0.85,
+           0.0
+          ],
+          [
+           1,
+           1
+          ]
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            0.9725490196078431,
+            0.8431372549019608,
+            0.5725490196078431
+           ]
+          ],
+          [
+           1,
+           [
+            1.0,
+            1.0,
+            1.0
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 1,
+        "Brightness": 2.2
+       }
+      },
+      {
+       "class": "ParticleEmitter",
+       "name": "Flare",
+       "props": {
+        "Texture": "sim:impact_star4_2x2",
+        "FlipbookLayout": {
+         "Enum": "ParticleFlipbookLayout.Grid2x2"
+        },
+        "FlipbookStartRandom": true,
+        "FlipbookFramerate": {
+         "NumberRange": [
+          0,
+          0
+         ]
+        },
+        "Rate": 0,
+        "Lifetime": {
+         "NumberRange": [
+          0.3,
+          0.3
+         ]
+        },
+        "Speed": {
+         "NumberRange": [
+          0,
+          0
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           9.0
+          ],
+          [
+           0.15,
+           58.5
+          ],
+          [
+           1,
+           49.50000000000001
+          ]
+         ]
+        },
+        "Transparency": {
+         "NumberSequence": [
+          [
+           0,
+           0
+          ],
+          [
+           0.6,
+           0
+          ],
+          [
+           1,
+           1
+          ]
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            0.9372549019607843,
+            0.9215686274509803,
+            0.9647058823529412
+           ]
+          ],
+          [
+           1,
+           [
+            0.7843137254901961,
+            0.5568627450980392,
+            0.8196078431372549
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 1,
+        "Brightness": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Point",
+   "MeshId": "sim:lumpy_sphere",
+   "Material": "Neon",
+   "Color": [
+    1.0,
+    0.9647058823529412,
+    0.8470588235294118
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    121.50000000000001,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    5.3999999999999995,
+    5.3999999999999995,
+    5.3999999999999995
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": []
+  },
+  {
+   "class": "Part",
+   "name": "Ignite",
+   "CFrame": [
+    0,
+    9.0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "Attachment",
+     "name": "A",
+     "children": [
+      {
+       "class": "ParticleEmitter",
+       "name": "Star",
+       "props": {
+        "Texture": "sim:impact_star4_2x2",
+        "FlipbookLayout": {
+         "Enum": "ParticleFlipbookLayout.Grid2x2"
+        },
+        "FlipbookStartRandom": true,
+        "FlipbookFramerate": {
+         "NumberRange": [
+          0,
+          0
+         ]
+        },
+        "Rate": 0,
+        "Lifetime": {
+         "NumberRange": [
+          0.22,
+          0.22
+         ]
+        },
+        "Speed": {
+         "NumberRange": [
+          0,
+          0
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           4.5
+          ],
+          [
+           0.3,
+           62.99999999999999
+          ],
+          [
+           1,
+           27.0
+          ]
+         ]
+        },
+        "Transparency": {
+         "NumberSequence": [
+          [
+           0,
+           0
+          ],
+          [
+           0.7,
+           0
+          ],
+          [
+           1,
+           1
+          ]
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            1,
+            1,
+            1
+           ]
+          ],
+          [
+           1,
+           [
+            0.9490196078431372,
+            0.9176470588235294,
+            0.11764705882352941
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 1,
+        "Brightness": 3,
+        "ZOffset": 5
+       }
+      },
+      {
+       "class": "ParticleEmitter",
+       "name": "Ring",
+       "props": {
+        "Texture": "sim:ring_energy",
+        "Rate": 0,
+        "Lifetime": {
+         "NumberRange": [
+          0.26,
+          0.26
+         ]
+        },
+        "Speed": {
+         "NumberRange": [
+          0,
+          0
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           9.0
+          ],
+          [
+           1,
+           144.0
+          ]
+         ]
+        },
+        "Transparency": {
+         "NumberSequence": [
+          [
+           0,
+           0
+          ],
+          [
+           1,
+           1
+          ]
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            0.9490196078431372,
+            0.9176470588235294,
+            0.11764705882352941
+           ]
+          ],
+          [
+           1,
+           [
+            0.9490196078431372,
+            0.9176470588235294,
+            0.11764705882352941
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 1,
+        "Brightness": 2,
+        "ZOffset": 4
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "class": "ColorCorrectionEffect",
+   "name": "Grade",
+   "props": {
+    "Brightness": 0,
+    "Contrast": 0,
+    "Saturation": 0,
+    "TintColor": {
+     "Color3": [
+      1,
+      1,
+      1
+     ]
+    }
+   }
+  },
+  {
+   "class": "BloomEffect",
+   "name": "Bloom",
+   "props": {
+    "Intensity": 1.2,
+    "Size": 36,
+    "Threshold": 1.7
+   }
+  },
+  {
+   "class": "MeshPart",
+   "name": "Core",
+   "MeshId": "sim:lumpy_sphere",
+   "Material": "Neon",
+   "Color": [
+    1.0,
+    0.984313725490196,
+    0.9019607843137255
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    1,
+    1,
+    1
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": []
+  },
+  {
+   "class": "MeshPart",
+   "name": "ShellIn",
+   "MeshId": "sim:lumpy_sphere",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    0,
+    0,
+    0,
+    40,
+    0
+   ],
+   "Size": [
+    1,
+    1,
+    1
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_fire_shell",
+      "EmissiveMask": "sim:mesh_fire_shell",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        1.0,
+        0.9607843137254902,
+        0.6039215686274509
+       ]
+      },
+      "EmissiveStrength": 3.0,
+      "EmissiveTint": {
+       "Color3": [
+        1.0,
+        0.9647058823529412,
+        0.7529411764705882
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "ShellOut",
+   "MeshId": "sim:lumpy_sphere",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    0,
+    0,
+    0,
+    160,
+    0
+   ],
+   "Size": [
+    1,
+    1,
+    1
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_fire_shell",
+      "EmissiveMask": "sim:mesh_fire_shell",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.9607843137254902,
+        0.6039215686274509,
+        0.16470588235294117
+       ]
+      },
+      "EmissiveStrength": 1.6,
+      "EmissiveTint": {
+       "Color3": [
+        1.0,
+        0.6901960784313725,
+        0.3137254901960784
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "Part",
+   "name": "PuffZone",
+   "Shape": "Ball",
+   "CFrame": [
+    0,
+    22.5,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    171.0,
+    108.0,
+    171.0
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "ParticleEmitter",
+     "name": "Puffs",
+     "props": {
+      "Texture": "sim:fire_hot_4x4",
+      "FlipbookLayout": {
+       "Enum": "ParticleFlipbookLayout.Grid4x4"
+      },
+      "FlipbookMode": {
+       "Enum": "ParticleFlipbookMode.OneShot"
+      },
+      "FlipbookBlendFrames": false,
+      "Shape": {
+       "Enum": "ParticleEmitterShape.Sphere"
+      },
+      "ShapeStyle": {
+       "Enum": "ParticleEmitterShapeStyle.Surface"
+      },
+      "Rate": 0,
+      "Lifetime": {
+       "NumberRange": [
+        0.7,
+        1.15
+       ]
+      },
+      "Speed": {
+       "NumberRange": [
+        7.2,
+        18.0
+       ]
+      },
+      "Acceleration": {
+       "Vector3": [
+        0,
+        13.5,
+        0
+       ]
+      },
+      "Size": {
+       "NumberSequence": [
+        [
+         0,
+         20.25,
+         4.5
+        ],
+        [
+         1,
+         32.4,
+         5.3999999999999995
+        ]
+       ]
+      },
+      "Rotation": {
+       "NumberRange": [
+        0,
+        360
+       ]
+      },
+      "RotSpeed": {
+       "NumberRange": [
+        -30,
+        30
+       ]
+      },
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          1,
+          1,
+          1
+         ]
+        ],
+        [
+         1,
+         [
+          1,
+          1,
+          1
+         ]
+        ]
+       ]
+      },
+      "LightEmission": 0.15,
+      "Brightness": 1.4,
+      "ZOffset": 2
+     }
+    }
+   ]
+  },
+  {
+   "class": "Part",
+   "name": "Debris",
+   "Shape": "Ball",
+   "CFrame": [
+    0,
+    9.0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    27.0,
+    27.0,
+    27.0
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "ParticleEmitter",
+     "name": "Rocks",
+     "props": {
+      "Texture": "sim:debris_rock_8x8",
+      "FlipbookLayout": {
+       "Enum": "ParticleFlipbookLayout.Grid8x8"
+      },
+      "FlipbookMode": {
+       "Enum": "ParticleFlipbookMode.Loop"
+      },
+      "FlipbookFramerate": {
+       "NumberRange": [
+        18,
+        30
+       ]
+      },
+      "FlipbookStartRandom": true,
+      "Shape": {
+       "Enum": "ParticleEmitterShape.Sphere"
+      },
+      "ShapePartial": 0.5,
+      "Rate": 0,
+      "Lifetime": {
+       "NumberRange": [
+        1.4,
+        2.4
+       ]
+      },
+      "Speed": {
+       "NumberRange": [
+        81.0,
+        153.0
+       ]
+      },
+      "Acceleration": {
+       "Vector3": [
+        0,
+        -81.0,
+        0
+       ]
+      },
+      "Drag": 0.4,
+      "Size": {
+       "NumberSequence": [
+        [
+         0,
+         2.25,
+         1.3499999999999999
+        ],
+        [
+         1,
+         2.25,
+         1.3499999999999999
+        ]
+       ]
+      },
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          0.22745098039215686,
+          0.10196078431372549,
+          0.0784313725490196
+         ]
+        ],
+        [
+         1,
+         [
+          0.16862745098039217,
+          0.050980392156862744,
+          0.050980392156862744
+         ]
+        ]
+       ]
+      },
+      "LightEmission": 0,
+      "LightInfluence": 0.3,
+      "ZOffset": 3
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Rim",
+   "MeshId": "sim:crater_rim",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.0418,
+    0.0,
+    0.6658,
+    0,
+    152,
+    0
+   ],
+   "Size": [
+    81.78972,
+    0.05,
+    84.96900000000001
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.42,
+        0.3,
+        0.27
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk0",
+   "MeshId": "sim:rock_1",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0.14403538225865364,
+    7.205087999693741,
+    0.5794293447266706,
+    295.97706222831033,
+    359.6471237520628,
+    0
+   ],
+   "Size": [
+    6.7692,
+    3.2806,
+    4.1465
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.36633503011371504,
+        0.2519642055768987,
+        0.21592112341637892
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk1",
+   "MeshId": "sim:rock_2",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.1827904647010109,
+    7.2181771042428196,
+    0.17799104675554445,
+    68.32466920927452,
+    53.543786076196426,
+    0
+   ],
+   "Size": [
+    3.781,
+    4.857,
+    5.343
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.4288403138754673,
+        0.26859267410050586,
+        0.27162851127673915
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk2",
+   "MeshId": "sim:rock_3",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.5790829159206525,
+    7.410645448602895,
+    -0.12870096240102508,
+    24.957314097317504,
+    89.81687244290795,
+    0
+   ],
+   "Size": [
+    7.4069,
+    2.5153,
+    6.7559
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.3695453497313878,
+        0.2671186818736252,
+        0.24336906940264763
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk3",
+   "MeshId": "sim:rock_4",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.2147277182906016,
+    7.256866182413387,
+    0.30123596861565605,
+    224.63475492252985,
+    224.360696172981,
+    0
+   ],
+   "Size": [
+    5.6418,
+    4.8689,
+    4.645
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.4102939568060373,
+        0.29784340907428536,
+        0.2146926899652707
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk4",
+   "MeshId": "sim:rock_0",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0.579374018790502,
+    7.499829118867719,
+    -0.03907449926260864,
+    46.23252845316942,
+    216.43740469920095,
+    0
+   ],
+   "Size": [
+    9.0174,
+    7.1328,
+    8.4581
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.36117508351360095,
+        0.2817879788193008,
+        0.22990594619047408
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk5",
+   "MeshId": "sim:rock_1",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0.5575465665594496,
+    7.444718372297559,
+    -0.05511982170075602,
+    232.19250861075284,
+    180.39541123429865,
+    0
+   ],
+   "Size": [
+    7.8691,
+    3.8137,
+    4.8202
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.40719441410291024,
+        0.25833983661175397,
+        0.2133482141654053
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk6",
+   "MeshId": "sim:rock_2",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.18681606716204063,
+    7.486175506038525,
+    -0.2542400981691621,
+    36.90787884827082,
+    192.53454941684987,
+    0
+   ],
+   "Size": [
+    5.4481,
+    6.9986,
+    7.6988
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.4030877936513495,
+        0.259519239328643,
+        0.25873156532178365
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk7",
+   "MeshId": "sim:rock_3",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0.5788100532464061,
+    7.263086202287855,
+    -0.05999657565697303,
+    169.08785392989773,
+    267.9854059267924,
+    0
+   ],
+   "Size": [
+    7.0757,
+    2.4028,
+    6.4538
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.3654221852850848,
+        0.24935835121359762,
+        0.2590082567696256
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk8",
+   "MeshId": "sim:rock_4",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.5258737334494368,
+    7.246350898748382,
+    0.4924676544029972,
+    162.67301891201546,
+    52.552659764086,
+    0
+   ],
+   "Size": [
+    7.3079,
+    6.3068,
+    6.0168
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.4287662687673116,
+        0.2512779569075106,
+        0.24083318791822697
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk9",
+   "MeshId": "sim:rock_0",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0.5582035211671846,
+    7.488254421221612,
+    -0.5942066249784256,
+    20.216888588578264,
+    313.6025218930034,
+    0
+   ],
+   "Size": [
+    7.8746,
+    6.2288,
+    7.3861
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.3508347025735945,
+        0.25713187661090126,
+        0.2533145523937055
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk10",
+   "MeshId": "sim:rock_1",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.37422556679436114,
+    7.7049573262348385,
+    0.12198957294196677,
+    227.56734306560017,
+    227.89496595195004,
+    0
+   ],
+   "Size": [
+    11.0946,
+    5.3769,
+    6.796
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.38495209328196867,
+        0.2968368971980213,
+        0.2162209507337867
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk11",
+   "MeshId": "sim:rock_2",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0.3772487166032642,
+    7.3378507122673415,
+    -0.25999539406522937,
+    115.47651522149714,
+    74.33840811147145,
+    0
+   ],
+   "Size": [
+    5.5114,
+    7.0799,
+    7.7883
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.41281829982681306,
+        0.27239167219879123,
+        0.2167288691101983
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk12",
+   "MeshId": "sim:rock_3",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0.3620304186782157,
+    7.774375822703922,
+    0.08645397000427968,
+    196.18234802194507,
+    108.1299049743729,
+    0
+   ],
+   "Size": [
+    12.1093,
+    4.1122,
+    11.0449
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.3948758883157163,
+        0.276985616685473,
+        0.26013540427192255
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk13",
+   "MeshId": "sim:rock_4",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0.4360902714003404,
+    7.523409690371363,
+    -0.31313170987782596,
+    151.82634991210733,
+    270.9162336705491,
+    0
+   ],
+   "Size": [
+    3.3904,
+    2.9259,
+    2.7914
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.34913749257829974,
+        0.3018002487973317,
+        0.25359726714215763
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk14",
+   "MeshId": "sim:rock_0",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.019243749567660395,
+    7.537769701415438,
+    -0.1358477819718814,
+    295.0144370039001,
+    280.8349372824714,
+    0
+   ],
+   "Size": [
+    8.4313,
+    6.6692,
+    7.9084
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.3788168753884645,
+        0.2770010452410388,
+        0.22969311217094204
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk15",
+   "MeshId": "sim:rock_1",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.30583772349665483,
+    7.29924679388828,
+    0.441312187695739,
+    292.3996684777199,
+    318.4776054701575,
+    0
+   ],
+   "Size": [
+    8.4992,
+    4.1191,
+    5.2062
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.35768377863106293,
+        0.2764069503319854,
+        0.2398780803283005
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk16",
+   "MeshId": "sim:rock_2",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0.4331653415488569,
+    7.602667354070304,
+    -0.15902493729732303,
+    191.44125303056256,
+    230.6359831201467,
+    0
+   ],
+   "Size": [
+    6.5425,
+    8.4044,
+    9.2453
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.35718093626745623,
+        0.3051854948124978,
+        0.26983282690963617
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk17",
+   "MeshId": "sim:rock_3",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.3631482882659991,
+    7.2179608446849235,
+    0.16529694061233013,
+    197.09234480577715,
+    315.77554560295283,
+    0
+   ],
+   "Size": [
+    9.2086,
+    3.1271,
+    8.3991
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.432212772510652,
+        0.2756511078340045,
+        0.21598584655471678
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk18",
+   "MeshId": "sim:rock_4",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.0631611604837724,
+    7.677805675734559,
+    0.2888603733409022,
+    11.32188139356372,
+    78.02261974098667,
+    0
+   ],
+   "Size": [
+    4.4863,
+    3.8717,
+    3.6936
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.34722762502914173,
+        0.2443837299060964,
+        0.21306937340665077
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk19",
+   "MeshId": "sim:rock_0",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0.5779390188162842,
+    7.7264057481939075,
+    0.5642254663257639,
+    66.3723946903341,
+    153.10539011388505,
+    0
+   ],
+   "Size": [
+    4.8061,
+    3.8016,
+    4.508
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.39535087454943124,
+        0.2426408113953984,
+        0.2529332321011077
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk20",
+   "MeshId": "sim:rock_1",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.48536372630878255,
+    7.248018724013705,
+    -0.172426829224199,
+    267.7516262836216,
+    201.21547894643393,
+    0
+   ],
+   "Size": [
+    5.1357,
+    2.489,
+    3.1459
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.35672893565905917,
+        0.2582673780316809,
+        0.2351726045395013
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk21",
+   "MeshId": "sim:rock_2",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0.38483864711798477,
+    7.331980570879809,
+    -0.1453735736586873,
+    219.6787052252966,
+    54.30292794627925,
+    0
+   ],
+   "Size": [
+    6.4488,
+    8.2841,
+    9.113
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.400247696219065,
+        0.24330558923818507,
+        0.26350959663651496
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk22",
+   "MeshId": "sim:rock_3",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0.33385896904524803,
+    7.634753371585679,
+    -0.3670730999324674,
+    294.76839996896405,
+    136.0693576488322,
+    0
+   ],
+   "Size": [
+    6.2514,
+    2.1229,
+    5.7019
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.3581726669755536,
+        0.24864213729521878,
+        0.24020569380922455
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk23",
+   "MeshId": "sim:rock_4",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.5196197208773529,
+    7.443178509408783,
+    0.4840684075573284,
+    335.41917529698003,
+    272.7699206041954,
+    0
+   ],
+   "Size": [
+    5.5537,
+    4.7929,
+    4.5725
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.41049162437820175,
+        0.30675948023553457,
+        0.22943314050791436
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk24",
+   "MeshId": "sim:rock_0",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -0.4268363280597536,
+    7.586992279520024,
+    -0.36309819856003517,
+    349.3574651074362,
+    335.8309470542031,
+    0
+   ],
+   "Size": [
+    8.8116,
+    6.97,
+    8.265
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.43650191709412023,
+        0.2792090041938872,
+        0.2748987701314975
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Chunk25",
+   "MeshId": "sim:rock_1",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0.4429661046757768,
+    7.568849034131078,
+    0.32812624685286973,
+    55.918985933902746,
+    90.01457198405002,
+    0
+   ],
+   "Size": [
+    10.56,
+    5.1178,
+    6.4685
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:stone_cel",
+      "EmissiveMask": "sim:stone_cel",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.4122396890827731,
+        0.28874247981959583,
+        0.2375230312022933
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Shock1",
+   "MeshId": "sim:ring",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    3.6,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    1,
+    0.1,
+    1
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_shock_ring",
+      "EmissiveMask": "sim:mesh_shock_ring",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.9529411764705882,
+        0.8980392156862745,
+        0.8313725490196079
+       ]
+      },
+      "EmissiveStrength": 2.5,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Shock2",
+   "MeshId": "sim:ring",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    49.50000000000001,
+    0,
+    0,
+    30,
+    0
+   ],
+   "Size": [
+    1,
+    0.1,
+    1
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_shock_ring",
+      "EmissiveMask": "sim:mesh_shock_ring",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.9529411764705882,
+        0.8980392156862745,
+        0.8313725490196079
+       ]
+      },
+      "EmissiveStrength": 2.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "Part",
+   "name": "DustRing",
+   "Shape": "Cylinder",
+   "CFrame": [
+    0,
+    5.3999999999999995,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    99.00000000000001,
+    4.5,
+    99.00000000000001
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "ParticleEmitter",
+     "name": "Dust",
+     "props": {
+      "Texture": "sim:smoke_dust_4x4",
+      "FlipbookLayout": {
+       "Enum": "ParticleFlipbookLayout.Grid4x4"
+      },
+      "FlipbookMode": {
+       "Enum": "ParticleFlipbookMode.OneShot"
+      },
+      "FlipbookBlendFrames": false,
+      "Shape": {
+       "Enum": "ParticleEmitterShape.Cylinder"
+      },
+      "ShapeStyle": {
+       "Enum": "ParticleEmitterShapeStyle.Surface"
+      },
+      "Rate": 0,
+      "Lifetime": {
+       "NumberRange": [
+        1.6,
+        2.8
+       ]
+      },
+      "Speed": {
+       "NumberRange": [
+        72.0,
+        125.99999999999999
+       ]
+      },
+      "Drag": 1.1,
+      "Acceleration": {
+       "Vector3": [
+        0,
+        4.5,
+        0
+       ]
+      },
+      "Size": {
+       "NumberSequence": [
+        [
+         0,
+         9.9,
+         2.6999999999999997
+        ],
+        [
+         1,
+         27.9,
+         5.3999999999999995
+        ]
+       ]
+      },
+      "Rotation": {
+       "NumberRange": [
+        0,
+        360
+       ]
+      },
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          0.8509803921568627,
+          0.7647058823529411,
+          0.6352941176470588
+         ]
+        ],
+        [
+         1,
+         [
+          0.6509803921568628,
+          0.5607843137254902,
+          0.47058823529411764
+         ]
+        ]
+       ]
+      },
+      "LightEmission": 0,
+      "LightInfluence": 0.45,
+      "ZOffset": 1
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Skirt",
+   "MeshId": "sim:cone",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    34.2,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    225.0,
+    55.8,
+    225.0
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_spike_skirt",
+      "EmissiveMask": "sim:mesh_spike_skirt",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        1,
+        0.97,
+        0.9
+       ]
+      },
+      "EmissiveStrength": 2.0,
+      "EmissiveTint": {
+       "Color3": [
+        1.0,
+        0.8509803921568627,
+        0.6901960784313725
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "GroundGlow",
+   "MeshId": "sim:plane",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    0.6,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    468.0,
+    0.1,
+    468.0
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:glow_falloff",
+      "EmissiveMask": "sim:glow_falloff",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.8784313725490196,
+        0.5490196078431373,
+        0.3411764705882353
+       ]
+      },
+      "EmissiveStrength": 1.2,
+      "EmissiveTint": {
+       "Color3": [
+        1.0,
+        0.6901960784313725,
+        0.4392156862745098
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Scorch",
+   "MeshId": "sim:plane",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    0.3,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    342.0,
+    0.1,
+    342.0
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_scorch",
+      "EmissiveMask": "sim:mesh_scorch",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      },
+      "EmissiveStrength": 0.0,
+      "EmissiveTint": {
+       "Color3": [
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "Part",
+   "name": "Lamp",
+   "CFrame": [
+    0,
+    36.0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "PointLight",
+     "name": "L",
+     "props": {
+      "Brightness": 0,
+      "Range": 60,
+      "Color": {
+       "Color3": [
+        1.0,
+        0.7019607843137254,
+        0.4196078431372549
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Stem",
+   "MeshId": "sim:stem",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    4.5,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    45.0,
+    0.2,
+    45.0
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_smoke_shell",
+      "EmissiveMask": "sim:mesh_smoke_shell",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.8666666666666667,
+        0.5254901960784314,
+        0.2235294117647059
+       ]
+      },
+      "EmissiveStrength": 1.4,
+      "EmissiveTint": {
+       "Color3": [
+        0.9647058823529412,
+        0.8352941176470589,
+        0.6235294117647059
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Cap",
+   "MeshId": "sim:lumpy_sphere",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    72.0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    162.0,
+    90.0,
+    162.0
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_smoke_shell",
+      "EmissiveMask": "sim:mesh_smoke_shell",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.8666666666666667,
+        0.5254901960784314,
+        0.2235294117647059
+       ]
+      },
+      "EmissiveStrength": 2.6,
+      "EmissiveTint": {
+       "Color3": [
+        0.9647058823529412,
+        0.8352941176470589,
+        0.6235294117647059
+       ]
+      }
+     }
+    },
+    {
+     "class": "ParticleEmitter",
+     "name": "Billow",
+     "props": {
+      "Texture": "sim:smoke_cel_4x4",
+      "FlipbookLayout": {
+       "Enum": "ParticleFlipbookLayout.Grid4x4"
+      },
+      "FlipbookMode": {
+       "Enum": "ParticleFlipbookMode.OneShot"
+      },
+      "FlipbookBlendFrames": false,
+      "Shape": {
+       "Enum": "ParticleEmitterShape.Sphere"
+      },
+      "ShapeStyle": {
+       "Enum": "ParticleEmitterShapeStyle.Surface"
+      },
+      "Rate": 0,
+      "Lifetime": {
+       "NumberRange": [
+        2.0,
+        3.2
+       ]
+      },
+      "Speed": {
+       "NumberRange": [
+        4.5,
+        13.5
+       ]
+      },
+      "Acceleration": {
+       "Vector3": [
+        0,
+        3.6,
+        0
+       ]
+      },
+      "Size": {
+       "NumberSequence": [
+        [
+         0,
+         27.0,
+         6.75
+        ],
+        [
+         1,
+         45.0,
+         9.0
+        ]
+       ]
+      },
+      "Rotation": {
+       "NumberRange": [
+        0,
+        360
+       ]
+      },
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          0.7843137254901961,
+          0.47843137254901963,
+          0.23529411764705882
+         ]
+        ],
+        [
+         1,
+         [
+          0.5411764705882353,
+          0.47843137254901963,
+          0.4549019607843137
+         ]
+        ]
+       ]
+      },
+      "LightEmission": 0,
+      "LightInfluence": 0.35,
+      "ZOffset": 1
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Lobe0",
+   "MeshId": "sim:lumpy_sphere",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    55.50681974258987,
+    63.0,
+    23.467906980888515,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    90.0,
+    67.5,
+    90.0
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_smoke_shell",
+      "EmissiveMask": "sim:mesh_smoke_shell",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.8666666666666667,
+        0.5254901960784314,
+        0.2235294117647059
+       ]
+      },
+      "EmissiveStrength": 2.4,
+      "EmissiveTint": {
+       "Color3": [
+        0.9647058823529412,
+        0.8352941176470589,
+        0.6235294117647059
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Lobe1",
+   "MeshId": "sim:lumpy_sphere",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    13.112893175666057,
+    76.5,
+    46.797564387087185,
+    0,
+    47,
+    0
+   ],
+   "Size": [
+    75.6,
+    56.699999999999996,
+    75.6
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_smoke_shell",
+      "EmissiveMask": "sim:mesh_smoke_shell",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.8666666666666667,
+        0.5254901960784314,
+        0.2235294117647059
+       ]
+      },
+      "EmissiveStrength": 2.4,
+      "EmissiveTint": {
+       "Color3": [
+        0.9647058823529412,
+        0.8352941176470589,
+        0.6235294117647059
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Lobe2",
+   "MeshId": "sim:lumpy_sphere",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -35.23094692622076,
+    63.0,
+    48.893047304108755,
+    0,
+    94,
+    0
+   ],
+   "Size": [
+    90.0,
+    67.5,
+    90.0
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_smoke_shell",
+      "EmissiveMask": "sim:mesh_smoke_shell",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.8666666666666667,
+        0.5254901960784314,
+        0.2235294117647059
+       ]
+      },
+      "EmissiveStrength": 2.4,
+      "EmissiveTint": {
+       "Color3": [
+        0.9647058823529412,
+        0.8352941176470589,
+        0.6235294117647059
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Lobe3",
+   "MeshId": "sim:lumpy_sphere",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -48.54214497941596,
+    76.5,
+    2.370687832119996,
+    0,
+    141,
+    0
+   ],
+   "Size": [
+    75.6,
+    56.699999999999996,
+    75.6
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_smoke_shell",
+      "EmissiveMask": "sim:mesh_smoke_shell",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.8666666666666667,
+        0.5254901960784314,
+        0.2235294117647059
+       ]
+      },
+      "EmissiveStrength": 2.4,
+      "EmissiveTint": {
+       "Color3": [
+        0.9647058823529412,
+        0.8352941176470589,
+        0.6235294117647059
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Lobe4",
+   "MeshId": "sim:lumpy_sphere",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    -39.8275733142139,
+    63.0,
+    -45.227360081049575,
+    0,
+    188,
+    0
+   ],
+   "Size": [
+    90.0,
+    67.5,
+    90.0
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_smoke_shell",
+      "EmissiveMask": "sim:mesh_smoke_shell",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.8666666666666667,
+        0.5254901960784314,
+        0.2235294117647059
+       ]
+      },
+      "EmissiveStrength": 2.4,
+      "EmissiveTint": {
+       "Color3": [
+        0.9647058823529412,
+        0.8352941176470589,
+        0.6235294117647059
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Lobe5",
+   "MeshId": "sim:lumpy_sphere",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    8.490393698458874,
+    76.5,
+    -47.8526197281316,
+    0,
+    235,
+    0
+   ],
+   "Size": [
+    75.6,
+    56.699999999999996,
+    75.6
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_smoke_shell",
+      "EmissiveMask": "sim:mesh_smoke_shell",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.8666666666666667,
+        0.5254901960784314,
+        0.2235294117647059
+       ]
+      },
+      "EmissiveStrength": 2.4,
+      "EmissiveTint": {
+       "Color3": [
+        0.9647058823529412,
+        0.8352941176470589,
+        0.6235294117647059
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Lobe6",
+   "MeshId": "sim:lumpy_sphere",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    52.95588454840569,
+    63.0,
+    -28.764978492881365,
+    0,
+    282,
+    0
+   ],
+   "Size": [
+    90.0,
+    67.5,
+    90.0
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_smoke_shell",
+      "EmissiveMask": "sim:mesh_smoke_shell",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.8666666666666667,
+        0.5254901960784314,
+        0.2235294117647059
+       ]
+      },
+      "EmissiveStrength": 2.4,
+      "EmissiveTint": {
+       "Color3": [
+        0.9647058823529412,
+        0.8352941176470589,
+        0.6235294117647059
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Vortex",
+   "MeshId": "sim:torus",
+   "Material": "SmoothPlastic",
+   "Color": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    49.50000000000001,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    162.0,
+    45.0,
+    162.0
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": [
+    {
+     "class": "SurfaceAppearance",
+     "name": "Look",
+     "props": {
+      "ColorMap": "sim:mesh_smoke_shell",
+      "EmissiveMask": "sim:mesh_smoke_shell",
+      "AlphaMode": {
+       "Enum": "AlphaMode.Transparency"
+      },
+      "Color": {
+       "Color3": [
+        0.788235294117647,
+        0.4588235294117647,
+        0.20392156862745098
+       ]
+      },
+      "EmissiveStrength": 0.9,
+      "EmissiveTint": {
+       "Color3": [
+        0.9647058823529412,
+        0.8352941176470589,
+        0.6235294117647059
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "class": "MeshPart",
+   "name": "Condense0",
+   "MeshId": "sim:torus",
+   "Material": "SmoothPlastic",
+   "Color": [
+    0.9137254901960784,
+    0.8235294117647058,
+    0.7215686274509804
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    94.5,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    135.0,
+    6.300000000000001,
+    135.0
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": []
+  },
+  {
+   "class": "MeshPart",
+   "name": "Condense1",
+   "MeshId": "sim:torus",
+   "Material": "SmoothPlastic",
+   "Color": [
+    0.9137254901960784,
+    0.8235294117647058,
+    0.7215686274509804
+   ],
+   "Transparency": 1,
+   "CFrame": [
+    0,
+    144.0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    135.0,
+    6.300000000000001,
+    135.0
+   ],
+   "props": {
+    "DoubleSided": true
+   },
+   "children": []
+  },
+  {
+   "class": "Part",
+   "name": "EmberSky",
+   "CFrame": [
+    0,
+    306.0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    540.0,
+    2,
+    360.0
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "ParticleEmitter",
+     "name": "Embers",
+     "props": {
+      "Texture": "sim:spark_ember_8x8",
+      "FlipbookLayout": {
+       "Enum": "ParticleFlipbookLayout.Grid8x8"
+      },
+      "FlipbookMode": {
+       "Enum": "ParticleFlipbookMode.Loop"
+      },
+      "FlipbookFramerate": {
+       "NumberRange": [
+        12,
+        24
+       ]
+      },
+      "FlipbookStartRandom": true,
+      "EmissionDirection": {
+       "Enum": "NormalId.Bottom"
+      },
+      "Rate": 0,
+      "Lifetime": {
+       "NumberRange": [
+        4,
+        6.5
+       ]
+      },
+      "Speed": {
+       "NumberRange": [
+        7.2,
+        18.0
+       ]
+      },
+      "Acceleration": {
+       "Vector3": [
+        0,
+        -4.5,
+        0
+       ]
+      },
+      "Drag": 0.3,
+      "SpreadAngle": {
+       "Vector2": [
+        25,
+        25
+       ]
+      },
+      "Size": {
+       "NumberSequence": [
+        [
+         0,
+         1.44,
+         0.54
+        ],
+        [
+         1,
+         0.9
+        ]
+       ]
+      },
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          0.9725490196078431,
+          0.8392156862745098,
+          0.596078431372549
+         ]
+        ],
+        [
+         1,
+         [
+          0.8352941176470589,
+          0.45098039215686275,
+          0.26666666666666666
+         ]
+        ]
+       ]
+      },
+      "LightEmission": 1,
+      "Brightness": 2.4,
+      "Transparency": {
+       "NumberSequence": [
+        [
+         0,
+         1
+        ],
+        [
+         0.1,
+         0
+        ],
+        [
+         0.85,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "do": "set",
+   "target": "Circles.C0outer",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 0.25
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C0outer",
+   "prop": "Size",
+   "to": [
+    140.4,
+    0.05,
+    140.4
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 0.25
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C0outer",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    66.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 0.25
+  },
+  {
+   "do": "set",
+   "target": "Circles.C0band",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 0.45
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C0band",
+   "prop": "Size",
+   "to": [
+    131.976,
+    0.05,
+    131.976
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 0.45
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C0band",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -90.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 0.45
+  },
+  {
+   "do": "set",
+   "target": "Circles.C0inner",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 0.55
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C0inner",
+   "prop": "Size",
+   "to": [
+    123.552,
+    0.05,
+    123.552
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 0.55
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C0inner",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    114.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 0.55
+  },
+  {
+   "do": "set",
+   "target": "Circles.C0core",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 0.63
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C0core",
+   "prop": "Size",
+   "to": [
+    115.12800000000001,
+    0.05,
+    115.12800000000001
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 0.63
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C0core",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -150.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 0.63
+  },
+  {
+   "do": "set",
+   "target": "Circles.C1outer",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 0.45
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C1outer",
+   "prop": "Size",
+   "to": [
+    112.32000000000001,
+    0.05,
+    112.32000000000001
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 0.45
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C1outer",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    66.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 0.45
+  },
+  {
+   "do": "set",
+   "target": "Circles.C1band",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 0.65
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C1band",
+   "prop": "Size",
+   "to": [
+    105.5808,
+    0.05,
+    105.5808
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 0.65
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C1band",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -90.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 0.65
+  },
+  {
+   "do": "set",
+   "target": "Circles.C1inner",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 0.75
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C1inner",
+   "prop": "Size",
+   "to": [
+    98.84160000000001,
+    0.05,
+    98.84160000000001
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 0.75
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C1inner",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    114.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 0.75
+  },
+  {
+   "do": "set",
+   "target": "Circles.C1core",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 0.83
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C1core",
+   "prop": "Size",
+   "to": [
+    92.10240000000002,
+    0.05,
+    92.10240000000002
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 0.83
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C1core",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -150.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 0.83
+  },
+  {
+   "do": "set",
+   "target": "Circles.C2outer",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 0.65
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C2outer",
+   "prop": "Size",
+   "to": [
+    87.048,
+    0.05,
+    87.048
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 0.65
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C2outer",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    66.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 0.65
+  },
+  {
+   "do": "set",
+   "target": "Circles.C2band",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 0.85
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C2band",
+   "prop": "Size",
+   "to": [
+    81.82512,
+    0.05,
+    81.82512
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 0.85
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C2band",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -90.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 0.85
+  },
+  {
+   "do": "set",
+   "target": "Circles.C2inner",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 0.95
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C2inner",
+   "prop": "Size",
+   "to": [
+    76.60224000000001,
+    0.05,
+    76.60224000000001
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 0.95
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C2inner",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    114.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 0.95
+  },
+  {
+   "do": "set",
+   "target": "Circles.C2core",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.03
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C2core",
+   "prop": "Size",
+   "to": [
+    71.37936,
+    0.05,
+    71.37936
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.03
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C2core",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -150.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.03
+  },
+  {
+   "do": "set",
+   "target": "Circles.C3outer",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 0.85
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C3outer",
+   "prop": "Size",
+   "to": [
+    73.00800000000001,
+    0.05,
+    73.00800000000001
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 0.85
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C3outer",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    66.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 0.85
+  },
+  {
+   "do": "set",
+   "target": "Circles.C3band",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.05
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C3band",
+   "prop": "Size",
+   "to": [
+    68.62752,
+    0.05,
+    68.62752
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.05
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C3band",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -90.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.05
+  },
+  {
+   "do": "set",
+   "target": "Circles.C3inner",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.15
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C3inner",
+   "prop": "Size",
+   "to": [
+    64.24704000000001,
+    0.05,
+    64.24704000000001
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.15
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C3inner",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    114.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.15
+  },
+  {
+   "do": "set",
+   "target": "Circles.C3core",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.23
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C3core",
+   "prop": "Size",
+   "to": [
+    59.866560000000014,
+    0.05,
+    59.866560000000014
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.23
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C3core",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -150.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.23
+  },
+  {
+   "do": "set",
+   "target": "Circles.C4outer",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.05
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C4outer",
+   "prop": "Size",
+   "to": [
+    87.048,
+    0.05,
+    87.048
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.05
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C4outer",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    66.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.05
+  },
+  {
+   "do": "set",
+   "target": "Circles.C4band",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.25
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C4band",
+   "prop": "Size",
+   "to": [
+    81.82512,
+    0.05,
+    81.82512
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.25
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C4band",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -90.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.25
+  },
+  {
+   "do": "set",
+   "target": "Circles.C4inner",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.35
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C4inner",
+   "prop": "Size",
+   "to": [
+    76.60224000000001,
+    0.05,
+    76.60224000000001
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.35
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C4inner",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    114.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.35
+  },
+  {
+   "do": "set",
+   "target": "Circles.C4core",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.43
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C4core",
+   "prop": "Size",
+   "to": [
+    71.37936,
+    0.05,
+    71.37936
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.43
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C4core",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -150.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.43
+  },
+  {
+   "do": "set",
+   "target": "Circles.C5outer",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.25
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C5outer",
+   "prop": "Size",
+   "to": [
+    112.32000000000001,
+    0.05,
+    112.32000000000001
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.25
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C5outer",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    66.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.25
+  },
+  {
+   "do": "set",
+   "target": "Circles.C5band",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.45
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C5band",
+   "prop": "Size",
+   "to": [
+    105.5808,
+    0.05,
+    105.5808
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.45
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C5band",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -90.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.45
+  },
+  {
+   "do": "set",
+   "target": "Circles.C5inner",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.55
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C5inner",
+   "prop": "Size",
+   "to": [
+    98.84160000000001,
+    0.05,
+    98.84160000000001
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.55
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C5inner",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    114.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.55
+  },
+  {
+   "do": "set",
+   "target": "Circles.C5core",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.63
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C5core",
+   "prop": "Size",
+   "to": [
+    92.10240000000002,
+    0.05,
+    92.10240000000002
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.63
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C5core",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -150.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.63
+  },
+  {
+   "do": "set",
+   "target": "Circles.C6outer",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.45
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C6outer",
+   "prop": "Size",
+   "to": [
+    133.38,
+    0.05,
+    133.38
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.45
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C6outer",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    66.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.45
+  },
+  {
+   "do": "set",
+   "target": "Circles.C6band",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.65
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C6band",
+   "prop": "Size",
+   "to": [
+    125.37719999999999,
+    0.05,
+    125.37719999999999
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.65
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C6band",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -90.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.65
+  },
+  {
+   "do": "set",
+   "target": "Circles.C6inner",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.75
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C6inner",
+   "prop": "Size",
+   "to": [
+    117.3744,
+    0.05,
+    117.3744
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.75
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C6inner",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    114.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.75
+  },
+  {
+   "do": "set",
+   "target": "Circles.C6core",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 1.83
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C6core",
+   "prop": "Size",
+   "to": [
+    109.3716,
+    0.05,
+    109.3716
+   ],
+   "time": 0.42,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 1.83
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C6core",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -150.0,
+    0
+   ],
+   "time": 3.0,
+   "style": "Linear",
+   "t": 1.83
+  },
+  {
+   "do": "enable",
+   "target": "Mana.Sparks",
+   "duration": 2.4,
+   "t": 0.4
+  },
+  {
+   "do": "set",
+   "target": "Mana.Sparks",
+   "prop": "Rate",
+   "value": 140,
+   "t": 0.4
+  },
+  {
+   "do": "emit",
+   "target": "Charge.A.Glow",
+   "count": 1,
+   "t": 0.2
+  },
+  {
+   "do": "emit",
+   "target": "Charge.A.Flare",
+   "count": 1,
+   "t": 2.55
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C0outer",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C0band",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C0inner",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C0core",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C1outer",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C1band",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C1inner",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C1core",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C2outer",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C2band",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C2inner",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C2core",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C3outer",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C3band",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C3inner",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C3core",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C4outer",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C4band",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C4inner",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C4core",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C5outer",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C5band",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C5inner",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C5core",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C6outer",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C6band",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C6inner",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "tween",
+   "target": "Circles.C6core",
+   "prop": "Size",
+   "to": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "time": 0.28,
+   "style": "Quart",
+   "dir": "In",
+   "t": 2.6
+  },
+  {
+   "do": "hide",
+   "target": "Circles",
+   "t": 2.9
+  },
+  {
+   "do": "hide",
+   "target": "Charge",
+   "t": 2.9
+  },
+  {
+   "do": "camera",
+   "pos": [
+    31.499999999999996,
+    31.499999999999996,
+    198.00000000000003
+   ],
+   "at": [
+    0,
+    157.5,
+    0
+   ],
+   "fov": 62,
+   "t": 0.0
+  },
+  {
+   "do": "camera",
+   "pos": [
+    27.0,
+    27.0,
+    180.0
+   ],
+   "at": [
+    0,
+    229.5,
+    0
+   ],
+   "fov": 60,
+   "time": 2.8,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 0.0
+  },
+  {
+   "do": "camera",
+   "pos": [
+    0,
+    25.200000000000003,
+    486.00000000000006
+   ],
+   "at": [
+    0,
+    90.0,
+    0
+   ],
+   "fov": 44,
+   "t": 2.9
+  },
+  {
+   "do": "camera",
+   "pos": [
+    0,
+    28.8,
+    450.0
+   ],
+   "at": [
+    0,
+    112.5,
+    0
+   ],
+   "fov": 44,
+   "time": 11.5,
+   "style": "Linear",
+   "t": 3.0
+  },
+  {
+   "do": "set",
+   "target": "Point",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 2.95
+  },
+  {
+   "do": "tween",
+   "target": "Point",
+   "prop": "CFrame",
+   "to": [
+    0,
+    4.5,
+    0,
+    0,
+    0,
+    0
+   ],
+   "time": 0.25,
+   "style": "Quad",
+   "dir": "In",
+   "t": 3.0
+  },
+  {
+   "do": "set",
+   "target": "Point",
+   "prop": "Transparency",
+   "value": 1,
+   "t": 3.3
+  },
+  {
+   "do": "emit",
+   "target": "Ignite.A.Star",
+   "count": 1,
+   "t": 3.25
+  },
+  {
+   "do": "emit",
+   "target": "Ignite.A.Ring",
+   "count": 1,
+   "t": 3.27
+  },
+  {
+   "do": "set",
+   "target": "Grade",
+   "prop": "Brightness",
+   "value": 1.0,
+   "t": 3.5
+  },
+  {
+   "do": "set",
+   "target": "Grade",
+   "prop": "Brightness",
+   "value": 0.0,
+   "t": 3.52
+  },
+  {
+   "do": "tween",
+   "target": "Grade",
+   "prop": "Brightness",
+   "to": 0.95,
+   "time": 0.08,
+   "style": "Linear",
+   "t": 4.3
+  },
+  {
+   "do": "set",
+   "target": "Grade",
+   "prop": "TintColor",
+   "value": {
+    "Color3": [
+     1,
+     0.99,
+     0.94
+    ]
+   },
+   "t": 4.3
+  },
+  {
+   "do": "tween",
+   "target": "Grade",
+   "prop": "Brightness",
+   "to": 0.12,
+   "time": 1.6,
+   "style": "Quad",
+   "dir": "Out",
+   "t": 4.65
+  },
+  {
+   "do": "tween",
+   "target": "Grade",
+   "prop": "TintColor",
+   "to": {
+    "Color3": [
+     0.9921568627450981,
+     0.9450980392156862,
+     0.8117647058823529
+    ]
+   },
+   "time": 0.9,
+   "style": "Linear",
+   "t": 4.65
+  },
+  {
+   "do": "tween",
+   "target": "Grade",
+   "prop": "TintColor",
+   "to": {
+    "Color3": [
+     0.9725490196078431,
+     0.8705882352941177,
+     0.5647058823529412
+    ]
+   },
+   "time": 1.0,
+   "style": "Linear",
+   "t": 5.55
+  },
+  {
+   "do": "tween",
+   "target": "Grade",
+   "prop": "TintColor",
+   "to": {
+    "Color3": [
+     0.9411764705882353,
+     0.7529411764705882,
+     0.5411764705882353
+    ]
+   },
+   "time": 2.5,
+   "style": "Linear",
+   "t": 6.6
+  },
+  {
+   "do": "tween",
+   "target": "Grade",
+   "prop": "Brightness",
+   "to": 0.0,
+   "time": 3.0,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 6.3
+  },
+  {
+   "do": "tween",
+   "target": "Grade",
+   "prop": "TintColor",
+   "to": {
+    "Color3": [
+     0.8901960784313725,
+     0.7647058823529411,
+     0.8235294117647058
+    ]
+   },
+   "time": 4.5,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 9.5
+  },
+  {
+   "do": "set",
+   "target": "Core",
+   "prop": "Transparency",
+   "value": 0.0,
+   "t": 3.52
+  },
+  {
+   "do": "tween",
+   "target": "Core",
+   "prop": "Size",
+   "to": [
+    108.35999999999999,
+    108.35999999999999,
+    108.35999999999999
+   ],
+   "time": 0.2,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 3.52,
+   "from": [
+    41.796,
+    41.796,
+    41.796
+   ]
+  },
+  {
+   "do": "tween",
+   "target": "Core",
+   "prop": "Size",
+   "to": [
+    154.8,
+    154.8,
+    154.8
+   ],
+   "time": 0.6,
+   "style": "Quad",
+   "dir": "In",
+   "t": 3.72
+  },
+  {
+   "do": "tween",
+   "target": "Core",
+   "prop": "Size",
+   "to": [
+    188.85600000000002,
+    95.97600000000001,
+    188.85600000000002
+   ],
+   "time": 0.7,
+   "style": "Quad",
+   "dir": "Out",
+   "t": 4.32
+  },
+  {
+   "do": "tween",
+   "target": "Core",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    25,
+    0
+   ],
+   "time": 6.0,
+   "style": "Linear",
+   "t": 4.0
+  },
+  {
+   "do": "set",
+   "target": "ShellIn",
+   "prop": "Transparency",
+   "value": 0.02,
+   "t": 3.52
+  },
+  {
+   "do": "tween",
+   "target": "ShellIn",
+   "prop": "Size",
+   "to": [
+    122.21999999999998,
+    122.21999999999998,
+    122.21999999999998
+   ],
+   "time": 0.2,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 3.52,
+   "from": [
+    47.142,
+    47.142,
+    47.142
+   ]
+  },
+  {
+   "do": "tween",
+   "target": "ShellIn",
+   "prop": "Size",
+   "to": [
+    174.6,
+    174.6,
+    174.6
+   ],
+   "time": 0.6,
+   "style": "Quad",
+   "dir": "In",
+   "t": 3.72
+  },
+  {
+   "do": "tween",
+   "target": "ShellIn",
+   "prop": "Size",
+   "to": [
+    213.012,
+    108.252,
+    213.012
+   ],
+   "time": 0.7,
+   "style": "Quad",
+   "dir": "Out",
+   "t": 4.32
+  },
+  {
+   "do": "tween",
+   "target": "ShellIn",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    25,
+    0
+   ],
+   "time": 6.0,
+   "style": "Linear",
+   "t": 4.0
+  },
+  {
+   "do": "set",
+   "target": "ShellOut",
+   "prop": "Transparency",
+   "value": 0.45,
+   "t": 3.52
+  },
+  {
+   "do": "tween",
+   "target": "ShellOut",
+   "prop": "Size",
+   "to": [
+    134.82,
+    134.82,
+    134.82
+   ],
+   "time": 0.2,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 3.52,
+   "from": [
+    52.002,
+    52.002,
+    52.002
+   ]
+  },
+  {
+   "do": "tween",
+   "target": "ShellOut",
+   "prop": "Size",
+   "to": [
+    192.60000000000002,
+    192.60000000000002,
+    192.60000000000002
+   ],
+   "time": 0.6,
+   "style": "Quad",
+   "dir": "In",
+   "t": 3.72
+  },
+  {
+   "do": "tween",
+   "target": "ShellOut",
+   "prop": "Size",
+   "to": [
+    234.972,
+    119.412,
+    234.972
+   ],
+   "time": 0.7,
+   "style": "Quad",
+   "dir": "Out",
+   "t": 4.32
+  },
+  {
+   "do": "tween",
+   "target": "ShellOut",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -18,
+    0
+   ],
+   "time": 6.0,
+   "style": "Linear",
+   "t": 4.0
+  },
+  {
+   "do": "tween",
+   "target": "ShellIn.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     1,
+     1,
+     0.94
+    ]
+   },
+   "time": 0.5,
+   "style": "Linear",
+   "t": 3.77
+  },
+  {
+   "do": "tween",
+   "target": "ShellIn.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.9725490196078431,
+     0.8705882352941177,
+     0.5647058823529412
+    ]
+   },
+   "time": 0.8,
+   "style": "Linear",
+   "t": 4.9
+  },
+  {
+   "do": "tween",
+   "target": "ShellIn.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.9803921568627451,
+     0.8352941176470589,
+     0.2980392156862745
+    ]
+   },
+   "time": 1.2,
+   "style": "Linear",
+   "t": 5.8
+  },
+  {
+   "do": "tween",
+   "target": "ShellIn.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.8941176470588236,
+     0.5176470588235295,
+     0.16470588235294117
+    ]
+   },
+   "time": 2.0,
+   "style": "Linear",
+   "t": 7.0
+  },
+  {
+   "do": "tween",
+   "target": "ShellOut.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.6470588235294118,
+     0.3176470588235294,
+     0.23137254901960785
+    ]
+   },
+   "time": 2.5,
+   "style": "Linear",
+   "t": 7.0
+  },
+  {
+   "do": "tween",
+   "target": "ShellIn.Look",
+   "prop": "EmissiveStrength",
+   "to": 0.6,
+   "time": 4.0,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 6.0
+  },
+  {
+   "do": "tween",
+   "target": "ShellOut.Look",
+   "prop": "EmissiveStrength",
+   "to": 0.25,
+   "time": 4.0,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 6.0
+  },
+  {
+   "do": "tween",
+   "target": "Core",
+   "prop": "Transparency",
+   "to": 1,
+   "time": 1.6,
+   "style": "Sine",
+   "dir": "In",
+   "t": 4.8
+  },
+  {
+   "do": "tween",
+   "target": "ShellIn",
+   "prop": "Transparency",
+   "to": 1,
+   "time": 2.5,
+   "style": "Sine",
+   "dir": "In",
+   "t": 9.0
+  },
+  {
+   "do": "tween",
+   "target": "ShellOut",
+   "prop": "Transparency",
+   "to": 1,
+   "time": 2.5,
+   "style": "Sine",
+   "dir": "In",
+   "t": 9.0
+  },
+  {
+   "do": "set",
+   "target": "PuffZone.Puffs",
+   "prop": "Rate",
+   "value": 170,
+   "t": 3.6
+  },
+  {
+   "do": "enable",
+   "target": "PuffZone.Puffs",
+   "duration": 1.1,
+   "t": 3.6
+  },
+  {
+   "do": "set",
+   "target": "PuffZone.Puffs",
+   "prop": "Rate",
+   "value": 55,
+   "t": 4.7
+  },
+  {
+   "do": "enable",
+   "target": "PuffZone.Puffs",
+   "duration": 4.3,
+   "t": 4.71
+  },
+  {
+   "do": "emit",
+   "target": "Debris.Rocks",
+   "count": 30,
+   "t": 3.6
+  },
+  {
+   "do": "set",
+   "target": "Rim",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6
+  },
+  {
+   "do": "tween",
+   "target": "Rim",
+   "prop": "Size",
+   "to": [
+    136.3162,
+    28.3612,
+    141.615
+   ],
+   "time": 0.18,
+   "style": "Back",
+   "dir": "Out",
+   "from": [
+    81.78972,
+    0.05,
+    84.96900000000001
+   ],
+   "t": 3.6
+  },
+  {
+   "do": "tween",
+   "target": "Rim",
+   "prop": "CFrame",
+   "to": [
+    -0.0418,
+    5.9231,
+    0.6658,
+    0,
+    152,
+    0
+   ],
+   "time": 0.18,
+   "style": "Back",
+   "dir": "Out",
+   "t": 3.6
+  },
+  {
+   "do": "set",
+   "target": "Chunk0",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.7038
+  },
+  {
+   "do": "toss",
+   "target": "Chunk0",
+   "vel": [
+    -30.48,
+    59.81,
+    11.23
+   ],
+   "spin": [
+    252.44931255050267,
+    208.53762108129422,
+    -120.54053159584981
+   ],
+   "t": 3.7038
+  },
+  {
+   "do": "set",
+   "target": "Chunk1",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6375
+  },
+  {
+   "do": "toss",
+   "target": "Chunk1",
+   "vel": [
+    7.22,
+    50.98,
+    57.94
+   ],
+   "spin": [
+    -202.72832031369674,
+    189.3031053117444,
+    9.446503846290796
+   ],
+   "t": 3.6375
+  },
+  {
+   "do": "set",
+   "target": "Chunk2",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6442
+  },
+  {
+   "do": "toss",
+   "target": "Chunk2",
+   "vel": [
+    26.41,
+    48.84,
+    -60.38
+   ],
+   "spin": [
+    -157.46997820442496,
+    -227.19080948454078,
+    60.50572658392139
+   ],
+   "t": 3.6442
+  },
+  {
+   "do": "set",
+   "target": "Chunk3",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.7051
+  },
+  {
+   "do": "toss",
+   "target": "Chunk3",
+   "vel": [
+    -46.9,
+    65.42,
+    18.99
+   ],
+   "spin": [
+    4.067110221526889,
+    -154.18994455434483,
+    -204.97178870462366
+   ],
+   "t": 3.7051
+  },
+  {
+   "do": "set",
+   "target": "Chunk4",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6468
+  },
+  {
+   "do": "toss",
+   "target": "Chunk4",
+   "vel": [
+    -13.59,
+    66.66,
+    -65.14
+   ],
+   "spin": [
+    -145.09408698467246,
+    -11.528125104680782,
+    293.8319676913428
+   ],
+   "t": 3.6468
+  },
+  {
+   "do": "set",
+   "target": "Chunk5",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6372
+  },
+  {
+   "do": "toss",
+   "target": "Chunk5",
+   "vel": [
+    -15.95,
+    69.21,
+    -30.15
+   ],
+   "spin": [
+    152.24400253104568,
+    327.89477376255695,
+    142.76638373303672
+   ],
+   "t": 3.6372
+  },
+  {
+   "do": "set",
+   "target": "Chunk6",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.7277
+  },
+  {
+   "do": "toss",
+   "target": "Chunk6",
+   "vel": [
+    8.23,
+    45.89,
+    -43.25
+   ],
+   "spin": [
+    -184.99737753184044,
+    -143.21410412551313,
+    138.21149390376434
+   ],
+   "t": 3.7277
+  },
+  {
+   "do": "set",
+   "target": "Chunk7",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.7355
+  },
+  {
+   "do": "toss",
+   "target": "Chunk7",
+   "vel": [
+    53.31,
+    60.99,
+    12.69
+   ],
+   "spin": [
+    -40.65048299799389,
+    -1.106795960536033,
+    -298.4056436119105
+   ],
+   "t": 3.7355
+  },
+  {
+   "do": "set",
+   "target": "Chunk8",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6723
+  },
+  {
+   "do": "toss",
+   "target": "Chunk8",
+   "vel": [
+    -3.39,
+    73.38,
+    37.15
+   ],
+   "spin": [
+    -296.53079674818315,
+    209.3071589139571,
+    115.5226990649312
+   ],
+   "t": 3.6723
+  },
+  {
+   "do": "set",
+   "target": "Chunk9",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6839
+  },
+  {
+   "do": "toss",
+   "target": "Chunk9",
+   "vel": [
+    61.83,
+    58.24,
+    -5.03
+   ],
+   "spin": [
+    321.13994830721356,
+    -385.23444706672916,
+    -194.08573292181268
+   ],
+   "t": 3.6839
+  },
+  {
+   "do": "set",
+   "target": "Chunk10",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.7106
+  },
+  {
+   "do": "toss",
+   "target": "Chunk10",
+   "vel": [
+    -61.18,
+    70.99,
+    -13.91
+   ],
+   "spin": [
+    151.77430264480734,
+    -165.10702510434749,
+    80.86303504660657
+   ],
+   "t": 3.7106
+  },
+  {
+   "do": "set",
+   "target": "Chunk11",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.7235
+  },
+  {
+   "do": "toss",
+   "target": "Chunk11",
+   "vel": [
+    32.94,
+    75.15,
+    41.12
+   ],
+   "spin": [
+    -81.51608973179896,
+    -143.6337106760792,
+    39.31064779488389
+   ],
+   "t": 3.7235
+  },
+  {
+   "do": "set",
+   "target": "Chunk12",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.638
+  },
+  {
+   "do": "toss",
+   "target": "Chunk12",
+   "vel": [
+    57.93,
+    71.2,
+    35.61
+   ],
+   "spin": [
+    -346.9977011533307,
+    -175.25661950612212,
+    83.2582300131885
+   ],
+   "t": 3.638
+  },
+  {
+   "do": "set",
+   "target": "Chunk13",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6938
+  },
+  {
+   "do": "toss",
+   "target": "Chunk13",
+   "vel": [
+    7.08,
+    53.99,
+    -38.64
+   ],
+   "spin": [
+    -344.37797548571467,
+    281.5451710779455,
+    -119.88130682086444
+   ],
+   "t": 3.6938
+  },
+  {
+   "do": "set",
+   "target": "Chunk14",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6902
+  },
+  {
+   "do": "toss",
+   "target": "Chunk14",
+   "vel": [
+    26.73,
+    68.27,
+    42.3
+   ],
+   "spin": [
+    -321.5436387094003,
+    -133.48459807195718,
+    222.22973227386774
+   ],
+   "t": 3.6902
+  },
+  {
+   "do": "set",
+   "target": "Chunk15",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6961
+  },
+  {
+   "do": "toss",
+   "target": "Chunk15",
+   "vel": [
+    -20.76,
+    68.2,
+    -41.18
+   ],
+   "spin": [
+    -341.2627044188258,
+    -368.2464070640154,
+    -258.4739913537769
+   ],
+   "t": 3.6961
+  },
+  {
+   "do": "set",
+   "target": "Chunk16",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6412
+  },
+  {
+   "do": "toss",
+   "target": "Chunk16",
+   "vel": [
+    -9.22,
+    79.83,
+    40.79
+   ],
+   "spin": [
+    327.15719091159224,
+    354.8968915958602,
+    -57.59035959414405
+   ],
+   "t": 3.6412
+  },
+  {
+   "do": "set",
+   "target": "Chunk17",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6713
+  },
+  {
+   "do": "toss",
+   "target": "Chunk17",
+   "vel": [
+    29.54,
+    71.12,
+    -62.6
+   ],
+   "spin": [
+    11.131871775735192,
+    -41.944164838425365,
+    -62.760235721260756
+   ],
+   "t": 3.6713
+  },
+  {
+   "do": "set",
+   "target": "Chunk18",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6992
+  },
+  {
+   "do": "toss",
+   "target": "Chunk18",
+   "vel": [
+    39.29,
+    78.65,
+    -5.81
+   ],
+   "spin": [
+    -276.037735181945,
+    -202.8153636114485,
+    -306.28130149304155
+   ],
+   "t": 3.6992
+  },
+  {
+   "do": "set",
+   "target": "Chunk19",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.7298
+  },
+  {
+   "do": "toss",
+   "target": "Chunk19",
+   "vel": [
+    49.23,
+    57.31,
+    48.44
+   ],
+   "spin": [
+    240.92267723947134,
+    -235.7927463740646,
+    -30.953153806339344
+   ],
+   "t": 3.7298
+  },
+  {
+   "do": "set",
+   "target": "Chunk20",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.742
+  },
+  {
+   "do": "toss",
+   "target": "Chunk20",
+   "vel": [
+    -25.36,
+    76.64,
+    28.42
+   ],
+   "spin": [
+    145.49643690361643,
+    -327.2745845573626,
+    8.14241209615875
+   ],
+   "t": 3.742
+  },
+  {
+   "do": "set",
+   "target": "Chunk21",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.705
+  },
+  {
+   "do": "toss",
+   "target": "Chunk21",
+   "vel": [
+    -45.59,
+    69.24,
+    7.76
+   ],
+   "spin": [
+    390.968813562915,
+    128.12760402068807,
+    -188.00116542624795
+   ],
+   "t": 3.705
+  },
+  {
+   "do": "set",
+   "target": "Chunk22",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6454
+  },
+  {
+   "do": "toss",
+   "target": "Chunk22",
+   "vel": [
+    51.22,
+    71.04,
+    12.09
+   ],
+   "spin": [
+    -384.55901442354445,
+    187.16269398648944,
+    147.50431397436364
+   ],
+   "t": 3.6454
+  },
+  {
+   "do": "set",
+   "target": "Chunk23",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.7253
+  },
+  {
+   "do": "toss",
+   "target": "Chunk23",
+   "vel": [
+    47.12,
+    54.42,
+    49.78
+   ],
+   "spin": [
+    117.7563670810465,
+    -374.59382041329616,
+    -211.4956961866114
+   ],
+   "t": 3.7253
+  },
+  {
+   "do": "set",
+   "target": "Chunk24",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.6152
+  },
+  {
+   "do": "toss",
+   "target": "Chunk24",
+   "vel": [
+    -45.17,
+    69.23,
+    31.43
+   ],
+   "spin": [
+    390.7135836210799,
+    185.487268003209,
+    232.73671714645627
+   ],
+   "t": 3.6152
+  },
+  {
+   "do": "set",
+   "target": "Chunk25",
+   "prop": "Transparency",
+   "value": 0,
+   "t": 3.7193
+  },
+  {
+   "do": "toss",
+   "target": "Chunk25",
+   "vel": [
+    -8.81,
+    63.15,
+    -44.24
+   ],
+   "spin": [
+    -136.55276389582775,
+    -222.08583633204827,
+    -33.769892674554455
+   ],
+   "t": 3.7193
+  },
+  {
+   "do": "set",
+   "target": "Shock1",
+   "prop": "Transparency",
+   "value": 0.05,
+   "t": 4.3
+  },
+  {
+   "do": "tween",
+   "target": "Shock1",
+   "prop": "Size",
+   "to": [
+    1007.9999999999999,
+    0.1,
+    1007.9999999999999
+   ],
+   "time": 0.6,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 4.3,
+   "from": [
+    162.0,
+    0.1,
+    162.0
+   ]
+  },
+  {
+   "do": "tween",
+   "target": "Shock1",
+   "prop": "Transparency",
+   "to": 1,
+   "time": 0.5,
+   "style": "Quad",
+   "dir": "In",
+   "t": 4.42
+  },
+  {
+   "do": "set",
+   "target": "Shock2",
+   "prop": "Transparency",
+   "value": 0.05,
+   "t": 4.37
+  },
+  {
+   "do": "tween",
+   "target": "Shock2",
+   "prop": "Size",
+   "to": [
+    720.0,
+    0.1,
+    720.0
+   ],
+   "time": 0.6,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 4.37,
+   "from": [
+    162.0,
+    0.1,
+    162.0
+   ]
+  },
+  {
+   "do": "tween",
+   "target": "Shock2",
+   "prop": "Transparency",
+   "to": 1,
+   "time": 0.5,
+   "style": "Quad",
+   "dir": "In",
+   "t": 4.49
+  },
+  {
+   "do": "shake",
+   "amp": 0.36,
+   "time": 0.5,
+   "freq": 24,
+   "t": 4.75
+  },
+  {
+   "do": "set",
+   "target": "DustRing.Dust",
+   "prop": "Rate",
+   "value": 260,
+   "t": 4.3
+  },
+  {
+   "do": "enable",
+   "target": "DustRing.Dust",
+   "duration": 0.7,
+   "t": 4.3
+  },
+  {
+   "do": "set",
+   "target": "Skirt",
+   "prop": "Transparency",
+   "value": 0.1,
+   "t": 4.55
+  },
+  {
+   "do": "tween",
+   "target": "Skirt",
+   "prop": "Size",
+   "to": [
+    234.0,
+    59.400000000000006,
+    234.0
+   ],
+   "time": 0.5,
+   "style": "Quart",
+   "dir": "Out",
+   "t": 4.55,
+   "from": [
+    162.0,
+    27.0,
+    162.0
+   ]
+  },
+  {
+   "do": "tween",
+   "target": "Skirt.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.8784313725490196,
+     0.5490196078431373,
+     0.3411764705882353
+    ]
+   },
+   "time": 2.0,
+   "style": "Linear",
+   "t": 5.4
+  },
+  {
+   "do": "tween",
+   "target": "Skirt",
+   "prop": "Transparency",
+   "to": 1,
+   "time": 2.0,
+   "style": "Sine",
+   "dir": "In",
+   "t": 6.8
+  },
+  {
+   "do": "set",
+   "target": "GroundGlow",
+   "prop": "Transparency",
+   "value": 0.1,
+   "t": 3.55
+  },
+  {
+   "do": "tween",
+   "target": "GroundGlow",
+   "prop": "Transparency",
+   "to": 1,
+   "time": 4.0,
+   "style": "Sine",
+   "dir": "In",
+   "t": 8.0
+  },
+  {
+   "do": "tween",
+   "target": "Scorch",
+   "prop": "Transparency",
+   "to": 0.05,
+   "time": 2.0,
+   "style": "Linear",
+   "t": 5.0
+  },
+  {
+   "do": "set",
+   "target": "Lamp.L",
+   "prop": "Brightness",
+   "value": 5,
+   "t": 3.52
+  },
+  {
+   "do": "tween",
+   "target": "Lamp.L",
+   "prop": "Brightness",
+   "to": 0,
+   "time": 2.6,
+   "style": "Sine",
+   "dir": "Out",
+   "t": 4.4
+  },
+  {
+   "do": "set",
+   "target": "Stem",
+   "prop": "Transparency",
+   "value": 0.05,
+   "t": 5.5
+  },
+  {
+   "do": "tween",
+   "target": "Stem",
+   "prop": "Size",
+   "to": [
+    85.5,
+    225.0,
+    85.5
+   ],
+   "time": 8.0,
+   "style": "Sine",
+   "dir": "Out",
+   "t": 5.5
+  },
+  {
+   "do": "tween",
+   "target": "Stem",
+   "prop": "CFrame",
+   "to": [
+    0,
+    112.5,
+    0,
+    0,
+    40,
+    0
+   ],
+   "time": 8.0,
+   "style": "Sine",
+   "dir": "Out",
+   "t": 5.5
+  },
+  {
+   "do": "set",
+   "target": "Cap",
+   "prop": "Transparency",
+   "value": 0.05,
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Cap",
+   "prop": "CFrame",
+   "to": [
+    0,
+    261.0,
+    0,
+    0,
+    30,
+    0
+   ],
+   "time": 9.0,
+   "style": "Linear",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Cap",
+   "prop": "Size",
+   "to": [
+    279.0,
+    148.5,
+    279.0
+   ],
+   "time": 9.0,
+   "style": "Sine",
+   "dir": "Out",
+   "t": 5.3
+  },
+  {
+   "do": "set",
+   "target": "Cap.Billow",
+   "prop": "Rate",
+   "value": 38,
+   "t": 5.5
+  },
+  {
+   "do": "set",
+   "target": "Lobe0",
+   "prop": "Transparency",
+   "value": 0.05,
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe0",
+   "prop": "CFrame",
+   "to": [
+    98.78158106042382,
+    247.5,
+    41.76418260858122,
+    0,
+    40,
+    0
+   ],
+   "time": 9.0,
+   "style": "Linear",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe0",
+   "prop": "Size",
+   "to": [
+    144.0,
+    103.49999999999999,
+    144.0
+   ],
+   "time": 9.0,
+   "style": "Sine",
+   "dir": "Out",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe0.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.6901960784313725,
+     0.37254901960784315,
+     0.1450980392156863
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 7.0
+  },
+  {
+   "do": "tween",
+   "target": "Lobe0.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.5254901960784314,
+     0.4627450980392157,
+     0.44313725490196076
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 10.5
+  },
+  {
+   "do": "tween",
+   "target": "Lobe0.Look",
+   "prop": "EmissiveStrength",
+   "to": 0.5,
+   "time": 7.0,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 6.0
+  },
+  {
+   "do": "set",
+   "target": "Lobe1",
+   "prop": "Transparency",
+   "value": 0.05,
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe1",
+   "prop": "CFrame",
+   "to": [
+    23.336093225583483,
+    271.8,
+    83.28233217776071,
+    0,
+    87,
+    0
+   ],
+   "time": 9.0,
+   "style": "Linear",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe1",
+   "prop": "Size",
+   "to": [
+    120.96,
+    86.93999999999998,
+    120.96
+   ],
+   "time": 9.0,
+   "style": "Sine",
+   "dir": "Out",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe1.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.6901960784313725,
+     0.37254901960784315,
+     0.1450980392156863
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 7.0
+  },
+  {
+   "do": "tween",
+   "target": "Lobe1.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.5254901960784314,
+     0.4627450980392157,
+     0.44313725490196076
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 10.5
+  },
+  {
+   "do": "tween",
+   "target": "Lobe1.Look",
+   "prop": "EmissiveStrength",
+   "to": 0.5,
+   "time": 7.0,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 6.0
+  },
+  {
+   "do": "set",
+   "target": "Lobe2",
+   "prop": "Transparency",
+   "value": 0.05,
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe2",
+   "prop": "CFrame",
+   "to": [
+    -62.698037029811395,
+    247.5,
+    87.01151566527501,
+    0,
+    134,
+    0
+   ],
+   "time": 9.0,
+   "style": "Linear",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe2",
+   "prop": "Size",
+   "to": [
+    144.0,
+    103.49999999999999,
+    144.0
+   ],
+   "time": 9.0,
+   "style": "Sine",
+   "dir": "Out",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe2.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.6901960784313725,
+     0.37254901960784315,
+     0.1450980392156863
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 7.0
+  },
+  {
+   "do": "tween",
+   "target": "Lobe2.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.5254901960784314,
+     0.4627450980392157,
+     0.44313725490196076
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 10.5
+  },
+  {
+   "do": "tween",
+   "target": "Lobe2.Look",
+   "prop": "EmissiveStrength",
+   "to": 0.5,
+   "time": 7.0,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 6.0
+  },
+  {
+   "do": "set",
+   "target": "Lobe3",
+   "prop": "Transparency",
+   "value": 0.05,
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe3",
+   "prop": "CFrame",
+   "to": [
+    -86.3870394911458,
+    271.8,
+    4.218946308643178,
+    0,
+    181,
+    0
+   ],
+   "time": 9.0,
+   "style": "Linear",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe3",
+   "prop": "Size",
+   "to": [
+    120.96,
+    86.93999999999998,
+    120.96
+   ],
+   "time": 9.0,
+   "style": "Sine",
+   "dir": "Out",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe3.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.6901960784313725,
+     0.37254901960784315,
+     0.1450980392156863
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 7.0
+  },
+  {
+   "do": "tween",
+   "target": "Lobe3.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.5254901960784314,
+     0.4627450980392157,
+     0.44313725490196076
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 10.5
+  },
+  {
+   "do": "tween",
+   "target": "Lobe3.Look",
+   "prop": "EmissiveStrength",
+   "to": 0.5,
+   "time": 7.0,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 6.0
+  },
+  {
+   "do": "set",
+   "target": "Lobe4",
+   "prop": "Transparency",
+   "value": 0.05,
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe4",
+   "prop": "CFrame",
+   "to": [
+    -70.8783295462214,
+    247.5,
+    -80.48795007016417,
+    0,
+    228,
+    0
+   ],
+   "time": 9.0,
+   "style": "Linear",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe4",
+   "prop": "Size",
+   "to": [
+    144.0,
+    103.49999999999999,
+    144.0
+   ],
+   "time": 9.0,
+   "style": "Sine",
+   "dir": "Out",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe4.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.6901960784313725,
+     0.37254901960784315,
+     0.1450980392156863
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 7.0
+  },
+  {
+   "do": "tween",
+   "target": "Lobe4.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.5254901960784314,
+     0.4627450980392157,
+     0.44313725490196076
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 10.5
+  },
+  {
+   "do": "tween",
+   "target": "Lobe4.Look",
+   "prop": "EmissiveStrength",
+   "to": 0.5,
+   "time": 7.0,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 6.0
+  },
+  {
+   "do": "set",
+   "target": "Lobe5",
+   "prop": "Transparency",
+   "value": 0.05,
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe5",
+   "prop": "CFrame",
+   "to": [
+    15.109756192998109,
+    271.8,
+    -85.15993992358236,
+    0,
+    275,
+    0
+   ],
+   "time": 9.0,
+   "style": "Linear",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe5",
+   "prop": "Size",
+   "to": [
+    120.96,
+    86.93999999999998,
+    120.96
+   ],
+   "time": 9.0,
+   "style": "Sine",
+   "dir": "Out",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe5.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.6901960784313725,
+     0.37254901960784315,
+     0.1450980392156863
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 7.0
+  },
+  {
+   "do": "tween",
+   "target": "Lobe5.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.5254901960784314,
+     0.4627450980392157,
+     0.44313725490196076
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 10.5
+  },
+  {
+   "do": "tween",
+   "target": "Lobe5.Look",
+   "prop": "EmissiveStrength",
+   "to": 0.5,
+   "time": 7.0,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 6.0
+  },
+  {
+   "do": "set",
+   "target": "Lobe6",
+   "prop": "Transparency",
+   "value": 0.05,
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe6",
+   "prop": "CFrame",
+   "to": [
+    94.24186120558865,
+    247.5,
+    -51.19100802159072,
+    0,
+    322,
+    0
+   ],
+   "time": 9.0,
+   "style": "Linear",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe6",
+   "prop": "Size",
+   "to": [
+    144.0,
+    103.49999999999999,
+    144.0
+   ],
+   "time": 9.0,
+   "style": "Sine",
+   "dir": "Out",
+   "t": 5.3
+  },
+  {
+   "do": "tween",
+   "target": "Lobe6.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.6901960784313725,
+     0.37254901960784315,
+     0.1450980392156863
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 7.0
+  },
+  {
+   "do": "tween",
+   "target": "Lobe6.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.5254901960784314,
+     0.4627450980392157,
+     0.44313725490196076
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 10.5
+  },
+  {
+   "do": "tween",
+   "target": "Lobe6.Look",
+   "prop": "EmissiveStrength",
+   "to": 0.5,
+   "time": 7.0,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 6.0
+  },
+  {
+   "do": "enable",
+   "target": "Cap.Billow",
+   "duration": 8.5,
+   "t": 5.5
+  },
+  {
+   "do": "tween",
+   "target": "Stem.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.6901960784313725,
+     0.37254901960784315,
+     0.1450980392156863
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 7.0
+  },
+  {
+   "do": "tween",
+   "target": "Stem.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.5254901960784314,
+     0.4627450980392157,
+     0.44313725490196076
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 10.5
+  },
+  {
+   "do": "tween",
+   "target": "Stem.Look",
+   "prop": "EmissiveStrength",
+   "to": 0.5,
+   "time": 7.0,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 6.0
+  },
+  {
+   "do": "tween",
+   "target": "Cap.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.6901960784313725,
+     0.37254901960784315,
+     0.1450980392156863
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 7.0
+  },
+  {
+   "do": "tween",
+   "target": "Cap.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.5254901960784314,
+     0.4627450980392157,
+     0.44313725490196076
+    ]
+   },
+   "time": 3.5,
+   "style": "Linear",
+   "t": 10.5
+  },
+  {
+   "do": "tween",
+   "target": "Cap.Look",
+   "prop": "EmissiveStrength",
+   "to": 0.5,
+   "time": 7.0,
+   "style": "Sine",
+   "dir": "InOut",
+   "t": 6.0
+  },
+  {
+   "do": "set",
+   "target": "Vortex",
+   "prop": "Transparency",
+   "value": 0.1,
+   "t": 5.4
+  },
+  {
+   "do": "tween",
+   "target": "Vortex",
+   "prop": "CFrame",
+   "to": [
+    0,
+    220.50000000000003,
+    0,
+    0,
+    180,
+    0
+   ],
+   "time": 9.0,
+   "style": "Linear",
+   "t": 5.4
+  },
+  {
+   "do": "tween",
+   "target": "Vortex",
+   "prop": "Size",
+   "to": [
+    306.0,
+    67.5,
+    306.0
+   ],
+   "time": 9.0,
+   "style": "Sine",
+   "dir": "Out",
+   "t": 5.4
+  },
+  {
+   "do": "tween",
+   "target": "Vortex.Look",
+   "prop": "Color",
+   "to": {
+    "Color3": [
+     0.5607843137254902,
+     0.4196078431372549,
+     0.35294117647058826
+    ]
+   },
+   "time": 6.0,
+   "style": "Linear",
+   "t": 7.0
+  },
+  {
+   "do": "set",
+   "target": "Condense0",
+   "prop": "Transparency",
+   "value": 0.55,
+   "t": 8.3
+  },
+  {
+   "do": "tween",
+   "target": "Condense0",
+   "prop": "Size",
+   "to": [
+    206.99999999999997,
+    8.1,
+    206.99999999999997
+   ],
+   "time": 3.5,
+   "style": "Quad",
+   "dir": "Out",
+   "t": 8.3
+  },
+  {
+   "do": "tween",
+   "target": "Condense0",
+   "prop": "Transparency",
+   "to": 1,
+   "time": 2.8,
+   "style": "Sine",
+   "dir": "In",
+   "t": 9.1
+  },
+  {
+   "do": "set",
+   "target": "Condense1",
+   "prop": "Transparency",
+   "value": 0.55,
+   "t": 8.7
+  },
+  {
+   "do": "tween",
+   "target": "Condense1",
+   "prop": "Size",
+   "to": [
+    206.99999999999997,
+    8.1,
+    206.99999999999997
+   ],
+   "time": 3.5,
+   "style": "Quad",
+   "dir": "Out",
+   "t": 8.7
+  },
+  {
+   "do": "tween",
+   "target": "Condense1",
+   "prop": "Transparency",
+   "to": 1,
+   "time": 2.8,
+   "style": "Sine",
+   "dir": "In",
+   "t": 9.5
+  },
+  {
+   "do": "set",
+   "target": "EmberSky.Embers",
+   "prop": "Rate",
+   "value": 320,
+   "t": 7.5
+  },
+  {
+   "do": "enable",
+   "target": "EmberSky.Embers",
+   "duration": 7.0,
+   "t": 7.5
+  }
+ ],
+ "sizeConvention": "roblox"
+}

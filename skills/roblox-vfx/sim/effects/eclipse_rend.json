@@ -1,0 +1,2198 @@
+{
+ "name": "EclipseRend",
+ "note": "Original no-reference slash (brief in build_eclipse_rend.py): dark beat, full-size crescent, gold corona eclipse left hanging at the contact.",
+ "duration": 1.6,
+ "seed": 21,
+ "camera": {
+  "pos": [
+   9,
+   7,
+   12
+  ],
+  "at": [
+   0,
+   3,
+   0
+  ]
+ },
+ "stage": {
+  "ground": "light",
+  "dummy": true
+ },
+ "brief": {
+  "name": "Eclipse Rend",
+  "category": "slash",
+  "tier": "skill",
+  "style": "anime_cel",
+  "shape": "crescent / eclipse",
+  "dominant": "#7a4dff",
+  "accent": "#ffcf5a",
+  "darks": "#12081f",
+  "signature_beats": [
+   "dark beat before release",
+   "shape born at full size",
+   "hanging eclipse residue"
+  ],
+  "phases": [
+   {
+    "name": "anticipation",
+    "t0": 0.0,
+    "t1": 0.25
+   },
+   {
+    "name": "release",
+    "t0": 0.25,
+    "t1": 0.26666666666666666
+   },
+   {
+    "name": "sustain",
+    "t0": 0.26666666666666666,
+    "t1": 0.68
+   },
+   {
+    "name": "residue",
+    "t0": 0.68,
+    "t1": 1.1
+   }
+  ]
+ },
+ "instances": [
+  {
+   "class": "Part",
+   "name": "Slash",
+   "CFrame": [
+    0,
+    4.3,
+    0,
+    22,
+    0,
+    -14
+   ],
+   "Size": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "Attachment",
+     "name": "Core",
+     "children": [
+      {
+       "class": "ParticleEmitter",
+       "name": "DarkUnder",
+       "props": {
+        "Rate": 0,
+        "Texture": "sim:slash_paint_4x4",
+        "FlipbookLayout": {
+         "Enum": "ParticleFlipbookLayout.Grid4x4"
+        },
+        "FlipbookMode": {
+         "Enum": "ParticleFlipbookMode.OneShot"
+        },
+        "FlipbookBlendFrames": false,
+        "Orientation": {
+         "Enum": "ParticleOrientation.VelocityPerpendicular"
+        },
+        "Speed": {
+         "NumberRange": [
+          0.01,
+          0.01
+         ]
+        },
+        "Lifetime": {
+         "NumberRange": [
+          0.45,
+          0.45
+         ]
+        },
+        "Rotation": {
+         "NumberRange": [
+          174,
+          177
+         ]
+        },
+        "RotSpeed": {
+         "NumberRange": [
+          -300,
+          -300
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           6.8,
+           0.075
+          ],
+          [
+           1,
+           6.8,
+           0.075
+          ]
+         ]
+        },
+        "Transparency": {
+         "NumberSequence": [
+          [
+           0,
+           0.5
+          ],
+          [
+           0.55,
+           0.5
+          ],
+          [
+           1,
+           1
+          ]
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            0.18,
+            0.08,
+            0.32
+           ]
+          ],
+          [
+           1,
+           [
+            0.12,
+            0.05,
+            0.22
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 0,
+        "ZOffset": 0
+       }
+      },
+      {
+       "class": "ParticleEmitter",
+       "name": "Body",
+       "props": {
+        "Rate": 0,
+        "Texture": "sim:slash_paint_4x4",
+        "FlipbookLayout": {
+         "Enum": "ParticleFlipbookLayout.Grid4x4"
+        },
+        "FlipbookMode": {
+         "Enum": "ParticleFlipbookMode.OneShot"
+        },
+        "FlipbookBlendFrames": false,
+        "Orientation": {
+         "Enum": "ParticleOrientation.VelocityPerpendicular"
+        },
+        "Speed": {
+         "NumberRange": [
+          0.01,
+          0.01
+         ]
+        },
+        "Lifetime": {
+         "NumberRange": [
+          0.42,
+          0.42
+         ]
+        },
+        "Rotation": {
+         "NumberRange": [
+          175,
+          175
+         ]
+        },
+        "RotSpeed": {
+         "NumberRange": [
+          -300,
+          -300
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           6.5,
+           0.15
+          ],
+          [
+           1,
+           6.5,
+           0.15
+          ]
+         ]
+        },
+        "Transparency": {
+         "NumberSequence": [
+          [
+           0,
+           0
+          ],
+          [
+           0.6,
+           0
+          ],
+          [
+           1,
+           1
+          ]
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            0.48,
+            0.3,
+            1.0
+           ]
+          ],
+          [
+           1,
+           [
+            0.36,
+            0.22,
+            0.85
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 0,
+        "ZOffset": 0.01
+       }
+      },
+      {
+       "class": "ParticleEmitter",
+       "name": "Ink",
+       "props": {
+        "Rate": 0,
+        "Texture": "sim:slash_paint_b_4x4",
+        "FlipbookLayout": {
+         "Enum": "ParticleFlipbookLayout.Grid4x4"
+        },
+        "FlipbookMode": {
+         "Enum": "ParticleFlipbookMode.OneShot"
+        },
+        "FlipbookBlendFrames": false,
+        "Orientation": {
+         "Enum": "ParticleOrientation.VelocityPerpendicular"
+        },
+        "Speed": {
+         "NumberRange": [
+          0.01,
+          0.01
+         ]
+        },
+        "Lifetime": {
+         "NumberRange": [
+          0.44,
+          0.44
+         ]
+        },
+        "Rotation": {
+         "NumberRange": [
+          160,
+          168
+         ]
+        },
+        "RotSpeed": {
+         "NumberRange": [
+          -280,
+          -280
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           6.1,
+           0.2
+          ],
+          [
+           1,
+           6.3,
+           0.2
+          ]
+         ]
+        },
+        "Transparency": {
+         "NumberSequence": [
+          [
+           0,
+           0.1
+          ],
+          [
+           0.55,
+           0.1
+          ],
+          [
+           1,
+           1
+          ]
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            0.3,
+            0.14,
+            0.7
+           ]
+          ],
+          [
+           1,
+           [
+            0.22,
+            0.1,
+            0.5
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 0,
+        "ZOffset": 0.02
+       }
+      },
+      {
+       "class": "ParticleEmitter",
+       "name": "Rim",
+       "props": {
+        "Rate": 0,
+        "Texture": "sim:slash_paint_rim_4x4",
+        "FlipbookLayout": {
+         "Enum": "ParticleFlipbookLayout.Grid4x4"
+        },
+        "FlipbookMode": {
+         "Enum": "ParticleFlipbookMode.OneShot"
+        },
+        "FlipbookBlendFrames": false,
+        "Orientation": {
+         "Enum": "ParticleOrientation.VelocityPerpendicular"
+        },
+        "Speed": {
+         "NumberRange": [
+          0.01,
+          0.01
+         ]
+        },
+        "Lifetime": {
+         "NumberRange": [
+          0.42,
+          0.42
+         ]
+        },
+        "Rotation": {
+         "NumberRange": [
+          175,
+          175
+         ]
+        },
+        "RotSpeed": {
+         "NumberRange": [
+          -300,
+          -300
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           6.5,
+           0.15
+          ],
+          [
+           1,
+           6.5,
+           0.15
+          ]
+         ]
+        },
+        "Transparency": {
+         "NumberSequence": [
+          [
+           0,
+           0
+          ],
+          [
+           0.5,
+           0
+          ],
+          [
+           1,
+           1
+          ]
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            1,
+            1,
+            1
+           ]
+          ],
+          [
+           0.18,
+           [
+            0.86,
+            0.78,
+            1.0
+           ]
+          ],
+          [
+           1,
+           [
+            0.48,
+            0.3,
+            1.0
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 0.5,
+        "Brightness": 1.2,
+        "ZOffset": 0.03
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "class": "Part",
+   "name": "Pivot",
+   "CFrame": [
+    0,
+    4.3,
+    0,
+    22,
+    0,
+    -14
+   ],
+   "Size": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "Attachment",
+     "name": "L0",
+     "CFrame": [
+      -5.5,
+      0.1,
+      0,
+      0,
+      90,
+      0
+     ]
+    },
+    {
+     "class": "Attachment",
+     "name": "R0",
+     "CFrame": [
+      5.5,
+      0.1,
+      0,
+      0,
+      -90,
+      0
+     ]
+    },
+    {
+     "class": "Attachment",
+     "name": "L1",
+     "CFrame": [
+      -5.5,
+      0.1,
+      0,
+      0,
+      90,
+      0
+     ]
+    },
+    {
+     "class": "Attachment",
+     "name": "R1",
+     "CFrame": [
+      5.5,
+      0.1,
+      0,
+      0,
+      -90,
+      0
+     ]
+    },
+    {
+     "class": "Attachment",
+     "name": "L2",
+     "CFrame": [
+      -6.1,
+      -0.25,
+      0,
+      0,
+      90,
+      0
+     ]
+    },
+    {
+     "class": "Attachment",
+     "name": "R2",
+     "CFrame": [
+      6.1,
+      -0.25,
+      0,
+      0,
+      -90,
+      0
+     ]
+    },
+    {
+     "class": "Attachment",
+     "name": "L3",
+     "CFrame": [
+      -4.6,
+      0.4,
+      0,
+      0,
+      90,
+      0
+     ]
+    },
+    {
+     "class": "Attachment",
+     "name": "R3",
+     "CFrame": [
+      4.6,
+      0.4,
+      0,
+      0,
+      -90,
+      0
+     ]
+    },
+    {
+     "class": "Attachment",
+     "name": "L4",
+     "CFrame": [
+      -7.3,
+      -0.4,
+      0,
+      0,
+      90,
+      0
+     ]
+    },
+    {
+     "class": "Attachment",
+     "name": "R4",
+     "CFrame": [
+      7.3,
+      -0.4,
+      0,
+      0,
+      -90,
+      0
+     ]
+    },
+    {
+     "class": "Attachment",
+     "name": "L5",
+     "CFrame": [
+      -6.6,
+      0.25,
+      0,
+      0,
+      90,
+      0
+     ]
+    },
+    {
+     "class": "Attachment",
+     "name": "R5",
+     "CFrame": [
+      6.6,
+      0.25,
+      0,
+      0,
+      -90,
+      0
+     ]
+    },
+    {
+     "class": "Beam",
+     "name": "Shadow",
+     "props": {
+      "Attachment0": {
+       "Ref": "Pivot.L0"
+      },
+      "Attachment1": {
+       "Ref": "Pivot.R0"
+      },
+      "Enabled": false,
+      "CurveSize0": 7.333333333333333,
+      "CurveSize1": 7.333333333333333,
+      "Segments": 48,
+      "FaceCamera": true,
+      "Width0": 0,
+      "Width1": 2.9,
+      "Texture": "sim:beam_paint",
+      "TextureSpeed": 0,
+      "LightEmission": 0,
+      "Brightness": 1.0,
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          0.07,
+          0.03,
+          0.12
+         ]
+        ],
+        [
+         1,
+         [
+          0.07,
+          0.03,
+          0.12
+         ]
+        ]
+       ]
+      },
+      "Transparency": {
+       "NumberSequence": [
+        [
+         0,
+         1
+        ],
+        [
+         0.25,
+         0.5
+        ],
+        [
+         0.85,
+         0.45
+        ],
+        [
+         1,
+         1
+        ]
+       ]
+      },
+      "ZOffset": -0.02
+     }
+    },
+    {
+     "class": "Beam",
+     "name": "S1",
+     "props": {
+      "Attachment0": {
+       "Ref": "Pivot.L1"
+      },
+      "Attachment1": {
+       "Ref": "Pivot.R1"
+      },
+      "Enabled": false,
+      "CurveSize0": 7.333333333333333,
+      "CurveSize1": 7.333333333333333,
+      "Segments": 48,
+      "FaceCamera": true,
+      "Width0": 0,
+      "Width1": 2.3,
+      "Texture": "sim:beam_paint",
+      "TextureSpeed": 0,
+      "LightEmission": 1,
+      "Brightness": 1.4,
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          0.48,
+          0.3,
+          1.0
+         ]
+        ],
+        [
+         1,
+         [
+          0.48,
+          0.3,
+          1.0
+         ]
+        ]
+       ]
+      },
+      "Transparency": {
+       "NumberSequence": [
+        [
+         0,
+         1
+        ],
+        [
+         0.25,
+         0.25
+        ],
+        [
+         0.85,
+         0.05
+        ],
+        [
+         1,
+         1
+        ]
+       ]
+      },
+      "ZOffset": 0.0
+     }
+    },
+    {
+     "class": "Beam",
+     "name": "S2",
+     "props": {
+      "Attachment0": {
+       "Ref": "Pivot.L2"
+      },
+      "Attachment1": {
+       "Ref": "Pivot.R2"
+      },
+      "Enabled": false,
+      "CurveSize0": 10.166666666666666,
+      "CurveSize1": 6.506666666666667,
+      "Segments": 48,
+      "FaceCamera": true,
+      "Width0": 0,
+      "Width1": 1.0,
+      "Texture": "sim:beam_paint",
+      "TextureSpeed": 0,
+      "LightEmission": 1,
+      "Brightness": 1.0,
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          0.62,
+          0.45,
+          1.0
+         ]
+        ],
+        [
+         1,
+         [
+          0.62,
+          0.45,
+          1.0
+         ]
+        ]
+       ]
+      },
+      "Transparency": {
+       "NumberSequence": [
+        [
+         0,
+         1
+        ],
+        [
+         0.25,
+         0.25
+        ],
+        [
+         0.85,
+         0.05
+        ],
+        [
+         1,
+         1
+        ]
+       ]
+      },
+      "ZOffset": 0.0
+     }
+    },
+    {
+     "class": "Beam",
+     "name": "S3",
+     "props": {
+      "Attachment0": {
+       "Ref": "Pivot.L3"
+      },
+      "Attachment1": {
+       "Ref": "Pivot.R3"
+      },
+      "Enabled": false,
+      "CurveSize0": 5.213333333333333,
+      "CurveSize1": 7.053333333333332,
+      "Segments": 48,
+      "FaceCamera": true,
+      "Width0": 0,
+      "Width1": 1.5,
+      "Texture": "sim:beam_paint",
+      "TextureSpeed": 0,
+      "LightEmission": 1,
+      "Brightness": 1.0,
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          0.85,
+          0.75,
+          1.0
+         ]
+        ],
+        [
+         1,
+         [
+          0.85,
+          0.75,
+          1.0
+         ]
+        ]
+       ]
+      },
+      "Transparency": {
+       "NumberSequence": [
+        [
+         0,
+         1
+        ],
+        [
+         0.25,
+         0.25
+        ],
+        [
+         0.85,
+         0.05
+        ],
+        [
+         1,
+         1
+        ]
+       ]
+      },
+      "ZOffset": 0.0
+     }
+    },
+    {
+     "class": "Beam",
+     "name": "Gold",
+     "props": {
+      "Attachment0": {
+       "Ref": "Pivot.L4"
+      },
+      "Attachment1": {
+       "Ref": "Pivot.R4"
+      },
+      "Enabled": false,
+      "CurveSize0": 11.193333333333332,
+      "CurveSize1": 7.299999999999999,
+      "Segments": 48,
+      "FaceCamera": true,
+      "Width0": 0,
+      "Width1": 0.45,
+      "Texture": "sim:beam_paint",
+      "TextureSpeed": 0,
+      "LightEmission": 1,
+      "Brightness": 1.6,
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          1.0,
+          0.81,
+          0.35
+         ]
+        ],
+        [
+         1,
+         [
+          1.0,
+          0.81,
+          0.35
+         ]
+        ]
+       ]
+      },
+      "Transparency": {
+       "NumberSequence": [
+        [
+         0,
+         1
+        ],
+        [
+         0.25,
+         0.25
+        ],
+        [
+         0.85,
+         0.05
+        ],
+        [
+         1,
+         1
+        ]
+       ]
+      },
+      "ZOffset": 0.0
+     }
+    },
+    {
+     "class": "Beam",
+     "name": "S4",
+     "props": {
+      "Attachment0": {
+       "Ref": "Pivot.L5"
+      },
+      "Attachment1": {
+       "Ref": "Pivot.R5"
+      },
+      "Enabled": false,
+      "CurveSize0": 6.159999999999999,
+      "CurveSize1": 11.44,
+      "Segments": 48,
+      "FaceCamera": true,
+      "Width0": 0,
+      "Width1": 0.3,
+      "Texture": "sim:beam_paint",
+      "TextureSpeed": 0,
+      "LightEmission": 1,
+      "Brightness": 1.0,
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          0.48,
+          0.3,
+          1.0
+         ]
+        ],
+        [
+         1,
+         [
+          0.48,
+          0.3,
+          1.0
+         ]
+        ]
+       ]
+      },
+      "Transparency": {
+       "NumberSequence": [
+        [
+         0,
+         1
+        ],
+        [
+         0.25,
+         0.25
+        ],
+        [
+         0.85,
+         0.05
+        ],
+        [
+         1,
+         1
+        ]
+       ]
+      },
+      "ZOffset": 0.0
+     }
+    }
+   ]
+  },
+  {
+   "class": "Part",
+   "name": "Blade",
+   "Shape": "Ball",
+   "CFrame": [
+    2.2,
+    4.4,
+    1.2,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    3,
+    3,
+    3
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "ParticleEmitter",
+     "name": "Strands",
+     "props": {
+      "Rate": 0,
+      "Texture": "sim:spark_needle",
+      "Shape": {
+       "Enum": "ParticleEmitterShape.Sphere"
+      },
+      "ShapeStyle": {
+       "Enum": "ParticleEmitterShapeStyle.Surface"
+      },
+      "ShapeInOut": {
+       "Enum": "ParticleEmitterShapeInOut.Inward"
+      },
+      "Orientation": {
+       "Enum": "ParticleOrientation.VelocityParallel"
+      },
+      "Lifetime": {
+       "NumberRange": [
+        0.12,
+        0.2
+       ]
+      },
+      "Speed": {
+       "NumberRange": [
+        10,
+        16
+       ]
+      },
+      "Size": {
+       "NumberSequence": [
+        [
+         0,
+         0.25,
+         0.075
+        ],
+        [
+         1,
+         0.1
+        ]
+       ]
+      },
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          0.75,
+          0.6,
+          1.0
+         ]
+        ],
+        [
+         1,
+         [
+          0.48,
+          0.3,
+          1.0
+         ]
+        ]
+       ]
+      },
+      "LightEmission": 1,
+      "Brightness": 2
+     }
+    },
+    {
+     "class": "ParticleEmitter",
+     "name": "Glint",
+     "props": {
+      "Rate": 0,
+      "Texture": "sim:impact_star4_2x2",
+      "FlipbookLayout": {
+       "Enum": "ParticleFlipbookLayout.Grid2x2"
+      },
+      "FlipbookStartRandom": true,
+      "FlipbookFramerate": {
+       "NumberRange": [
+        0,
+        0
+       ]
+      },
+      "Lifetime": {
+       "NumberRange": [
+        0.16,
+        0.16
+       ]
+      },
+      "Speed": {
+       "NumberRange": [
+        0,
+        0
+       ]
+      },
+      "Size": {
+       "NumberSequence": [
+        [
+         0,
+         0.3
+        ],
+        [
+         0.4,
+         1.3
+        ],
+        [
+         1,
+         0.0
+        ]
+       ]
+      },
+      "Color": {
+       "ColorSequence": [
+        [
+         0,
+         [
+          1.0,
+          0.81,
+          0.35
+         ]
+        ],
+        [
+         1,
+         [
+          1.0,
+          0.81,
+          0.35
+         ]
+        ]
+       ]
+      },
+      "LightEmission": 1,
+      "Brightness": 2.5,
+      "ZOffset": 1
+     }
+    }
+   ]
+  },
+  {
+   "class": "Part",
+   "name": "Contact",
+   "CFrame": [
+    3.6,
+    4.6,
+    -2.6,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "Attachment",
+     "name": "A",
+     "children": [
+      {
+       "class": "ParticleEmitter",
+       "name": "Flare",
+       "props": {
+        "Rate": 0,
+        "Texture": "sim:impact_star4_2x2",
+        "FlipbookLayout": {
+         "Enum": "ParticleFlipbookLayout.Grid2x2"
+        },
+        "FlipbookStartRandom": true,
+        "FlipbookFramerate": {
+         "NumberRange": [
+          0,
+          0
+         ]
+        },
+        "Lifetime": {
+         "NumberRange": [
+          0.05,
+          0.05
+         ]
+        },
+        "Speed": {
+         "NumberRange": [
+          0,
+          0
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           2.25
+          ],
+          [
+           1,
+           3.5
+          ]
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            1,
+            1,
+            1
+           ]
+          ],
+          [
+           1,
+           [
+            1.0,
+            0.81,
+            0.35
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 1,
+        "Brightness": 3,
+        "ZOffset": 2
+       }
+      },
+      {
+       "class": "ParticleEmitter",
+       "name": "Burst",
+       "props": {
+        "Rate": 0,
+        "Texture": "sim:impact_burst_4x4",
+        "FlipbookLayout": {
+         "Enum": "ParticleFlipbookLayout.Grid4x4"
+        },
+        "FlipbookMode": {
+         "Enum": "ParticleFlipbookMode.OneShot"
+        },
+        "FlipbookBlendFrames": false,
+        "Lifetime": {
+         "NumberRange": [
+          0.22,
+          0.22
+         ]
+        },
+        "Speed": {
+         "NumberRange": [
+          0,
+          0
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           2.75
+          ],
+          [
+           1,
+           3.25
+          ]
+         ]
+        },
+        "Rotation": {
+         "NumberRange": [
+          0,
+          360
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            1,
+            1,
+            1
+           ]
+          ],
+          [
+           0.3,
+           [
+            0.8,
+            0.7,
+            1.0
+           ]
+          ],
+          [
+           1,
+           [
+            0.48,
+            0.3,
+            1.0
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 0.6,
+        "Brightness": 1.5,
+        "ZOffset": 1.5
+       }
+      },
+      {
+       "class": "ParticleEmitter",
+       "name": "Sparks",
+       "props": {
+        "Rate": 0,
+        "Texture": "sim:spark_needle",
+        "Orientation": {
+         "Enum": "ParticleOrientation.VelocityParallel"
+        },
+        "EmissionDirection": {
+         "Enum": "NormalId.Front"
+        },
+        "SpreadAngle": {
+         "Vector2": [
+          55,
+          35
+         ]
+        },
+        "Lifetime": {
+         "NumberRange": [
+          0.3,
+          0.55
+         ]
+        },
+        "Speed": {
+         "NumberRange": [
+          26,
+          46
+         ]
+        },
+        "Drag": 3,
+        "Acceleration": {
+         "Vector3": [
+          0,
+          -38,
+          0
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           0.275,
+           0.075
+          ],
+          [
+           1,
+           0.075
+          ]
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            1,
+            0.95,
+            0.75
+           ]
+          ],
+          [
+           0.5,
+           [
+            1.0,
+            0.81,
+            0.35
+           ]
+          ],
+          [
+           1,
+           [
+            0.9,
+            0.35,
+            0.15
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 1,
+        "Brightness": 2
+       }
+      },
+      {
+       "class": "ParticleEmitter",
+       "name": "Eclipse",
+       "props": {
+        "Rate": 0,
+        "Texture": "sim:eclipse_paint",
+        "Lifetime": {
+         "NumberRange": [
+          0.55,
+          0.55
+         ]
+        },
+        "Speed": {
+         "NumberRange": [
+          0.9,
+          0.9
+         ]
+        },
+        "EmissionDirection": {
+         "Enum": "NormalId.Top"
+        },
+        "Drag": 1.5,
+        "Rotation": {
+         "NumberRange": [
+          0,
+          360
+         ]
+        },
+        "RotSpeed": {
+         "NumberRange": [
+          -35,
+          -35
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           0.2
+          ],
+          [
+           0.07,
+           1.8
+          ],
+          [
+           0.25,
+           1.55
+          ],
+          [
+           0.45,
+           1.7
+          ],
+          [
+           0.7,
+           1.45
+          ],
+          [
+           1,
+           0.0
+          ]
+         ]
+        },
+        "Transparency": {
+         "NumberSequence": [
+          [
+           0,
+           0
+          ],
+          [
+           0.8,
+           0
+          ],
+          [
+           1,
+           1
+          ]
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            1.0,
+            0.81,
+            0.35
+           ]
+          ],
+          [
+           1,
+           [
+            1,
+            0.62,
+            0.3
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 0,
+        "ZOffset": 2.5
+       }
+      },
+      {
+       "class": "ParticleEmitter",
+       "name": "Smoke",
+       "props": {
+        "Rate": 0,
+        "Texture": "sim:smoke_wisp_4x4",
+        "FlipbookLayout": {
+         "Enum": "ParticleFlipbookLayout.Grid4x4"
+        },
+        "FlipbookMode": {
+         "Enum": "ParticleFlipbookMode.OneShot"
+        },
+        "FlipbookBlendFrames": false,
+        "Lifetime": {
+         "NumberRange": [
+          0.6,
+          0.95
+         ]
+        },
+        "Speed": {
+         "NumberRange": [
+          2,
+          5
+         ]
+        },
+        "SpreadAngle": {
+         "Vector2": [
+          180,
+          180
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           0.7,
+           0.35
+          ],
+          [
+           1,
+           1.5,
+           0.45
+          ]
+         ]
+        },
+        "Rotation": {
+         "NumberRange": [
+          0,
+          360
+         ]
+        },
+        "RotSpeed": {
+         "NumberRange": [
+          -60,
+          60
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            0.62,
+            0.56,
+            0.75
+           ]
+          ],
+          [
+           1,
+           [
+            0.45,
+            0.42,
+            0.55
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 0,
+        "LightInfluence": 0.3,
+        "ZOffset": 0.5
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "class": "Part",
+   "name": "Ground",
+   "CFrame": [
+    0,
+    0.08,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    1,
+    0.1,
+    1
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "Attachment",
+     "name": "A",
+     "children": [
+      {
+       "class": "ParticleEmitter",
+       "name": "Ring",
+       "props": {
+        "Rate": 0,
+        "Texture": "sim:ring_paint_4x4",
+        "FlipbookLayout": {
+         "Enum": "ParticleFlipbookLayout.Grid4x4"
+        },
+        "FlipbookMode": {
+         "Enum": "ParticleFlipbookMode.OneShot"
+        },
+        "FlipbookBlendFrames": false,
+        "Orientation": {
+         "Enum": "ParticleOrientation.VelocityPerpendicular"
+        },
+        "Speed": {
+         "NumberRange": [
+          0.01,
+          0.01
+         ]
+        },
+        "Lifetime": {
+         "NumberRange": [
+          0.4,
+          0.4
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           2.5
+          ],
+          [
+           1,
+           6.5
+          ]
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            0.85,
+            0.75,
+            1.0
+           ]
+          ],
+          [
+           1,
+           [
+            0.48,
+            0.3,
+            1.0
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 0.4,
+        "ZOffset": 0.2
+       }
+      },
+      {
+       "class": "ParticleEmitter",
+       "name": "Wind",
+       "props": {
+        "Rate": 0,
+        "Texture": "sim:wind_swirl_4x4",
+        "FlipbookLayout": {
+         "Enum": "ParticleFlipbookLayout.Grid4x4"
+        },
+        "FlipbookMode": {
+         "Enum": "ParticleFlipbookMode.OneShot"
+        },
+        "FlipbookBlendFrames": false,
+        "Orientation": {
+         "Enum": "ParticleOrientation.VelocityPerpendicular"
+        },
+        "Speed": {
+         "NumberRange": [
+          0.01,
+          0.01
+         ]
+        },
+        "Lifetime": {
+         "NumberRange": [
+          0.55,
+          0.55
+         ]
+        },
+        "Rotation": {
+         "NumberRange": [
+          0,
+          360
+         ]
+        },
+        "RotSpeed": {
+         "NumberRange": [
+          -90,
+          -90
+         ]
+        },
+        "Size": {
+         "NumberSequence": [
+          [
+           0,
+           3.0
+          ],
+          [
+           1,
+           5.5
+          ]
+         ]
+        },
+        "Transparency": {
+         "NumberSequence": [
+          [
+           0,
+           0.3
+          ],
+          [
+           1,
+           1
+          ]
+         ]
+        },
+        "Color": {
+         "ColorSequence": [
+          [
+           0,
+           [
+            0.75,
+            0.7,
+            0.9
+           ]
+          ],
+          [
+           1,
+           [
+            0.6,
+            0.55,
+            0.75
+           ]
+          ]
+         ]
+        },
+        "LightEmission": 0.2,
+        "ZOffset": 0.1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "class": "Highlight",
+   "name": "Hit",
+   "props": {
+    "Adornee": "Dummy",
+    "FillColor": {
+     "Color3": [
+      0.48,
+      0.3,
+      1.0
+     ]
+    },
+    "FillTransparency": 1,
+    "OutlineTransparency": 1,
+    "DepthMode": {
+     "Enum": "HighlightDepthMode.AlwaysOnTop"
+    }
+   }
+  },
+  {
+   "class": "ColorCorrectionEffect",
+   "name": "Grade",
+   "props": {
+    "Brightness": 0,
+    "Saturation": 0,
+    "TintColor": {
+     "Color3": [
+      1,
+      1,
+      1
+     ]
+    }
+   }
+  },
+  {
+   "class": "Part",
+   "name": "Lamp",
+   "CFrame": [
+    0.7,
+    3.5,
+    -0.7,
+    0,
+    0,
+    0
+   ],
+   "Size": [
+    1,
+    1,
+    1
+   ],
+   "Transparency": 1,
+   "children": [
+    {
+     "class": "PointLight",
+     "name": "L",
+     "props": {
+      "Brightness": 0,
+      "Range": 16,
+      "Color": {
+       "Color3": [
+        0.48,
+        0.3,
+        1.0
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "do": "set",
+   "target": "Blade.Strands",
+   "prop": "Rate",
+   "value": 70,
+   "t": 0.0
+  },
+  {
+   "do": "enable",
+   "target": "Blade.Strands",
+   "duration": 0.2,
+   "t": 0.0
+  },
+  {
+   "do": "emit",
+   "target": "Blade.Glint",
+   "count": 1,
+   "t": 0.06
+  },
+  {
+   "do": "tween",
+   "target": "Grade",
+   "prop": "Brightness",
+   "to": -0.22,
+   "time": 0.1,
+   "style": "Quad",
+   "dir": "In",
+   "t": 0.12
+  },
+  {
+   "do": "tween",
+   "target": "Grade",
+   "prop": "Saturation",
+   "to": -0.35,
+   "time": 0.1,
+   "style": "Quad",
+   "dir": "In",
+   "t": 0.12
+  },
+  {
+   "do": "set",
+   "target": "Grade",
+   "prop": "Brightness",
+   "value": -0.2,
+   "t": 0.25
+  },
+  {
+   "do": "set",
+   "target": "Grade",
+   "prop": "TintColor",
+   "value": {
+    "Color3": [
+     0.95,
+     0.88,
+     1.0
+    ]
+   },
+   "t": 0.25
+  },
+  {
+   "do": "set",
+   "target": "Grade",
+   "prop": "TintColor",
+   "value": {
+    "Color3": [
+     1,
+     1,
+     1
+    ]
+   },
+   "t": 0.2833
+  },
+  {
+   "do": "set",
+   "target": "Grade",
+   "prop": "Brightness",
+   "value": -0.1,
+   "t": 0.2833
+  },
+  {
+   "do": "tween",
+   "target": "Grade",
+   "prop": "Brightness",
+   "to": 0,
+   "time": 0.35,
+   "style": "Quad",
+   "dir": "Out",
+   "t": 0.2667
+  },
+  {
+   "do": "tween",
+   "target": "Grade",
+   "prop": "Saturation",
+   "to": 0,
+   "time": 0.35,
+   "style": "Quad",
+   "dir": "Out",
+   "t": 0.2667
+  },
+  {
+   "do": "emit",
+   "target": "Slash.Core",
+   "count": 1,
+   "t": 0.25
+  },
+  {
+   "do": "set",
+   "target": "Pivot.Shadow",
+   "prop": "Enabled",
+   "value": true,
+   "t": 0.25
+  },
+  {
+   "do": "tween",
+   "target": "Pivot.Shadow",
+   "prop": "Width1",
+   "from": 3.625,
+   "to": 0,
+   "time": 0.185,
+   "style": "Linear",
+   "t": 0.25
+  },
+  {
+   "do": "set",
+   "target": "Pivot.S1",
+   "prop": "Enabled",
+   "value": true,
+   "t": 0.25
+  },
+  {
+   "do": "tween",
+   "target": "Pivot.S1",
+   "prop": "Width1",
+   "from": 2.875,
+   "to": 0,
+   "time": 0.21000000000000002,
+   "style": "Linear",
+   "t": 0.25
+  },
+  {
+   "do": "set",
+   "target": "Pivot.S2",
+   "prop": "Enabled",
+   "value": true,
+   "t": 0.2667
+  },
+  {
+   "do": "tween",
+   "target": "Pivot.S2",
+   "prop": "Width1",
+   "from": 1.25,
+   "to": 0,
+   "time": 0.21000000000000002,
+   "style": "Linear",
+   "t": 0.2667
+  },
+  {
+   "do": "set",
+   "target": "Pivot.S3",
+   "prop": "Enabled",
+   "value": true,
+   "t": 0.2833
+  },
+  {
+   "do": "tween",
+   "target": "Pivot.S3",
+   "prop": "Width1",
+   "from": 1.875,
+   "to": 0,
+   "time": 0.21000000000000002,
+   "style": "Linear",
+   "t": 0.2833
+  },
+  {
+   "do": "set",
+   "target": "Pivot.Gold",
+   "prop": "Enabled",
+   "value": true,
+   "t": 0.2667
+  },
+  {
+   "do": "tween",
+   "target": "Pivot.Gold",
+   "prop": "Width1",
+   "from": 0.5625,
+   "to": 0,
+   "time": 0.1975,
+   "style": "Linear",
+   "t": 0.2667
+  },
+  {
+   "do": "set",
+   "target": "Pivot.S4",
+   "prop": "Enabled",
+   "value": true,
+   "t": 0.3
+  },
+  {
+   "do": "tween",
+   "target": "Pivot.S4",
+   "prop": "Width1",
+   "from": 0.375,
+   "to": 0,
+   "time": 0.21000000000000002,
+   "style": "Linear",
+   "t": 0.3
+  },
+  {
+   "do": "tween",
+   "target": "Pivot",
+   "prop": "CFrame",
+   "by": [
+    0,
+    0,
+    0,
+    0,
+    -175,
+    0
+   ],
+   "time": 0.26,
+   "style": "Linear",
+   "t": 0.25
+  },
+  {
+   "do": "emit",
+   "target": "Contact.A.Flare",
+   "count": 1,
+   "t": 0.25
+  },
+  {
+   "do": "emit",
+   "target": "Contact.A.Burst",
+   "count": 1,
+   "t": 0.25
+  },
+  {
+   "do": "emit",
+   "target": "Contact.A.Sparks",
+   "count": 18,
+   "t": 0.25
+  },
+  {
+   "do": "shake",
+   "amp": 0.14,
+   "time": 0.22,
+   "freq": 28,
+   "t": 0.25
+  },
+  {
+   "do": "set",
+   "target": "Lamp.L",
+   "prop": "Brightness",
+   "value": 4,
+   "t": 0.25
+  },
+  {
+   "do": "tween",
+   "target": "Lamp.L",
+   "prop": "Brightness",
+   "to": 0,
+   "time": 0.35,
+   "style": "Quad",
+   "dir": "Out",
+   "t": 0.27
+  },
+  {
+   "do": "tween",
+   "target": "Hit",
+   "prop": "FillTransparency",
+   "from": 1,
+   "to": 0.5,
+   "time": 0.07,
+   "style": "Circular",
+   "dir": "Out",
+   "reverses": true,
+   "t": 0.28
+  },
+  {
+   "do": "emit",
+   "target": "Contact.A.Eclipse",
+   "count": 1,
+   "t": 0.28
+  },
+  {
+   "do": "emit",
+   "target": "Contact.A.Smoke",
+   "count": 9,
+   "t": 0.3
+  },
+  {
+   "do": "emit",
+   "target": "Ground.A.Ring",
+   "count": 1,
+   "t": 0.31
+  },
+  {
+   "do": "set",
+   "target": "Pivot.Shadow",
+   "prop": "Enabled",
+   "value": false,
+   "t": 0.55
+  },
+  {
+   "do": "set",
+   "target": "Pivot.S1",
+   "prop": "Enabled",
+   "value": false,
+   "t": 0.55
+  },
+  {
+   "do": "set",
+   "target": "Pivot.S2",
+   "prop": "Enabled",
+   "value": false,
+   "t": 0.55
+  },
+  {
+   "do": "set",
+   "target": "Pivot.S3",
+   "prop": "Enabled",
+   "value": false,
+   "t": 0.55
+  },
+  {
+   "do": "set",
+   "target": "Pivot.Gold",
+   "prop": "Enabled",
+   "value": false,
+   "t": 0.55
+  },
+  {
+   "do": "set",
+   "target": "Pivot.S4",
+   "prop": "Enabled",
+   "value": false,
+   "t": 0.55
+  }
+ ],
+ "sizeConvention": "roblox"
+}

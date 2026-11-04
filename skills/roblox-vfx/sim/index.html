@@ -1,0 +1,397 @@
+<title>Roblox VFX Sim</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: Studio-like workbench. Viewport left, inspector right, transport on top. Single dark look (a VFX bench is judged against both grounds inside the viewport, not the page chrome). */
+:root{
+  --bg:#14161a; --panel:#1c1f25; --panel2:#23272e; --line:#2f343d; --fg:#e4e7ec; --muted:#8d94a1;
+  --accent:#3ddc97; --warn:#ffb547; --bad:#ff6b5b;
+  --ui:"IBM Plex Sans", "Segoe UI", sans-serif; --mono:"IBM Plex Mono", Consolas, monospace; --brand:"Chakra Petch", "Segoe UI", sans-serif;
+  color-scheme:dark;
+}
+html,body{height:100%}
+body{background:var(--bg);color:var(--fg);font-family:var(--ui);font-size:13px;display:flex;flex-direction:column;overflow:hidden}
+.top{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding-block:8px;padding-left:max(12px, env(safe-area-inset-left, 0px));padding-right:max(12px, env(safe-area-inset-right, 0px));border-bottom:1px solid var(--line);background:var(--panel)}
+.brand{font-family:var(--brand);font-size:15px;letter-spacing:.02em;margin-right:6px}
+.brand b{color:var(--accent)}
+button,select,input{font:inherit;color:var(--fg)}
+button{background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:5px 10px;cursor:pointer}
+button:hover{border-color:var(--muted)}
+button.primary{background:var(--accent);color:#06140d;border-color:var(--accent);font-weight:600}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+select{background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:5px 6px}
+.time{font-family:var(--mono);font-variant-numeric:tabular-nums;min-width:150px;color:var(--muted)}
+.time b{color:var(--fg);font-weight:500}
+#scrub{flex:1;min-width:160px;accent-color:var(--accent)}
+.main{flex:1;display:flex;min-height:0}
+.view{flex:1;position:relative;min-width:0}
+#c{width:100%;height:100%;display:block;cursor:grab}
+.hud{position:absolute;left:10px;bottom:10px;font-family:var(--mono);font-size:11px;color:#dfe3ea;background:rgba(10,12,15,.6);padding:6px 8px;border-radius:6px;line-height:1.5;pointer-events:none;font-variant-numeric:tabular-nums}
+.toggles{position:absolute;right:10px;top:10px;display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end;max-width:70%}
+.chip{background:rgba(20,22,26,.78);border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer;font-size:12px}
+.chip[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+.side{width:360px;max-width:42vw;border-left:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;min-height:0}
+.tabs{display:flex;border-bottom:1px solid var(--line)}
+.tabs button{flex:1;border:0;border-radius:0;background:transparent;padding:9px 4px;color:var(--muted);border-bottom:2px solid transparent}
+.tabs button[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--accent)}
+.pane{flex:1;overflow:auto;padding:10px;min-height:0}
+.tree{font-family:var(--mono);font-size:12px;margin-bottom:10px;border:1px solid var(--line);border-radius:6px;max-height:34%;overflow:auto}
+.tree div{padding:3px 8px;cursor:pointer;white-space:nowrap}
+.tree div:hover{background:var(--panel2)}
+.tree div.sel{background:#1f3a2e;color:var(--accent)}
+.tree .cls{color:var(--muted);font-size:10.5px}
+.props{display:grid;grid-template-columns:118px 1fr;gap:4px 8px;align-items:center}
+.props label{color:var(--muted);font-size:12px;overflow:hidden;text-overflow:ellipsis}
+.props input,.props select,.props textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:3px 5px;font-family:var(--mono);font-size:11.5px;min-width:0}
+.props textarea{resize:vertical;min-height:34px}
+.props input[type=checkbox]{width:auto}
+.hdr{grid-column:1/-1;font-family:var(--brand);font-size:13px;margin:6px 0 2px;color:var(--fg)}
+textarea.code{width:100%;height:calc(100% - 44px);background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:6px;font-family:var(--mono);font-size:11.5px;padding:8px;resize:none}
+.row{display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap}
+.ev{font-family:var(--mono);font-size:11.5px;padding:4px 6px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:56px 60px 1fr;gap:6px}
+.ev .t{color:var(--accent)}
+.ev .a{color:var(--warn)}
+.warn{color:var(--warn);font-size:12px;margin-top:8px;white-space:pre-wrap}
+.note{color:var(--muted);font-size:12px;line-height:1.5;margin-bottom:10px}
+@media (max-width:760px){.main{flex-direction:column}.side{width:auto;max-width:none;height:46%;border-left:0;border-top:1px solid var(--line)}}
+</style>
+
+<div class="top">
+  <span class="brand">Roblox <b>VFX</b> Sim</span>
+  <select id="fx" aria-label="Effect"></select>
+  <button id="play" class="primary" aria-label="Play or pause">Pause</button>
+  <button id="back" aria-label="Previous frame">&#9664; 1f</button>
+  <button id="fwd" aria-label="Next frame">1f &#9654;</button>
+  <select id="speed" aria-label="Playback speed"><option value="1">1x</option><option value="0.5">0.5x</option><option value="0.25">0.25x</option><option value="0.1">0.1x</option></select>
+  <input id="scrub" type="range" min="0" max="1000" value="0" aria-label="Time">
+  <span class="time" id="time"><b>0.000 s</b> · f0</span>
+</div>
+<div class="main">
+  <div class="view">
+    <canvas id="c"></canvas>
+    <div class="toggles">
+      <button class="chip" id="tg-ground" aria-pressed="false">Dark ground</button>
+      <button class="chip" id="tg-night" aria-pressed="false">Night</button>
+      <button class="chip" id="tg-dummy" aria-pressed="true">Dummy</button>
+      <button class="chip" id="tg-bloom" aria-pressed="true">Bloom</button>
+      <button class="chip" id="tg-grey" aria-pressed="false">Greyscale check</button>
+      <button class="chip" id="tg-loop" aria-pressed="true">Loop</button>
+      <button class="chip" id="tg-free" aria-pressed="false" title="Ignore the effect's own camera moves">Free camera</button>
+    </div>
+    <div class="hud" id="hud"></div>
+  </div>
+  <div class="side">
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-tab="inspect">Inspect</button>
+      <button role="tab" aria-selected="false" data-tab="timeline">Timeline</button>
+      <button role="tab" aria-selected="false" data-tab="json">JSON</button>
+      <button role="tab" aria-selected="false" data-tab="export">Luau</button>
+    </div>
+    <div class="pane" id="p-inspect">
+      <div class="note" id="fxnote"></div>
+      <div class="tree" id="tree"></div>
+      <div class="props" id="props"></div>
+      <div class="warn" id="warn"></div>
+    </div>
+    <div class="pane" id="p-timeline" hidden></div>
+    <div class="pane" id="p-json" hidden>
+      <div class="row"><button id="apply" class="primary">Apply JSON</button><button id="reset">Revert</button></div>
+      <textarea class="code" id="json" spellcheck="false" aria-label="Effect JSON"></textarea>
+    </div>
+    <div class="pane" id="p-export" hidden>
+      <div class="row"><button id="copy" class="primary">Copy Luau</button><span class="note" id="copied"></span></div>
+      <textarea class="code" id="luau" spellcheck="false" readonly aria-label="Generated Luau"></textarea>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="vfxsim.js"></script>
+<script src="vfxrender.js"></script>
+<script>
+(function () {
+  const SIM = window.VFXSIM;
+  const $ = (id) => document.getElementById(id);
+  const canvas = $("c");
+  const R = new SIM.Renderer(canvas, { base: "" });
+  const app = { def: null, original: null, world: null, t: 0, playing: true, speed: 1, loop: true, sel: null };
+  window.app = app;
+
+  const ENUMS = {
+    EmissionDirection: ["Top", "Bottom", "Left", "Right", "Front", "Back"],
+    FlipbookLayout: ["None", "Grid2x2", "Grid4x4", "Grid8x8", "Custom"],
+    FlipbookMode: ["Loop", "OneShot", "PingPong", "Random"],
+    Orientation: ["FacingCamera", "FacingCameraWorldUp", "VelocityParallel", "VelocityPerpendicular"],
+    ShapeInOut: ["Outward", "Inward", "InAndOut"], ShapeStyle: ["Volume", "Surface"],
+    TextureMode: ["Stretch", "Wrap", "Static"], DepthMode: ["AlwaysOnTop", "Occluded"],
+    Material: ["Plastic", "SmoothPlastic", "Neon", "ForceField", "Glass", "Metal", "Wood"],
+    Face: ["Front", "Back", "Top", "Bottom", "Left", "Right"],
+  };
+  const ENUM_TYPE = { EmissionDirection: "NormalId", FlipbookLayout: "ParticleFlipbookLayout", FlipbookMode: "ParticleFlipbookMode", Orientation: "ParticleOrientation", ShapeInOut: "ParticleEmitterShapeInOut", ShapeStyle: "ParticleEmitterShapeStyle", TextureMode: "TextureMode", DepthMode: "HighlightDepthMode", Material: "Material", Face: "NormalId" };
+  const RANGE = { Lifetime: 1, Speed: 1, Rotation: 1, RotSpeed: 1, FlipbookFramerate: 1 };
+  const COLOR3 = { Color: 1, FillColor: 1, OutlineColor: 1, TintColor: 1 };
+
+  // ------------------------------------------------ loading
+  async function loadIndex() {
+    const list = await fetch("effects/index.json").then((r) => r.json());
+    $("fx").innerHTML = list.map((e) => `<option value="${e.file}">${e.title}</option>`).join("");
+    await loadFile(list[0].file);
+  }
+  async function loadFile(f) {
+    const def = await fetch("effects/" + f).then((r) => r.json());
+    load(def);
+  }
+  function load(def) {
+    app.def = JSON.parse(JSON.stringify(def));
+    app.original = JSON.parse(JSON.stringify(def));
+    R.clearObjects();
+    R.setCamera(def.camera);
+    const st = def.stage || {};
+    R.setView({ ground: st.ground || "light", sky: st.sky || "day", dummy: st.dummy !== false, freeCam: false, fog: st.fog || null, dummyAt: st.dummyAt || [0, 0, 0] });
+    syncChips();
+    rebuild(0);
+    app.sel = null;
+    $("fxnote").textContent = def.note || "";
+    renderTree(); renderTimeline(); $("json").value = JSON.stringify(app.def, null, 1);
+    $("luau").value = SIM.toLuau(app.def);
+  }
+  function rebuild(t) {
+    R.clearObjects();
+    app.world = new SIM.World(app.def);
+    // fetch every mesh up front: a mesh is otherwise requested only when its part first shows,
+    // asynchronously, so a synchronous frame strip never saw a new mesh appear (Getsuga v2)
+    for (const it of app.world.all) if (it.spec && it.spec.MeshId) R.getMesh(it.spec.MeshId);
+    app.world.seek(t);
+    app.t = t;
+    draw();
+  }
+  app.load = load;
+  app.seek = (t) => { app.t = t; if (t < app.world.time) app.world.reset(); app.world.seek(t); draw(); };
+  app.render = () => draw();
+  app.metrics = () => R.metrics();
+  app.ready = () => R.ready();
+  app.setView = (v) => { R.setView(v); syncChips(); draw(); };
+  app.exportLuau = () => SIM.toLuau(app.def);
+  app.R = R;
+  // Offline video render: fixed drawing size, no layout resize, one JPEG per frame.
+  app.captureFrame = (t, w, h, q) => {
+    if (canvas.width !== w || canvas.height !== h) R.setSize(w, h);
+    if (t < app.world.time - 1e-9) app.world.reset();
+    app.world.seek(t);
+    R.draw(app.world);
+    return canvas.toDataURL("image/jpeg", q || 0.93);
+  };
+  // Numbered frame strip at given times (seconds), plus per-frame metrics.
+  app.strip = async function (times, opts) {
+    opts = opts || {};
+    const cols = opts.cols || 6, tw = opts.w || 320, th = opts.h || 180;
+    const rows = Math.ceil(times.length / cols);
+    const sc = document.createElement("canvas");
+    sc.width = cols * tw; sc.height = rows * (th + 16);
+    const g = sc.getContext("2d");
+    g.fillStyle = "#111"; g.fillRect(0, 0, sc.width, sc.height);
+    const was = app.playing; app.playing = false;
+    const W = canvas.width, H = canvas.height;
+    const m = [];
+    app.world.reset();
+    for (let i = 0; i < times.length; i++) {
+      app.world.seek(times[i]);
+      R.draw(app.world);
+      m.push(Object.assign({ t: times[i] }, R.metrics()));
+      const x = (i % cols) * tw, y = Math.floor(i / cols) * (th + 16);
+      g.drawImage(canvas, 0, 0, W, H, x, y + 16, tw, th);
+      // opts.blind: frame number only, so a reviewer cannot tell our strips
+      // from reference strips by the luma readout (it gave them away once)
+      g.fillStyle = "#3ddc97"; g.font = "12px monospace";
+      g.fillText(opts.blind ? `#${i + 1}` : `${(opts.label || "f")}${Math.round(times[i] * 60)}  ${(times[i]).toFixed(3)}s  Y${m[i].luma.toFixed(0)}`, x + 4, y + 12);
+    }
+    app.playing = was;
+    return { png: sc.toDataURL("image/png"), metrics: m };
+  };
+
+  // ------------------------------------------------ drawing
+  function draw() {
+    const pr = R.gl.getPixelRatio();
+    if (canvas.clientWidth && (canvas.width !== Math.floor(canvas.clientWidth * pr) || canvas.height !== Math.floor(canvas.clientHeight * pr))) R.resize();
+    R.draw(app.world);
+    const w = app.world;
+    const f = Math.round(w.time * 60);
+    $("time").innerHTML = `<b>${w.time.toFixed(3)} s</b> · f${f}`;
+    const dur = app.def.duration || 2;
+    $("scrub").value = Math.round((w.time / dur) * 1000);
+    $("hud").textContent = `particles ${w.particleCount()}   frame ${f}   ${(app.def.name || "")}`;
+    const warns = [...w.warnings, ...R.warnings];
+    $("warn").textContent = warns.length ? warns.slice(0, 6).join("\n") : "";
+  }
+  let last = performance.now();
+  function loop(now) {
+    const dt = Math.min(0.1, (now - last) / 1000); last = now;
+    if (app.playing && app.world) {
+      const dur = app.def.duration || 2;
+      let t = app.world.time + dt * app.speed;
+      if (t > dur) { if (app.loop) { app.world.reset(); t = 0; } else { t = dur; app.playing = false; setPlay(); } }
+      app.world.seek(t);
+      draw();
+    } else if (app.world && dragging) draw();
+    requestAnimationFrame(loop);
+  }
+
+  // ------------------------------------------------ transport
+  function setPlay() { $("play").textContent = app.playing ? "Pause" : "Play"; }
+  $("play").onclick = () => { app.playing = !app.playing; setPlay(); };
+  $("fwd").onclick = () => { app.playing = false; setPlay(); app.world.seek(app.world.time + SIM.DT); draw(); };
+  $("back").onclick = () => { app.playing = false; setPlay(); const t = Math.max(0, app.world.time - SIM.DT); app.world.reset(); app.world.seek(t); draw(); };
+  $("speed").onchange = (e) => { app.speed = +e.target.value; };
+  $("scrub").oninput = (e) => {
+    app.playing = false; setPlay();
+    const t = (+e.target.value / 1000) * (app.def.duration || 2);
+    app.world.reset(); app.world.seek(t); draw();
+  };
+  $("fx").onchange = (e) => loadFile(e.target.value);
+  document.addEventListener("keydown", (e) => {
+    if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA" || e.target.tagName === "SELECT") return;
+    if (e.key === " ") { e.preventDefault(); $("play").click(); }
+    if (e.key === "ArrowRight") $("fwd").click();
+    if (e.key === "ArrowLeft") $("back").click();
+  });
+
+  // ------------------------------------------------ toggles
+  function chip(id, on) { $(id).setAttribute("aria-pressed", on ? "true" : "false"); }
+  function syncChips() {
+    chip("tg-ground", R.view.ground === "dark"); chip("tg-night", R.view.sky === "night");
+    chip("tg-dummy", R.view.dummy); chip("tg-bloom", R.view.bloom); chip("tg-grey", R.view.greyscale); chip("tg-loop", app.loop); chip("tg-free", !!R.view.freeCam);
+  }
+  $("tg-ground").onclick = () => { R.setView({ ground: R.view.ground === "dark" ? "light" : "dark" }); syncChips(); draw(); };
+  $("tg-night").onclick = () => { R.setView({ sky: R.view.sky === "night" ? "day" : "night" }); syncChips(); draw(); };
+  $("tg-dummy").onclick = () => { R.setView({ dummy: !R.view.dummy }); syncChips(); draw(); };
+  $("tg-bloom").onclick = () => { R.setView({ bloom: !R.view.bloom }); syncChips(); draw(); };
+  $("tg-grey").onclick = () => { R.setView({ greyscale: !R.view.greyscale }); syncChips(); draw(); };
+  $("tg-loop").onclick = () => { app.loop = !app.loop; syncChips(); };
+  $("tg-free").onclick = () => { R.setView({ freeCam: !R.view.freeCam }); syncChips(); draw(); };
+
+  // ------------------------------------------------ camera orbit
+  let dragging = null;
+  canvas.addEventListener("pointerdown", (e) => { if (app.world && app.world.cam && !R.view.freeCam) { R.setView({ freeCam: true }); syncChips(); } dragging ={ x: e.clientX, y: e.clientY, b: e.button, shift: e.shiftKey }; canvas.setPointerCapture(e.pointerId); canvas.style.cursor = "grabbing"; });
+  canvas.addEventListener("pointerup", () => { dragging = null; canvas.style.cursor = "grab"; });
+  canvas.addEventListener("contextmenu", (e) => e.preventDefault());
+  canvas.addEventListener("pointermove", (e) => {
+    if (!dragging) return;
+    const dx = e.clientX - dragging.x, dy = e.clientY - dragging.y;
+    dragging.x = e.clientX; dragging.y = e.clientY;
+    const c = R.cam;
+    if (dragging.b === 2 || dragging.shift) {
+      const k = c.dist * 0.0018;
+      const r = R.camRight, u = R.camUp;
+      c.at = [c.at[0] - r[0] * dx * k + u[0] * dy * k, c.at[1] - r[1] * dx * k + u[1] * dy * k, c.at[2] - r[2] * dx * k + u[2] * dy * k];
+    } else {
+      c.yaw -= dx * 0.008;
+      c.pitch = Math.max(-1.45, Math.min(1.45, c.pitch + dy * 0.008));
+    }
+    if (!app.playing) draw();
+  });
+  canvas.addEventListener("wheel", (e) => { e.preventDefault(); R.cam.dist = Math.max(2, Math.min(300, R.cam.dist * Math.exp(e.deltaY * 0.001))); if (!app.playing) draw(); }, { passive: false });
+  new ResizeObserver(() => { R.resize(); if (app.world) draw(); }).observe(canvas);
+
+  // ------------------------------------------------ tabs
+  document.querySelectorAll(".tabs button").forEach((b) => b.onclick = () => {
+    document.querySelectorAll(".tabs button").forEach((x) => x.setAttribute("aria-selected", x === b ? "true" : "false"));
+    for (const id of ["inspect", "timeline", "json", "export"]) $("p-" + id).hidden = id !== b.dataset.tab;
+    if (b.dataset.tab === "json") $("json").value = JSON.stringify(app.def, null, 1);
+    if (b.dataset.tab === "export") $("luau").value = SIM.toLuau(app.def);
+  });
+  $("apply").onclick = () => {
+    try { const d = JSON.parse($("json").value); const t = app.world.time; app.def = d; R.setCamera(d.camera); rebuild(t); renderTree(); renderTimeline(); $("warn").textContent = ""; }
+    catch (err) { $("warn").textContent = "JSON error: " + err.message; }
+  };
+  $("reset").onclick = () => load(app.original);
+  $("copy").onclick = () => {
+    const txt = $("luau").value;
+    const done = () => { $("copied").textContent = "Copied"; setTimeout(() => ($("copied").textContent = ""), 1500); };
+    if (navigator.clipboard) navigator.clipboard.writeText(txt).then(done).catch(() => { $("luau").select(); });
+    else $("luau").select();
+  };
+
+  // ------------------------------------------------ inspector
+  function specs() { const out = []; const walk = (arr, path) => { for (const s of arr) { const p = path ? path + "." + s.name : s.name; out.push({ s, p, depth: p.split(".").length - 1 }); walk(s.children || [], p); } }; walk(app.def.instances || [], ""); return out; }
+  function renderTree() {
+    $("tree").innerHTML = specs().map((x) => `<div data-p="${x.p}" class="${x.p === app.sel ? "sel" : ""}" style="padding-left:${8 + x.depth * 14}px">${x.s.name} <span class="cls">${x.s.class}</span></div>`).join("");
+    $("tree").querySelectorAll("div").forEach((d) => d.onclick = () => { app.sel = d.dataset.p; renderTree(); renderProps(); });
+    renderProps();
+  }
+  function encode(prop, v) {
+    if (v && v.ns) return { NumberSequence: v.ns };
+    if (v && v.cs) return { ColorSequence: v.cs };
+    if (Array.isArray(v)) {
+      if (RANGE[prop]) return { NumberRange: v };
+      if (COLOR3[prop]) return { Color3: v };
+      if (prop === "SpreadAngle") return { Vector2: v };
+      return { Vector3: v };
+    }
+    if (ENUMS[prop]) return { Enum: `${ENUM_TYPE[prop]}.${v}` };
+    return v;
+  }
+  function renderProps() {
+    const box = $("props");
+    if (!app.sel) { box.innerHTML = `<div class="note" style="grid-column:1/-1">Select an instance to edit its properties. Drag the view to orbit, right-drag to pan, scroll to zoom. Space plays, arrow keys step one frame (1/60 s).</div>`; return; }
+    const it = app.world.byPath[app.sel] || app.world.find(app.sel);
+    const x = specs().find((y) => y.p === app.sel);
+    if (!it || !x) { box.innerHTML = ""; return; }
+    const rows = [`<div class="hdr">${it.Name} · ${it.ClassName}</div>`];
+    const keys = Object.keys(it.p).filter((k) => !(k === "CFrame" && false));
+    keys.sort();
+    for (const k of keys) {
+      const v = it.p[k];
+      const id = "pp-" + k;
+      let input;
+      if (k === "CFrame") input = `<input id="${id}" value="${(x.s.CFrame || (x.s.props || {}).CFrame || [0,0,0,0,0,0]).join(", ")}">`;
+      else if (typeof v === "boolean") input = `<input id="${id}" type="checkbox" ${v ? "checked" : ""}>`;
+      else if (ENUMS[k] || (k === "Shape")) {
+        const opts = k === "Shape" ? (it.ClassName === "ParticleEmitter" ? ["Box", "Sphere", "Cylinder", "Disc"] : ["Block", "Ball", "Cylinder"]) : ENUMS[k];
+        input = `<select id="${id}">${opts.map((o) => `<option ${o === v ? "selected" : ""}>${o}</option>`).join("")}</select>`;
+      } else if (typeof v === "number") input = `<input id="${id}" type="number" step="any" value="${v}">`;
+      else if (v && (v.ns || v.cs)) input = `<textarea id="${id}">${JSON.stringify(v.ns || v.cs)}</textarea>`;
+      else if (v && typeof v === "object" && !Array.isArray(v)) input = `<input id="${id}" value="${it.p[k] && it.p[k].path ? it.p[k].path() : ""}" disabled>`;
+      else if (Array.isArray(v)) input = `<input id="${id}" value="${v.join(", ")}">`;
+      else input = `<input id="${id}" value="${v == null ? "" : String(v).replace(/"/g, "&quot;")}">`;
+      rows.push(`<label for="${id}" title="${k}">${k}</label>${input}`);
+    }
+    box.innerHTML = rows.join("");
+    for (const k of keys) {
+      const el = $("pp-" + k);
+      if (!el || el.disabled) continue;
+      el.onchange = () => {
+        const old = it.p[k];
+        let nv;
+        try {
+          if (k === "CFrame") nv = el.value.split(",").map(Number);
+          else if (el.type === "checkbox") nv = el.checked;
+          else if (el.tagName === "SELECT") nv = el.value;
+          else if (typeof old === "number") nv = +el.value;
+          else if (old && old.ns) nv = { NumberSequence: JSON.parse(el.value) };
+          else if (old && old.cs) nv = { ColorSequence: JSON.parse(el.value) };
+          else if (Array.isArray(old)) nv = el.value.split(",").map(Number);
+          else nv = el.value;
+        } catch (err) { $("warn").textContent = `${k}: ${err.message}`; return; }
+        if (k === "CFrame" || k === "Size" || k === "Color" && x.s.class !== "ParticleEmitter" && x.s.class !== "Beam" && x.s.class !== "Trail" || k === "Transparency" && typeof old === "number" || k === "Material" || k === "MeshId" || k === "TextureID") {
+          if (k in x.s && !(x.s.props && k in x.s.props)) { x.s[k] = Array.isArray(nv) || typeof nv !== "object" ? nv : nv; }
+          else { x.s.props = x.s.props || {}; x.s.props[k] = typeof nv === "object" && !Array.isArray(nv) ? nv : encode(k, nv); }
+        } else {
+          x.s.props = x.s.props || {};
+          x.s.props[k] = (nv && (nv.NumberSequence || nv.ColorSequence)) ? nv : encode(k, nv);
+        }
+        rebuild(app.world.time);
+        renderProps();
+      };
+    }
+  }
+  function renderTimeline() {
+    const evs = (app.def.timeline || []).slice().sort((a, b) => (a.t || 0) - (b.t || 0));
+    $("p-timeline").innerHTML = `<div class="note">Edit timing in the JSON tab. Frames are at 60 fps.</div>` + evs.map((e) => {
+      const what = e.do === "tween" ? `${e.target}.${e.prop} → ${JSON.stringify(e.to)} (${e.time}s ${e.style || "Quad"})` : e.do === "set" ? `${e.target}.${e.prop} = ${JSON.stringify(e.value)}` : e.do === "emit" ? `${e.target} ×${e.count || 1}` : (e.target || "") + (e.amp ? ` amp ${e.amp}` : "");
+      return `<div class="ev"><span class="t">f${Math.round((e.t || 0) * 60)}</span><span class="a">${e.do}</span><span>${what}</span></div>`;
+    }).join("");
+  }
+
+  loadIndex().then(() => requestAnimationFrame(loop)).catch((err) => { $("warn").textContent = "Could not load effects: " + err.message; requestAnimationFrame(loop); });
+})();
+</script>

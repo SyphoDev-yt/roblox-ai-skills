@@ -1,0 +1,8833 @@
+{
+ "total": 55,
+ "groups": {
+  "cat:ambient_pickup": {
+   "count": 3,
+   "duration_s": {
+    "n": 3,
+    "median": 1.6,
+    "p25": 0.73,
+    "p75": 13.1
+   },
+   "anticipation_to_release": null,
+   "residue_to_main": {
+    "n": 3,
+    "median": 0.9,
+    "p25": 0.75,
+    "p75": 10.0
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 2,
+    "p25": 2,
+    "p75": 2
+   },
+   "flash_share": 0.33,
+   "layer_count": {
+    "n": 3,
+    "median": 5,
+    "p25": 4,
+    "p75": 6
+   },
+   "phase_share": {
+    "release": {
+     "n": 3,
+     "median": 0.012,
+     "p25": 0.002,
+     "p75": 0.548
+    },
+    "dissipation": {
+     "n": 3,
+     "median": 0.062,
+     "p25": 0.031,
+     "p75": 0.411
+    },
+    "peak": {
+     "n": 2,
+     "median": 0.04,
+     "p25": 0.019,
+     "p75": 0.061
+    },
+    "sustain": {
+     "n": 2,
+     "median": 0.669,
+     "p25": 0.437,
+     "p75": 0.901
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.469,
+     "p25": 0.469,
+     "p75": 0.469
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     3
+    ],
+    [
+     "body",
+     2
+    ],
+    [
+     "sparks",
+     2
+    ],
+    [
+     "flash",
+     2
+    ],
+    [
+     "core",
+     2
+    ],
+    [
+     "light",
+     2
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "ground",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "BillboardGui",
+     2
+    ],
+    [
+     "PointLight",
+     2
+    ],
+    [
+     "coin",
+     1
+    ],
+    [
+     "ParticleEmitter:Emit(6-10)",
+     1
+    ],
+    [
+     "1",
+     1
+    ],
+    [
+     "UI",
+     1
+    ],
+    [
+     "Beam",
+     1
+    ],
+    [
+     "2-3",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "each pickup is under 0.5 s",
+     1
+    ],
+    [
+     "pops chain and stack along a coin line",
+     1
+    ],
+    [
+     "hard off at the end of a pop",
+     1
+    ],
+    [
+     "1-frame pop to max, 20% of peak by 0.15 s",
+     1
+    ],
+    [
+     "text + upward chevron carry the meaning",
+     1
+    ],
+    [
+     "arcs orbit and rise",
+     1
+    ],
+    [
+     "multicolour sparkles add reward feel",
+     1
+    ],
+    [
+     "greyscale -> colour cut",
+     1
+    ],
+    [
+     "light shafts peak at 0.4 s then settle to a quiet sustain",
+     1
+    ],
+    [
+     "ground rune keeps the buff readable from above",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "mono",
+     2
+    ],
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 0.67,
+   "ids": [
+    "ambient_pickup_cash_roblox",
+    "ambient_pickup_level_up_roblox",
+    "ambient_pickup_revive_lol"
+   ]
+  },
+  "cat:aura_transform": {
+   "count": 4,
+   "duration_s": {
+    "n": 4,
+    "median": 29.325,
+    "p25": 11.55,
+    "p75": 47.1
+   },
+   "anticipation_to_release": {
+    "n": 4,
+    "median": 6.25,
+    "p25": 2.6,
+    "p75": 9.9
+   },
+   "residue_to_main": {
+    "n": 4,
+    "median": 0.81,
+    "p25": 0.02,
+    "p75": 1.6
+   },
+   "flash_frames": {
+    "n": 3,
+    "median": 3,
+    "p25": 1,
+    "p75": 57
+   },
+   "flash_share": 0.75,
+   "layer_count": {
+    "n": 4,
+    "median": 8.0,
+    "p25": 7,
+    "p75": 9
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 4,
+     "median": 0.203,
+     "p25": 0.113,
+     "p75": 0.294
+    },
+    "impact": {
+     "n": 2,
+     "median": 0.009,
+     "p25": 0.002,
+     "p75": 0.017
+    },
+    "release": {
+     "n": 4,
+     "median": 0.031,
+     "p25": 0.014,
+     "p75": 0.049
+    },
+    "peak": {
+     "n": 2,
+     "median": 0.055,
+     "p25": 0.04,
+     "p75": 0.069
+    },
+    "sustain": {
+     "n": 4,
+     "median": 0.455,
+     "p25": 0.316,
+     "p75": 0.593
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.019,
+     "p25": 0.019,
+     "p75": 0.019
+    },
+    "quiet_beat": {
+     "n": 2,
+     "median": 0.113,
+     "p25": 0.052,
+     "p75": 0.173
+    },
+    "dissipation": {
+     "n": 2,
+     "median": 0.055,
+     "p25": 0.032,
+     "p75": 0.078
+    }
+   },
+   "roles": [
+    [
+     "secondary_strokes",
+     5
+    ],
+    [
+     "flash",
+     4
+    ],
+    [
+     "light",
+     4
+    ],
+    [
+     "screen",
+     4
+    ],
+    [
+     "core",
+     3
+    ],
+    [
+     "body",
+     3
+    ],
+    [
+     "camera",
+     2
+    ],
+    [
+     "smoke",
+     1
+    ],
+    [
+     "residue",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "debris",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     5
+    ],
+    [
+     "ParticleEmitter",
+     3
+    ],
+    [
+     "2-3",
+     3
+    ],
+    [
+     "full-screen",
+     2
+    ],
+    [
+     "PointLight",
+     2
+    ],
+    [
+     "Lighting",
+     1
+    ],
+    [
+     "large",
+     1
+    ],
+    [
+     "Trail",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "single white frame at the blade burst",
+     1
+    ],
+    [
+     "sky changes before the form does",
+     1
+    ],
+    [
+     "dust cyclone with a rotating spiral cloud ring on top",
+     1
+    ],
+    [
+     "long concealment then 2-frame flash reveal",
+     1
+    ],
+    [
+     "glint along the new weapon",
+     1
+    ],
+    [
+     "starts tiny at the hands",
+     1
+    ],
+    [
+     "growth accelerates and hard-stops at full size",
+     1
+    ],
+    [
+     "colour deepens as linework densifies",
+     1
+    ],
+    [
+     "2.4 s black silence before the change",
+     1
+    ],
+    [
+     "brief world colour swap to night-blue",
+     1
+    ],
+    [
+     "gold rises from the bottom and swallows the frame",
+     1
+    ],
+    [
+     "transformation hidden inside the glow",
+     1
+    ],
+    [
+     "aura flickers on 2s afterwards",
+     1
+    ],
+    [
+     "2 s blackout with silhouette",
+     1
+    ],
+    [
+     "burst with expanding sphere",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     2
+    ],
+    [
+     "analogous",
+     2
+    ]
+   ],
+   "core_white": 0.25,
+   "ids": [
+    "aura_bankai_release_bleach",
+    "aura_mandala_shield_mcu",
+    "aura_super_saiyan_dbz",
+    "aura_transformation_roblox"
+   ]
+  },
+  "cat:beam": {
+   "count": 9,
+   "duration_s": {
+    "n": 9,
+    "median": 27.5,
+    "p25": 14.5,
+    "p75": 30.0
+   },
+   "anticipation_to_release": {
+    "n": 8,
+    "median": 20.55,
+    "p25": 13.7,
+    "p75": 48.9
+   },
+   "residue_to_main": {
+    "n": 9,
+    "median": 0.6,
+    "p25": 0.4,
+    "p75": 1.0
+   },
+   "flash_frames": {
+    "n": 9,
+    "median": 2,
+    "p25": 2,
+    "p75": 3
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 9,
+    "median": 9,
+    "p25": 7,
+    "p75": 10
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 9,
+     "median": 0.362,
+     "p25": 0.315,
+     "p75": 0.662
+    },
+    "quiet_beat": {
+     "n": 5,
+     "median": 0.011,
+     "p25": 0.003,
+     "p75": 0.05
+    },
+    "release": {
+     "n": 9,
+     "median": 0.014,
+     "p25": 0.006,
+     "p75": 0.032
+    },
+    "sustain": {
+     "n": 8,
+     "median": 0.138,
+     "p25": 0.069,
+     "p75": 0.306
+    },
+    "impact": {
+     "n": 5,
+     "median": 0.043,
+     "p25": 0.022,
+     "p75": 0.055
+    },
+    "peak": {
+     "n": 6,
+     "median": 0.035,
+     "p25": 0.023,
+     "p75": 0.077
+    },
+    "dissipation": {
+     "n": 8,
+     "median": 0.06,
+     "p25": 0.021,
+     "p75": 0.105
+    },
+    "residue": {
+     "n": 5,
+     "median": 0.138,
+     "p25": 0.115,
+     "p75": 0.251
+    }
+   },
+   "roles": [
+    [
+     "core",
+     18
+    ],
+    [
+     "screen",
+     17
+    ],
+    [
+     "body",
+     8
+    ],
+    [
+     "secondary_strokes",
+     6
+    ],
+    [
+     "flash",
+     6
+    ],
+    [
+     "sparks",
+     6
+    ],
+    [
+     "smoke",
+     4
+    ],
+    [
+     "ground",
+     4
+    ],
+    [
+     "light",
+     3
+    ],
+    [
+     "camera",
+     3
+    ],
+    [
+     "debris",
+     2
+    ],
+    [
+     "residue",
+     2
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     10
+    ],
+    [
+     "ParticleEmitter",
+     9
+    ],
+    [
+     "Neon",
+     7
+    ],
+    [
+     "Beam",
+     5
+    ],
+    [
+     "BillboardGui",
+     5
+    ],
+    [
+     "scripted",
+     3
+    ],
+    [
+     "thin",
+     3
+    ],
+    [
+     "MeshPart",
+     3
+    ]
+   ],
+   "signature_beats": [
+    [
+     "plates light up in sequence",
+     1
+    ],
+    [
+     "lights dim right before firing",
+     1
+    ],
+    [
+     "two-stage beam onset",
+     1
+    ],
+    [
+     "cool flash, black gap, warm fireball",
+     1
+    ],
+    [
+     "fireball cools through orange to dark red",
+     1
+    ],
+    [
+     "helical rings on the beam",
+     1
+    ],
+    [
+     "head-on growth accelerating into a surge",
+     1
+    ],
+    [
+     "red sparks against cyan",
+     1
+    ],
+    [
+     "warm residue after a cool beam",
+     1
+    ],
+    [
+     "very long cinematic charge",
+     1
+    ],
+    [
+     "telegraph line along the ground",
+     1
+    ],
+    [
+     "white/black flicker before the blast",
+     1
+    ],
+    [
+     "spikes re-rolled every frame",
+     1
+    ],
+    [
+     "dark beat + inverted line frame instead of a white flash",
+     1
+    ],
+    [
+     "burst fills the frame in 0.33 s",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     6
+    ],
+    [
+     "analogous",
+     3
+    ]
+   ],
+   "core_white": 0.78,
+   "ids": [
+    "beam_atomic_breath_godzilla_minus_one",
+    "beam_atomic_breath_godzilla_vs_kong",
+    "beam_excalibur_morgan_roblox",
+    "beam_final_flash_dbz",
+    "beam_final_spark_lux_wild_rift",
+    "beam_hollow_purple_jjk",
+    "beam_kamehameha_dbz",
+    "beam_kamehameha_rework_roblox",
+    "beam_special_beam_cannon_dbz"
+   ]
+  },
+  "cat:dash_teleport": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 2.4,
+    "p25": 2.4,
+    "p75": 2.4
+   },
+   "anticipation_to_release": null,
+   "residue_to_main": {
+    "n": 1,
+    "median": 0.0,
+    "p25": 0.0,
+    "p75": 0.0
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 1,
+    "p25": 1,
+    "p75": 1
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 5,
+    "p25": 5,
+    "p75": 5
+   },
+   "phase_share": {
+    "release": {
+     "n": 1,
+     "median": 0.046,
+     "p25": 0.046,
+     "p75": 0.046
+    },
+    "quiet_beat": {
+     "n": 1,
+     "median": 0.708,
+     "p25": 0.708,
+     "p75": 0.708
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.067,
+     "p25": 0.067,
+     "p75": 0.067
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.083,
+     "p25": 0.083,
+     "p75": 0.083
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.058,
+     "p25": 0.058,
+     "p75": 0.058
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.012,
+     "p25": 0.012,
+     "p75": 0.012
+    }
+   },
+   "roles": [
+    [
+     "flash",
+     1
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "core",
+     1
+    ],
+    [
+     "screen",
+     1
+    ],
+    [
+     "camera",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ScreenGui",
+     2
+    ],
+    [
+     "Trails",
+     1
+    ],
+    [
+     "small",
+     1
+    ],
+    [
+     "hard",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "1-2 frame white frames as the teleport punctuation",
+     1
+    ],
+    [
+     "flash gaps accelerate (0.2 s -> 0.1 s)",
+     1
+    ],
+    [
+     "streaks wrap the target before the body reappears",
+     1
+    ],
+    [
+     "final white decays through cyan",
+     1
+    ],
+    [
+     "reappear already in the end pose",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "dash_teleport_flying_raijin_naruto"
+   ]
+  },
+  "cat:elemental": {
+   "count": 7,
+   "duration_s": {
+    "n": 7,
+    "median": 16.4,
+    "p25": 9.7,
+    "p75": 16.6
+   },
+   "anticipation_to_release": {
+    "n": 4,
+    "median": 0.75,
+    "p25": 0.1,
+    "p75": 1.4
+   },
+   "residue_to_main": {
+    "n": 7,
+    "median": 0.4,
+    "p25": 0.38,
+    "p75": 0.4
+   },
+   "flash_frames": {
+    "n": 5,
+    "median": 1,
+    "p25": 1,
+    "p75": 8
+   },
+   "flash_share": 0.71,
+   "layer_count": {
+    "n": 7,
+    "median": 6,
+    "p25": 6,
+    "p75": 7
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 5,
+     "median": 0.025,
+     "p25": 0.008,
+     "p75": 0.058
+    },
+    "release": {
+     "n": 7,
+     "median": 0.009,
+     "p25": 0.006,
+     "p75": 0.011
+    },
+    "sustain": {
+     "n": 6,
+     "median": 0.241,
+     "p25": 0.046,
+     "p75": 0.314
+    },
+    "peak": {
+     "n": 5,
+     "median": 0.116,
+     "p25": 0.06,
+     "p75": 0.134
+    },
+    "impact": {
+     "n": 6,
+     "median": 0.03,
+     "p25": 0.022,
+     "p75": 0.097
+    },
+    "dissipation": {
+     "n": 3,
+     "median": 0.116,
+     "p25": 0.033,
+     "p75": 0.375
+    },
+    "quiet_beat": {
+     "n": 2,
+     "median": 0.332,
+     "p25": 0.04,
+     "p75": 0.624
+    },
+    "residue": {
+     "n": 4,
+     "median": 0.274,
+     "p25": 0.273,
+     "p75": 0.274
+    }
+   },
+   "roles": [
+    [
+     "core",
+     7
+    ],
+    [
+     "screen",
+     6
+    ],
+    [
+     "camera",
+     6
+    ],
+    [
+     "light",
+     5
+    ],
+    [
+     "smoke",
+     5
+    ],
+    [
+     "secondary_strokes",
+     4
+    ],
+    [
+     "body",
+     4
+    ],
+    [
+     "ground",
+     3
+    ],
+    [
+     "flash",
+     3
+    ],
+    [
+     "debris",
+     2
+    ],
+    [
+     "sparks",
+     2
+    ]
+   ],
+   "techniques": [
+    [
+     "ParticleEmitter",
+     7
+    ],
+    [
+     "ColorCorrection",
+     5
+    ],
+    [
+     "PointLight",
+     3
+    ],
+    [
+     "camera",
+     3
+    ],
+    [
+     "Beams",
+     2
+    ],
+    [
+     "8-16",
+     2
+    ],
+    [
+     "ScreenGui",
+     2
+    ],
+    [
+     "Neon",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "world darkens and turns blue in a single frame when the charge appears",
+     1
+    ],
+    [
+     "bolts redrawn on 2s-3s, never tweened",
+     1
+    ],
+    [
+     "ground lit before the hand is revealed",
+     1
+    ],
+    [
+     "close-up re-randomises slower than the wide shot",
+     1
+    ],
+    [
+     "ignition to 22% of frame in one frame",
+     1
+    ],
+    [
+     "steady 1.5 s growth after the pop",
+     1
+    ],
+    [
+     "fire jet accelerates at the lens",
+     1
+    ],
+    [
+     "cream whiteout cooling to yellow then orange",
+     1
+    ],
+    [
+     "close blast -> radial burst -> ground wave -> glacier (escalating scale every cut)",
+     1
+    ],
+    [
+     "wave accelerates then stops dead",
+     1
+    ],
+    [
+     "glacier held 13 s with slow tilt",
+     1
+    ],
+    [
+     "dark storm sky before the strike",
+     1
+    ],
+    [
+     "0.27 s pure white on contact",
+     1
+    ],
+    [
+     "1.6 s held whiteout",
+     1
+    ],
+    [
+     "strobe then single black frame before the smoke",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "mono",
+     3
+    ],
+    [
+     "analogous",
+     2
+    ],
+    [
+     "triadic",
+     1
+    ],
+    [
+     "complementary",
+     1
+    ]
+   ],
+   "core_white": 0.57,
+   "ids": [
+    "elemental_chidori_naruto",
+    "elemental_fire_blast_hp_ootp",
+    "elemental_ice_glacier_mha",
+    "elemental_kirin_naruto",
+    "elemental_overloaded_genshin",
+    "elemental_thunder_dragon_roblox",
+    "elemental_water_dragon_naruto"
+   ]
+  },
+  "cat:explosion": {
+   "count": 6,
+   "duration_s": {
+    "n": 6,
+    "median": 12.325,
+    "p25": 2.4,
+    "p75": 19.85
+   },
+   "anticipation_to_release": {
+    "n": 2,
+    "median": 5.8,
+    "p25": 1.6,
+    "p75": 10.0
+   },
+   "residue_to_main": {
+    "n": 3,
+    "median": 1.4,
+    "p25": 0.67,
+    "p75": 5.0
+   },
+   "flash_frames": {
+    "n": 4,
+    "median": 4.0,
+    "p25": 4,
+    "p75": 4
+   },
+   "flash_share": 0.67,
+   "layer_count": {
+    "n": 6,
+    "median": 8.0,
+    "p25": 8,
+    "p75": 8
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 3,
+     "median": 0.307,
+     "p25": 0.214,
+     "p75": 0.317
+    },
+    "quiet_beat": {
+     "n": 3,
+     "median": 0.059,
+     "p25": 0.021,
+     "p75": 0.077
+    },
+    "release": {
+     "n": 6,
+     "median": 0.014,
+     "p25": 0.007,
+     "p75": 0.021
+    },
+    "impact": {
+     "n": 4,
+     "median": 0.084,
+     "p25": 0.057,
+     "p75": 0.11
+    },
+    "peak": {
+     "n": 5,
+     "median": 0.126,
+     "p25": 0.021,
+     "p75": 0.147
+    },
+    "dissipation": {
+     "n": 3,
+     "median": 0.236,
+     "p25": 0.21,
+     "p75": 0.263
+    },
+    "residue": {
+     "n": 4,
+     "median": 0.364,
+     "p25": 0.3,
+     "p75": 0.429
+    },
+    "sustain": {
+     "n": 4,
+     "median": 0.338,
+     "p25": 0.253,
+     "p75": 0.423
+    }
+   },
+   "roles": [
+    [
+     "core",
+     7
+    ],
+    [
+     "body",
+     7
+    ],
+    [
+     "screen",
+     6
+    ],
+    [
+     "light",
+     5
+    ],
+    [
+     "flash",
+     4
+    ],
+    [
+     "smoke",
+     4
+    ],
+    [
+     "ground",
+     3
+    ],
+    [
+     "debris",
+     3
+    ],
+    [
+     "sparks",
+     3
+    ],
+    [
+     "secondary_strokes",
+     2
+    ],
+    [
+     "residue",
+     2
+    ],
+    [
+     "camera",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     5
+    ],
+    [
+     "ParticleEmitter",
+     5
+    ],
+    [
+     "MeshPart",
+     4
+    ],
+    [
+     "Neon",
+     4
+    ],
+    [
+     "PointLight",
+     4
+    ],
+    [
+     "ScreenGui",
+     3
+    ],
+    [
+     "flat",
+     2
+    ],
+    [
+     "BillboardGui",
+     2
+    ]
+   ],
+   "signature_beats": [
+    [
+     "stacked staggered magic circles",
+     1
+    ],
+    [
+     "cut to calm wide shot",
+     1
+    ],
+    [
+     "point -> star -> ring",
+     1
+    ],
+    [
+     "one white frame",
+     1
+    ],
+    [
+     "held whiteout",
+     1
+    ],
+    [
+     "colour cooling grade",
+     1
+    ],
+    [
+     "squash to dome with horizontal shock ring",
+     1
+    ],
+    [
+     "fire is short (about 0.5 s) and is eaten by debris",
+     1
+    ],
+    [
+     "spiky streak-shaped ejecta, not round puffs",
+     1
+    ],
+    [
+     "plume keeps growing ~1.5 s after the fire is gone",
+     1
+    ],
+    [
+     "ground ripple ring around the blast",
+     1
+    ],
+    [
+     "two opposed colour orbs combine into a third colour",
+     1
+    ],
+    [
+     "held compressed point (star) with dialogue",
+     1
+    ],
+    [
+     "full desaturation silence beat before release",
+     1
+    ],
+    [
+     "erasure mass deletes scenery along a corridor",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     4
+    ],
+    [
+     "analogous",
+     2
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "explosion_explosion_konosuba",
+    "explosion_ground_burst_houdini",
+    "explosion_hollow_purple_jjk",
+    "explosion_howitzer_impact_mha",
+    "explosion_stylised_roblox",
+    "explosion_trinity_oppenheimer"
+   ]
+  },
+  "cat:impact": {
+   "count": 6,
+   "duration_s": {
+    "n": 6,
+    "median": 14.1,
+    "p25": 3.75,
+    "p75": 21.6
+   },
+   "anticipation_to_release": {
+    "n": 4,
+    "median": 6.785,
+    "p25": 2.67,
+    "p75": 10.9
+   },
+   "residue_to_main": {
+    "n": 6,
+    "median": 0.35,
+    "p25": 0.21,
+    "p75": 2.4
+   },
+   "flash_frames": {
+    "n": 5,
+    "median": 12,
+    "p25": 4,
+    "p75": 12
+   },
+   "flash_share": 0.83,
+   "layer_count": {
+    "n": 6,
+    "median": 9.5,
+    "p25": 6,
+    "p75": 11
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 5,
+     "median": 0.253,
+     "p25": 0.188,
+     "p75": 0.267
+    },
+    "impact": {
+     "n": 6,
+     "median": 0.067,
+     "p25": 0.015,
+     "p75": 0.1
+    },
+    "quiet_beat": {
+     "n": 3,
+     "median": 0.102,
+     "p25": 0.088,
+     "p75": 0.231
+    },
+    "peak": {
+     "n": 5,
+     "median": 0.145,
+     "p25": 0.136,
+     "p75": 0.151
+    },
+    "residue": {
+     "n": 6,
+     "median": 0.209,
+     "p25": 0.086,
+     "p75": 0.516
+    },
+    "release": {
+     "n": 4,
+     "median": 0.065,
+     "p25": 0.029,
+     "p75": 0.101
+    },
+    "sustain": {
+     "n": 3,
+     "median": 0.236,
+     "p25": 0.111,
+     "p75": 0.332
+    },
+    "dissipation": {
+     "n": 2,
+     "median": 0.075,
+     "p25": 0.033,
+     "p75": 0.117
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     11
+    ],
+    [
+     "secondary_strokes",
+     9
+    ],
+    [
+     "body",
+     8
+    ],
+    [
+     "flash",
+     6
+    ],
+    [
+     "camera",
+     5
+    ],
+    [
+     "distortion",
+     4
+    ],
+    [
+     "core",
+     3
+    ],
+    [
+     "ground",
+     3
+    ],
+    [
+     "debris",
+     2
+    ],
+    [
+     "light",
+     1
+    ],
+    [
+     "residue",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ScreenGui",
+     9
+    ],
+    [
+     "ColorCorrection",
+     5
+    ],
+    [
+     "ParticleEmitter",
+     3
+    ],
+    [
+     "two",
+     3
+    ],
+    [
+     "Beams",
+     3
+    ],
+    [
+     "Beam",
+     3
+    ],
+    [
+     "BillboardGui/ParticleEmitter",
+     2
+    ],
+    [
+     "expanding",
+     2
+    ]
+   ],
+   "signature_beats": [
+    [
+     "black, not white, is the flash colour first",
+     1
+    ],
+    [
+     "red is the only hue: spark, edges, lightning rim",
+     1
+    ],
+    [
+     "0.33 s black-out before the inverted white",
+     1
+    ],
+    [
+     "inverted field with the hitters as black silhouettes",
+     1
+    ],
+    [
+     "lightning crackle lingers after colour returns",
+     1
+    ],
+    [
+     "hue-cycling cross flare montage, 9 hues, 0.3-0.7 s each",
+     1
+    ],
+    [
+     "black frame before the first white (dark-then-light pop)",
+     1
+    ],
+    [
+     "0.5 s held white, then a ~2 s silent close-up before contact",
+     1
+    ],
+    [
+     "three impact frames that escalate: sketch-on-white, black+white, pure white",
+     1
+    ],
+    [
+     "0.25 s dark dip right before the final peak",
+     1
+    ],
+    [
+     "space-black emblem cut as the charge",
+     1
+    ],
+    [
+     "eclipse ring in the sky",
+     1
+    ],
+    [
+     "3-panel black/white impact-frame triad at contact",
+     1
+    ],
+    [
+     "rock-slab crater ring",
+     1
+    ],
+    [
+     "cool cyan base ring inside a warm blast",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     3
+    ],
+    [
+     "mono",
+     1
+    ],
+    [
+     "triadic",
+     1
+    ],
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 0.83,
+   "ids": [
+    "impact_black_flash_jjk",
+    "impact_detroit_smash_mha",
+    "impact_galaxy_impact_roblox",
+    "impact_ground_slam_malphite_lol",
+    "impact_haki_clash_onepiece",
+    "impact_serious_punch_opm"
+   ]
+  },
+  "cat:orb_charge": {
+   "count": 3,
+   "duration_s": {
+    "n": 3,
+    "median": 29.0,
+    "p25": 2.04,
+    "p75": 38.7
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 0.2,
+    "p25": 0.2,
+    "p75": 0.2
+   },
+   "residue_to_main": {
+    "n": 3,
+    "median": 0.16,
+    "p25": 0.0,
+    "p75": 1.0
+   },
+   "flash_frames": {
+    "n": 2,
+    "median": 46.5,
+    "p25": 2,
+    "p75": 91
+   },
+   "flash_share": 0.67,
+   "layer_count": {
+    "n": 3,
+    "median": 8,
+    "p25": 4,
+    "p75": 8
+   },
+   "phase_share": {
+    "sustain": {
+     "n": 3,
+     "median": 0.62,
+     "p25": 0.147,
+     "p75": 0.775
+    },
+    "anticipation": {
+     "n": 3,
+     "median": 0.039,
+     "p25": 0.006,
+     "p75": 0.069
+    },
+    "release": {
+     "n": 3,
+     "median": 0.059,
+     "p25": 0.026,
+     "p75": 0.186
+    },
+    "impact": {
+     "n": 2,
+     "median": 0.044,
+     "p25": 0.037,
+     "p75": 0.052
+    },
+    "peak": {
+     "n": 2,
+     "median": 0.155,
+     "p25": 0.124,
+     "p75": 0.186
+    },
+    "dissipation": {
+     "n": 2,
+     "median": 0.071,
+     "p25": 0.059,
+     "p75": 0.082
+    },
+    "residue": {
+     "n": 2,
+     "median": 0.272,
+     "p25": 0.052,
+     "p75": 0.492
+    }
+   },
+   "roles": [
+    [
+     "core",
+     3
+    ],
+    [
+     "screen",
+     3
+    ],
+    [
+     "body",
+     2
+    ],
+    [
+     "flash",
+     2
+    ],
+    [
+     "camera",
+     2
+    ],
+    [
+     "light",
+     2
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "residue",
+     1
+    ],
+    [
+     "ground",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "distortion",
+     1
+    ],
+    [
+     "debris",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     4
+    ],
+    [
+     "Neon",
+     2
+    ],
+    [
+     "ParticleEmitter",
+     2
+    ],
+    [
+     "ParticleEmitter,",
+     1
+    ],
+    [
+     "flat",
+     1
+    ],
+    [
+     "tween",
+     1
+    ],
+    [
+     "terrain",
+     1
+    ],
+    [
+     "Camera",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "edge-on white blade-plane band appears before the dome",
+     1
+    ],
+    [
+     "accelerating (ease-in) whiteout rather than an instant flash",
+     1
+    ],
+    [
+     "3.8 s perfectly held white",
+     1
+    ],
+    [
+     "whiteout thins then re-flares",
+     1
+    ],
+    [
+     "fade out through saturated blue",
+     1
+    ],
+    [
+     "single point first",
+     1
+    ],
+    [
+     "sparks fall from the start",
+     1
+    ],
+    [
+     "fast-out ring growth: half size in 0.17 s, full in 1.3 s",
+     1
+    ],
+    [
+     "colour deepens then re-brightens",
+     1
+    ],
+    [
+     "power-up flare pushes field from 6% to 58% of frame in 1 frame",
+     1
+    ],
+    [
+     "2-frame black impact frame inside the white",
+     1
+    ],
+    [
+     "b/w strobe of the dome silhouette",
+     1
+    ],
+    [
+     "target goes cyan then crumbles into blobs",
+     1
+    ],
+    [
+     "multiple white pulses afterwards",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     2
+    ],
+    [
+     "mono",
+     1
+    ]
+   ],
+   "core_white": 0.67,
+   "ids": [
+    "orb_rasenshuriken_naruto",
+    "orb_sling_ring_portal_mcu",
+    "orb_spirit_bomb_dbz"
+   ]
+  },
+  "cat:projectile": {
+   "count": 2,
+   "duration_s": {
+    "n": 2,
+    "median": 10.75,
+    "p25": 2.9,
+    "p75": 18.6
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 2.5,
+    "p25": 2.5,
+    "p75": 2.5
+   },
+   "residue_to_main": {
+    "n": 2,
+    "median": 4.8,
+    "p25": 3.6,
+    "p75": 6.0
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 7,
+    "p25": 7,
+    "p75": 7
+   },
+   "flash_share": 0.5,
+   "layer_count": {
+    "n": 2,
+    "median": 6.5,
+    "p25": 5,
+    "p75": 8
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.023,
+     "p25": 0.023,
+     "p75": 0.023
+    },
+    "release": {
+     "n": 2,
+     "median": 0.018,
+     "p25": 0.009,
+     "p75": 0.028
+    },
+    "sustain": {
+     "n": 2,
+     "median": 0.464,
+     "p25": 0.025,
+     "p75": 0.903
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.027,
+     "p25": 0.027,
+     "p75": 0.027
+    },
+    "impact": {
+     "n": 2,
+     "median": 0.083,
+     "p25": 0.038,
+     "p75": 0.128
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.833,
+     "p25": 0.833,
+     "p75": 0.833
+    }
+   },
+   "roles": [
+    [
+     "core",
+     2
+    ],
+    [
+     "light",
+     2
+    ],
+    [
+     "body",
+     1
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "debris",
+     1
+    ],
+    [
+     "smoke",
+     1
+    ],
+    [
+     "residue",
+     1
+    ],
+    [
+     "camera",
+     1
+    ],
+    [
+     "flash",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "screen",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "MeshPart",
+     2
+    ],
+    [
+     "PointLight",
+     2
+    ],
+    [
+     "ParticleEmitter",
+     2
+    ],
+    [
+     "Trail",
+     1
+    ],
+    [
+     "small",
+     1
+    ],
+    [
+     "Fire",
+     1
+    ],
+    [
+     "camera",
+     1
+    ],
+    [
+     "Beams",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "arm flames bloom before the throw",
+     1
+    ],
+    [
+     "fist silhouette is the shape language",
+     1
+    ],
+    [
+     "frame fills with flat fire then hard-cuts to the target",
+     1
+    ],
+    [
+     "target turns to silhouettes against flame",
+     1
+    ],
+    [
+     "long burning aftermath in wide shots",
+     1
+    ],
+    [
+     "colour swap through white at contact (magenta -> white -> cyan)",
+     1
+    ],
+    [
+     "second colour arrives as particles, not as a beam",
+     1
+    ],
+    [
+     "film-style bloom fringe",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ],
+    [
+     "complementary",
+     1
+    ]
+   ],
+   "core_white": 0.5,
+   "ids": [
+    "projectile_fire_fist_onepiece",
+    "projectile_spell_clash_hp_ootp"
+   ]
+  },
+  "cat:slash": {
+   "count": 11,
+   "duration_s": {
+    "n": 11,
+    "median": 7.98,
+    "p25": 2.63,
+    "p75": 9.25
+   },
+   "anticipation_to_release": {
+    "n": 8,
+    "median": 4.325,
+    "p25": 2.0,
+    "p75": 7.3
+   },
+   "residue_to_main": {
+    "n": 11,
+    "median": 0.3,
+    "p25": 0.1,
+    "p75": 1.33
+   },
+   "flash_frames": {
+    "n": 8,
+    "median": 1.0,
+    "p25": 1,
+    "p75": 1
+   },
+   "flash_share": 0.73,
+   "layer_count": {
+    "n": 11,
+    "median": 7,
+    "p25": 5,
+    "p75": 7
+   },
+   "phase_share": {
+    "release": {
+     "n": 10,
+     "median": 0.026,
+     "p25": 0.018,
+     "p75": 0.041
+    },
+    "quiet_beat": {
+     "n": 7,
+     "median": 0.229,
+     "p25": 0.113,
+     "p75": 0.27
+    },
+    "sustain": {
+     "n": 9,
+     "median": 0.279,
+     "p25": 0.096,
+     "p75": 0.365
+    },
+    "impact": {
+     "n": 8,
+     "median": 0.054,
+     "p25": 0.034,
+     "p75": 0.064
+    },
+    "dissipation": {
+     "n": 6,
+     "median": 0.154,
+     "p25": 0.045,
+     "p75": 0.37
+    },
+    "residue": {
+     "n": 11,
+     "median": 0.148,
+     "p25": 0.074,
+     "p75": 0.479
+    },
+    "anticipation": {
+     "n": 8,
+     "median": 0.263,
+     "p25": 0.112,
+     "p75": 0.357
+    },
+    "peak": {
+     "n": 5,
+     "median": 0.087,
+     "p25": 0.02,
+     "p75": 0.18
+    }
+   },
+   "roles": [
+    [
+     "secondary_strokes",
+     10
+    ],
+    [
+     "flash",
+     10
+    ],
+    [
+     "screen",
+     10
+    ],
+    [
+     "core",
+     9
+    ],
+    [
+     "body",
+     8
+    ],
+    [
+     "camera",
+     5
+    ],
+    [
+     "sparks",
+     5
+    ],
+    [
+     "ground",
+     5
+    ],
+    [
+     "residue",
+     4
+    ],
+    [
+     "light",
+     3
+    ],
+    [
+     "debris",
+     3
+    ]
+   ],
+   "techniques": [
+    [
+     "ParticleEmitter",
+     12
+    ],
+    [
+     "ScreenGui",
+     7
+    ],
+    [
+     "ColorCorrection",
+     7
+    ],
+    [
+     "BillboardGui",
+     4
+    ],
+    [
+     "flat",
+     4
+    ],
+    [
+     "camera",
+     3
+    ],
+    [
+     "Beam",
+     3
+    ],
+    [
+     "MeshPart",
+     2
+    ]
+   ],
+   "signature_beats": [
+    [
+     "flat cel yellow slash masses, not glowing gradients",
+     1
+    ],
+    [
+     "inverted two-tone impact frames between beats",
+     1
+    ],
+    [
+     "1.5 s dark hold before the final mass",
+     1
+    ],
+    [
+     "decay holds lengthen (2s -> 3s -> 4s) as the mass dies",
+     1
+    ],
+    [
+     "reaction insert on the target between swings",
+     1
+    ],
+    [
+     "build is long and dim, the dragon only appears 1.6 s in",
+     1
+    ],
+    [
+     "flat ukiyo-e white highlight shapes instead of glow",
+     1
+    ],
+    [
+     "whitening push-in right before the shatter",
+     1
+    ],
+    [
+     "shatter into droplets then a hard black beat",
+     1
+    ],
+    [
+     "single-frame contact flare",
+     1
+    ],
+    [
+     "spark fan with gravity, not a radial burst",
+     1
+    ],
+    [
+     "white-hot to red cooling along the spark life",
+     1
+    ],
+    [
+     "the world is graded dark and cool so sparks are the brightest pixels",
+     1
+    ],
+    [
+     "the result (debris whiteout) is shown before the cut lines",
+     1
+    ],
+    [
+     "cuts are thin lines, almost invisible, the damage carries the read",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "mono",
+     4
+    ],
+    [
+     "analogous",
+     4
+    ],
+    [
+     "complementary",
+     3
+    ]
+   ],
+   "core_white": 0.73,
+   "ids": [
+    "slash_asura_onepiece",
+    "slash_constant_flux_demonslayer",
+    "slash_darksaber_sparks_mandalorian",
+    "slash_dismantle_jjk",
+    "slash_divine_sword_roblox",
+    "slash_feixiao_ultimate_hsr",
+    "slash_getsuga_tensho_bleach",
+    "slash_kingofhell_onepiece",
+    "slash_lightning_combo_roblox",
+    "slash_thunderclap_flash_demonslayer",
+    "slash_wind_twistvfx_roblox"
+   ]
+  },
+  "cat:ultimate": {
+   "count": 3,
+   "duration_s": {
+    "n": 3,
+    "median": 17.7,
+    "p25": 9.7,
+    "p75": 69.3
+   },
+   "anticipation_to_release": {
+    "n": 3,
+    "median": 9.4,
+    "p25": 2.4,
+    "p75": 13.0
+   },
+   "residue_to_main": {
+    "n": 3,
+    "median": 0.11,
+    "p25": 0.0,
+    "p75": 2.8
+   },
+   "flash_frames": {
+    "n": 3,
+    "median": 1,
+    "p25": 1,
+    "p75": 1
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 3,
+    "median": 7,
+    "p25": 7,
+    "p75": 8
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 3,
+     "median": 0.04,
+     "p25": 0.034,
+     "p75": 0.155
+    },
+    "quiet_beat": {
+     "n": 2,
+     "median": 0.058,
+     "p25": 0.035,
+     "p75": 0.081
+    },
+    "release": {
+     "n": 3,
+     "median": 0.032,
+     "p25": 0.006,
+     "p75": 0.09
+    },
+    "sustain": {
+     "n": 3,
+     "median": 0.583,
+     "p25": 0.356,
+     "p75": 0.67
+    },
+    "peak": {
+     "n": 3,
+     "median": 0.076,
+     "p25": 0.057,
+     "p75": 0.407
+    },
+    "impact": {
+     "n": 3,
+     "median": 0.014,
+     "p25": 0.002,
+     "p75": 0.045
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.082,
+     "p25": 0.082,
+     "p75": 0.082
+    },
+    "residue": {
+     "n": 2,
+     "median": 0.055,
+     "p25": 0.017,
+     "p75": 0.094
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     5
+    ],
+    [
+     "body",
+     3
+    ],
+    [
+     "core",
+     3
+    ],
+    [
+     "light",
+     3
+    ],
+    [
+     "secondary_strokes",
+     2
+    ],
+    [
+     "camera",
+     2
+    ],
+    [
+     "flash",
+     2
+    ],
+    [
+     "smoke",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ScreenGui",
+     3
+    ],
+    [
+     "ColorCorrection",
+     3
+    ],
+    [
+     "ParticleEmitter",
+     2
+    ],
+    [
+     "Camera",
+     2
+    ],
+    [
+     "full-screen",
+     2
+    ],
+    [
+     "ParticleEmitter/Beam",
+     1
+    ],
+    [
+     "ImageLabel",
+     1
+    ],
+    [
+     "black",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "reuses the anime order: white, tunnel, ink, void",
+     1
+    ],
+    [
+     "white phase stretched to 5.2 s (anime: 0.3 s)",
+     1
+    ],
+    [
+     "extra inserts: mandala, bubbles, star burst",
+     1
+    ],
+    [
+     "dim-to-black then frozen frame",
+     1
+    ],
+    [
+     "cinematic cut-in",
+     1
+    ],
+    [
+     "single white frame on the slash line",
+     1
+    ],
+    [
+     "eye sigil in the slit",
+     1
+    ],
+    [
+     "empowered aura state with darker world",
+     1
+    ],
+    [
+     "white world for 8 frames",
+     1
+    ],
+    [
+     "ink splatter wipe from the edges",
+     1
+    ],
+    [
+     "6 s converging tunnel",
+     1
+    ],
+    [
+     "1-frame white into the void",
+     1
+    ],
+    [
+     "void shown as long held stills",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     2
+    ],
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "ultimate_infinite_void_roblox",
+    "ultimate_musou_shinsetsu_genshin",
+    "ultimate_unlimited_void_jjk"
+   ]
+  },
+  "cat_style:ambient_pickup|roblox": {
+   "count": 2,
+   "duration_s": {
+    "n": 2,
+    "median": 1.165,
+    "p25": 0.73,
+    "p75": 1.6
+   },
+   "anticipation_to_release": null,
+   "residue_to_main": {
+    "n": 2,
+    "median": 0.825,
+    "p25": 0.75,
+    "p75": 0.9
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 2,
+    "p25": 2,
+    "p75": 2
+   },
+   "flash_share": 0.5,
+   "layer_count": {
+    "n": 2,
+    "median": 5.0,
+    "p25": 4,
+    "p75": 6
+   },
+   "phase_share": {
+    "release": {
+     "n": 2,
+     "median": 0.28,
+     "p25": 0.012,
+     "p75": 0.548
+    },
+    "dissipation": {
+     "n": 2,
+     "median": 0.237,
+     "p25": 0.062,
+     "p75": 0.411
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.019,
+     "p25": 0.019,
+     "p75": 0.019
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.437,
+     "p25": 0.437,
+     "p75": 0.437
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.469,
+     "p25": 0.469,
+     "p75": 0.469
+    }
+   },
+   "roles": [
+    [
+     "sparks",
+     2
+    ],
+    [
+     "flash",
+     2
+    ],
+    [
+     "screen",
+     2
+    ],
+    [
+     "body",
+     1
+    ],
+    [
+     "core",
+     1
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "light",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "BillboardGui",
+     2
+    ],
+    [
+     "coin",
+     1
+    ],
+    [
+     "ParticleEmitter:Emit(6-10)",
+     1
+    ],
+    [
+     "1",
+     1
+    ],
+    [
+     "UI",
+     1
+    ],
+    [
+     "Beam",
+     1
+    ],
+    [
+     "2-3",
+     1
+    ],
+    [
+     "ParticleEmitter:Emit(8-14)",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "each pickup is under 0.5 s",
+     1
+    ],
+    [
+     "pops chain and stack along a coin line",
+     1
+    ],
+    [
+     "hard off at the end of a pop",
+     1
+    ],
+    [
+     "1-frame pop to max, 20% of peak by 0.15 s",
+     1
+    ],
+    [
+     "text + upward chevron carry the meaning",
+     1
+    ],
+    [
+     "arcs orbit and rise",
+     1
+    ],
+    [
+     "multicolour sparkles add reward feel",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "mono",
+     2
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "ambient_pickup_cash_roblox",
+    "ambient_pickup_level_up_roblox"
+   ]
+  },
+  "cat_style:ambient_pickup|stylised_game": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 13.1,
+    "p25": 13.1,
+    "p75": 13.1
+   },
+   "anticipation_to_release": null,
+   "residue_to_main": {
+    "n": 1,
+    "median": 10.0,
+    "p25": 10.0,
+    "p75": 10.0
+   },
+   "flash_frames": null,
+   "flash_share": 0.0,
+   "layer_count": {
+    "n": 1,
+    "median": 5,
+    "p25": 5,
+    "p75": 5
+   },
+   "phase_share": {
+    "release": {
+     "n": 1,
+     "median": 0.002,
+     "p25": 0.002,
+     "p75": 0.002
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.061,
+     "p25": 0.061,
+     "p75": 0.061
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.031,
+     "p25": 0.031,
+     "p75": 0.031
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.901,
+     "p25": 0.901,
+     "p75": 0.901
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     1
+    ],
+    [
+     "body",
+     1
+    ],
+    [
+     "ground",
+     1
+    ],
+    [
+     "core",
+     1
+    ],
+    [
+     "light",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     1
+    ],
+    [
+     "6-10",
+     1
+    ],
+    [
+     "flat",
+     1
+    ],
+    [
+     "ParticleEmitter",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "greyscale -> colour cut",
+     1
+    ],
+    [
+     "light shafts peak at 0.4 s then settle to a quiet sustain",
+     1
+    ],
+    [
+     "ground rune keeps the buff readable from above",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 0.0,
+   "ids": [
+    "ambient_pickup_revive_lol"
+   ]
+  },
+  "cat_style:aura_transform|anime_cel": {
+   "count": 2,
+   "duration_s": {
+    "n": 2,
+    "median": 54.05,
+    "p25": 47.1,
+    "p75": 61.0
+   },
+   "anticipation_to_release": {
+    "n": 2,
+    "median": 6.25,
+    "p25": 2.6,
+    "p75": 9.9
+   },
+   "residue_to_main": {
+    "n": 2,
+    "median": 1.41,
+    "p25": 0.02,
+    "p75": 2.8
+   },
+   "flash_frames": {
+    "n": 2,
+    "median": 29.0,
+    "p25": 1,
+    "p75": 57
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 2,
+    "median": 9.0,
+    "p25": 9,
+    "p75": 9
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 2,
+     "median": 0.276,
+     "p25": 0.043,
+     "p75": 0.508
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.002,
+     "p25": 0.002,
+     "p75": 0.002
+    },
+    "release": {
+     "n": 2,
+     "median": 0.031,
+     "p25": 0.014,
+     "p75": 0.049
+    },
+    "peak": {
+     "n": 2,
+     "median": 0.055,
+     "p25": 0.04,
+     "p75": 0.069
+    },
+    "sustain": {
+     "n": 2,
+     "median": 0.529,
+     "p25": 0.316,
+     "p75": 0.741
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.019,
+     "p25": 0.019,
+     "p75": 0.019
+    },
+    "quiet_beat": {
+     "n": 1,
+     "median": 0.052,
+     "p25": 0.052,
+     "p75": 0.052
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.032,
+     "p25": 0.032,
+     "p75": 0.032
+    }
+   },
+   "roles": [
+    [
+     "flash",
+     3
+    ],
+    [
+     "secondary_strokes",
+     3
+    ],
+    [
+     "core",
+     2
+    ],
+    [
+     "light",
+     2
+    ],
+    [
+     "camera",
+     2
+    ],
+    [
+     "screen",
+     2
+    ],
+    [
+     "body",
+     2
+    ],
+    [
+     "smoke",
+     1
+    ],
+    [
+     "residue",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     3
+    ],
+    [
+     "ParticleEmitter",
+     2
+    ],
+    [
+     "full-screen",
+     2
+    ],
+    [
+     "2-3",
+     2
+    ],
+    [
+     "Lighting",
+     1
+    ],
+    [
+     "large",
+     1
+    ],
+    [
+     "Trail",
+     1
+    ],
+    [
+     "2-frame",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "single white frame at the blade burst",
+     1
+    ],
+    [
+     "sky changes before the form does",
+     1
+    ],
+    [
+     "dust cyclone with a rotating spiral cloud ring on top",
+     1
+    ],
+    [
+     "long concealment then 2-frame flash reveal",
+     1
+    ],
+    [
+     "glint along the new weapon",
+     1
+    ],
+    [
+     "2.4 s black silence before the change",
+     1
+    ],
+    [
+     "brief world colour swap to night-blue",
+     1
+    ],
+    [
+     "gold rises from the bottom and swallows the frame",
+     1
+    ],
+    [
+     "transformation hidden inside the glow",
+     1
+    ],
+    [
+     "aura flickers on 2s afterwards",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     2
+    ]
+   ],
+   "core_white": 0.5,
+   "ids": [
+    "aura_bankai_release_bleach",
+    "aura_super_saiyan_dbz"
+   ]
+  },
+  "cat_style:aura_transform|realistic": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 3.4,
+    "p25": 3.4,
+    "p75": 3.4
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 0.6,
+    "p25": 0.6,
+    "p75": 0.6
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 0.0,
+    "p25": 0.0,
+    "p75": 0.0
+   },
+   "flash_frames": null,
+   "flash_share": 0.0,
+   "layer_count": {
+    "n": 1,
+    "median": 4,
+    "p25": 4,
+    "p75": 4
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.294,
+     "p25": 0.294,
+     "p75": 0.294
+    },
+    "release": {
+     "n": 1,
+     "median": 0.491,
+     "p25": 0.491,
+     "p75": 0.491
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.215,
+     "p25": 0.215,
+     "p75": 0.215
+    }
+   },
+   "roles": [
+    [
+     "core",
+     1
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "light",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "flat",
+     1
+    ],
+    [
+     "2-3",
+     1
+    ],
+    [
+     "ParticleEmitter",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "starts tiny at the hands",
+     1
+    ],
+    [
+     "growth accelerates and hard-stops at full size",
+     1
+    ],
+    [
+     "colour deepens as linework densifies",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 0.0,
+   "ids": [
+    "aura_mandala_shield_mcu"
+   ]
+  },
+  "cat_style:aura_transform|roblox": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 11.55,
+    "p25": 11.55,
+    "p75": 11.55
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 26.0,
+    "p25": 26.0,
+    "p75": 26.0
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 1.6,
+    "p25": 1.6,
+    "p75": 1.6
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 3,
+    "p25": 3,
+    "p75": 3
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 7,
+    "p25": 7,
+    "p75": 7
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.113,
+     "p25": 0.113,
+     "p75": 0.113
+    },
+    "quiet_beat": {
+     "n": 1,
+     "median": 0.173,
+     "p25": 0.173,
+     "p75": 0.173
+    },
+    "release": {
+     "n": 1,
+     "median": 0.009,
+     "p25": 0.009,
+     "p75": 0.009
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.593,
+     "p25": 0.593,
+     "p75": 0.593
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.017,
+     "p25": 0.017,
+     "p75": 0.017
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.078,
+     "p25": 0.078,
+     "p75": 0.078
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     2
+    ],
+    [
+     "flash",
+     1
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "body",
+     1
+    ],
+    [
+     "debris",
+     1
+    ],
+    [
+     "light",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     2
+    ],
+    [
+     "BillboardGui",
+     1
+    ],
+    [
+     "Beams",
+     1
+    ],
+    [
+     "Neon",
+     1
+    ],
+    [
+     "MeshPart",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "2 s blackout with silhouette",
+     1
+    ],
+    [
+     "burst with expanding sphere",
+     1
+    ],
+    [
+     "pillar then inverted frames",
+     1
+    ],
+    [
+     "crystal blast then loop",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 0.0,
+   "ids": [
+    "aura_transformation_roblox"
+   ]
+  },
+  "cat_style:beam|anime_cel": {
+   "count": 4,
+   "duration_s": {
+    "n": 4,
+    "median": 32.3,
+    "p25": 30.0,
+    "p75": 34.6
+   },
+   "anticipation_to_release": {
+    "n": 4,
+    "median": 29.95,
+    "p25": 11.0,
+    "p75": 48.9
+   },
+   "residue_to_main": {
+    "n": 4,
+    "median": 0.385,
+    "p25": 0.17,
+    "p75": 0.6
+   },
+   "flash_frames": {
+    "n": 4,
+    "median": 2.0,
+    "p25": 2,
+    "p75": 2
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 4,
+    "median": 10.5,
+    "p25": 10,
+    "p75": 11
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 4,
+     "median": 0.299,
+     "p25": 0.282,
+     "p75": 0.315
+    },
+    "quiet_beat": {
+     "n": 2,
+     "median": 0.002,
+     "p25": 0.001,
+     "p75": 0.003
+    },
+    "release": {
+     "n": 4,
+     "median": 0.01,
+     "p25": 0.006,
+     "p75": 0.014
+    },
+    "peak": {
+     "n": 4,
+     "median": 0.059,
+     "p25": 0.04,
+     "p75": 0.077
+    },
+    "sustain": {
+     "n": 4,
+     "median": 0.12,
+     "p25": 0.045,
+     "p75": 0.196
+    },
+    "impact": {
+     "n": 4,
+     "median": 0.049,
+     "p25": 0.043,
+     "p75": 0.055
+    },
+    "dissipation": {
+     "n": 3,
+     "median": 0.067,
+     "p25": 0.019,
+     "p75": 0.105
+    },
+    "residue": {
+     "n": 3,
+     "median": 0.251,
+     "p25": 0.086,
+     "p75": 0.465
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     12
+    ],
+    [
+     "core",
+     9
+    ],
+    [
+     "body",
+     4
+    ],
+    [
+     "flash",
+     3
+    ],
+    [
+     "sparks",
+     3
+    ],
+    [
+     "light",
+     2
+    ],
+    [
+     "residue",
+     2
+    ],
+    [
+     "camera",
+     2
+    ],
+    [
+     "secondary_strokes",
+     2
+    ],
+    [
+     "smoke",
+     2
+    ],
+    [
+     "ground",
+     1
+    ],
+    [
+     "debris",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     8
+    ],
+    [
+     "Neon",
+     3
+    ],
+    [
+     "MeshPart",
+     3
+    ],
+    [
+     "BillboardGui",
+     3
+    ],
+    [
+     "ParticleEmitter",
+     3
+    ],
+    [
+     "white",
+     2
+    ],
+    [
+     "Beam",
+     2
+    ],
+    [
+     "scripted",
+     2
+    ]
+   ],
+   "signature_beats": [
+    [
+     "dark beat + inverted line frame instead of a white flash",
+     1
+    ],
+    [
+     "burst fills the frame in 0.33 s",
+     1
+    ],
+    [
+     "posterised two-tone world inside the beam light",
+     1
+    ],
+    [
+     "scale escalation cuts to orbit",
+     1
+    ],
+    [
+     "beam tail passes as a comet shape",
+     1
+    ],
+    [
+     "two opposing colours shown first, then merged",
+     1
+    ],
+    [
+     "black frame then 2 white frames with chromatic star at the fusion",
+     1
+    ],
+    [
+     "star glint pulsing every 3 frames",
+     1
+    ],
+    [
+     "slow 2.5 s whiten on the target",
+     1
+    ],
+    [
+     "quiet warm aftermath after a purple attack",
+     1
+    ],
+    [
+     "point-blank fire then cut to far wide for the blast",
+     1
+    ],
+    [
+     "small white impact ball holds 0.2 s before the dome blooms",
+     1
+    ],
+    [
+     "world grade drops to deep navy on impact so the white reads",
+     1
+    ],
+    [
+     "long held whiteout",
+     1
+    ],
+    [
+     "calm wide aftermath with static smoke dome",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     2
+    ],
+    [
+     "analogous",
+     2
+    ]
+   ],
+   "core_white": 0.75,
+   "ids": [
+    "beam_final_flash_dbz",
+    "beam_hollow_purple_jjk",
+    "beam_kamehameha_dbz",
+    "beam_special_beam_cannon_dbz"
+   ]
+  },
+  "cat_style:beam|realistic": {
+   "count": 2,
+   "duration_s": {
+    "n": 2,
+    "median": 21.75,
+    "p25": 14.5,
+    "p75": 29.0
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 52.5,
+    "p25": 52.5,
+    "p75": 52.5
+   },
+   "residue_to_main": {
+    "n": 2,
+    "median": 0.5,
+    "p25": 0.4,
+    "p75": 0.6
+   },
+   "flash_frames": {
+    "n": 2,
+    "median": 7.0,
+    "p25": 4,
+    "p75": 10
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 2,
+    "median": 7.5,
+    "p25": 6,
+    "p75": 9
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 2,
+     "median": 0.64,
+     "p25": 0.501,
+     "p75": 0.778
+    },
+    "quiet_beat": {
+     "n": 1,
+     "median": 0.052,
+     "p25": 0.052,
+     "p75": 0.052
+    },
+    "release": {
+     "n": 2,
+     "median": 0.009,
+     "p25": 0.002,
+     "p75": 0.016
+    },
+    "sustain": {
+     "n": 2,
+     "median": 0.188,
+     "p25": 0.069,
+     "p75": 0.306
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.008,
+     "p25": 0.008,
+     "p75": 0.008
+    },
+    "peak": {
+     "n": 2,
+     "median": 0.022,
+     "p25": 0.021,
+     "p75": 0.023
+    },
+    "dissipation": {
+     "n": 2,
+     "median": 0.036,
+     "p25": 0.021,
+     "p75": 0.052
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.138,
+     "p25": 0.138,
+     "p75": 0.138
+    }
+   },
+   "roles": [
+    [
+     "core",
+     4
+    ],
+    [
+     "secondary_strokes",
+     2
+    ],
+    [
+     "screen",
+     2
+    ],
+    [
+     "light",
+     1
+    ],
+    [
+     "body",
+     1
+    ],
+    [
+     "debris",
+     1
+    ],
+    [
+     "flash",
+     1
+    ],
+    [
+     "camera",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "smoke",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "Neon",
+     3
+    ],
+    [
+     "Beam",
+     2
+    ],
+    [
+     "ParticleEmitter",
+     2
+    ],
+    [
+     "ColorCorrection",
+     2
+    ],
+    [
+     "spine-plate",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ],
+    [
+     "wider",
+     1
+    ],
+    [
+     "scripted",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "plates light up in sequence",
+     1
+    ],
+    [
+     "lights dim right before firing",
+     1
+    ],
+    [
+     "two-stage beam onset",
+     1
+    ],
+    [
+     "cool flash, black gap, warm fireball",
+     1
+    ],
+    [
+     "fireball cools through orange to dark red",
+     1
+    ],
+    [
+     "helical rings on the beam",
+     1
+    ],
+    [
+     "head-on growth accelerating into a surge",
+     1
+    ],
+    [
+     "red sparks against cyan",
+     1
+    ],
+    [
+     "warm residue after a cool beam",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     2
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "beam_atomic_breath_godzilla_minus_one",
+    "beam_atomic_breath_godzilla_vs_kong"
+   ]
+  },
+  "cat_style:beam|roblox": {
+   "count": 2,
+   "duration_s": {
+    "n": 2,
+    "median": 12.47,
+    "p25": 4.04,
+    "p75": 20.9
+   },
+   "anticipation_to_release": {
+    "n": 2,
+    "median": 20.55,
+    "p25": 15.1,
+    "p75": 26.0
+   },
+   "residue_to_main": {
+    "n": 2,
+    "median": 0.725,
+    "p25": 0.45,
+    "p75": 1.0
+   },
+   "flash_frames": {
+    "n": 2,
+    "median": 2.5,
+    "p25": 2,
+    "p75": 3
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 2,
+    "median": 7.0,
+    "p25": 5,
+    "p75": 9
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 2,
+     "median": 0.521,
+     "p25": 0.322,
+     "p75": 0.721
+    },
+    "release": {
+     "n": 2,
+     "median": 0.029,
+     "p25": 0.01,
+     "p75": 0.048
+    },
+    "quiet_beat": {
+     "n": 2,
+     "median": 0.03,
+     "p25": 0.011,
+     "p75": 0.05
+    },
+    "sustain": {
+     "n": 2,
+     "median": 0.226,
+     "p25": 0.08,
+     "p75": 0.371
+    },
+    "dissipation": {
+     "n": 2,
+     "median": 0.092,
+     "p25": 0.017,
+     "p75": 0.166
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.115,
+     "p25": 0.115,
+     "p75": 0.115
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     3
+    ],
+    [
+     "core",
+     3
+    ],
+    [
+     "body",
+     2
+    ],
+    [
+     "secondary_strokes",
+     2
+    ],
+    [
+     "ground",
+     1
+    ],
+    [
+     "flash",
+     1
+    ],
+    [
+     "smoke",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ParticleEmitter",
+     3
+    ],
+    [
+     "full-screen",
+     1
+    ],
+    [
+     "spiral",
+     1
+    ],
+    [
+     "crescent",
+     1
+    ],
+    [
+     "thin",
+     1
+    ],
+    [
+     "BillboardGui",
+     1
+    ],
+    [
+     "white/black",
+     1
+    ],
+    [
+     "spike",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "very long cinematic charge",
+     1
+    ],
+    [
+     "telegraph line along the ground",
+     1
+    ],
+    [
+     "white/black flicker before the blast",
+     1
+    ],
+    [
+     "spikes re-rolled every frame",
+     1
+    ],
+    [
+     "charge collapses before release",
+     1
+    ],
+    [
+     "3-frame white flash",
+     1
+    ],
+    [
+     "complementary blue charge, red beam",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ],
+    [
+     "complementary",
+     1
+    ]
+   ],
+   "core_white": 0.5,
+   "ids": [
+    "beam_excalibur_morgan_roblox",
+    "beam_kamehameha_rework_roblox"
+   ]
+  },
+  "cat_style:beam|stylised_game": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 2.1,
+    "p25": 2.1,
+    "p75": 2.1
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 13.7,
+    "p25": 13.7,
+    "p75": 13.7
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 7.0,
+    "p25": 7.0,
+    "p75": 7.0
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 2,
+    "p25": 2,
+    "p75": 2
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 7,
+    "p25": 7,
+    "p75": 7
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.662,
+     "p25": 0.662,
+     "p75": 0.662
+    },
+    "release": {
+     "n": 1,
+     "median": 0.033,
+     "p25": 0.033,
+     "p75": 0.033
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.238,
+     "p25": 0.238,
+     "p75": 0.238
+    }
+   },
+   "roles": [
+    [
+     "ground",
+     2
+    ],
+    [
+     "core",
+     2
+    ],
+    [
+     "flash",
+     1
+    ],
+    [
+     "body",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ground",
+     1
+    ],
+    [
+     "thin",
+     1
+    ],
+    [
+     "Neon",
+     1
+    ],
+    [
+     "wide",
+     1
+    ],
+    [
+     "BillboardGui",
+     1
+    ],
+    [
+     "Beam",
+     1
+    ],
+    [
+     "ParticleEmitter",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "telegraph line that warms yellow to red",
+     1
+    ],
+    [
+     "2-frame peak then fast decay",
+     1
+    ],
+    [
+     "dark core frame inside the bloom",
+     1
+    ],
+    [
+     "star on the target",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "beam_final_spark_lux_wild_rift"
+   ]
+  },
+  "cat_style:dash_teleport|anime_cel": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 2.4,
+    "p25": 2.4,
+    "p75": 2.4
+   },
+   "anticipation_to_release": null,
+   "residue_to_main": {
+    "n": 1,
+    "median": 0.0,
+    "p25": 0.0,
+    "p75": 0.0
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 1,
+    "p25": 1,
+    "p75": 1
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 5,
+    "p25": 5,
+    "p75": 5
+   },
+   "phase_share": {
+    "release": {
+     "n": 1,
+     "median": 0.046,
+     "p25": 0.046,
+     "p75": 0.046
+    },
+    "quiet_beat": {
+     "n": 1,
+     "median": 0.708,
+     "p25": 0.708,
+     "p75": 0.708
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.067,
+     "p25": 0.067,
+     "p75": 0.067
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.083,
+     "p25": 0.083,
+     "p75": 0.083
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.058,
+     "p25": 0.058,
+     "p75": 0.058
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.012,
+     "p25": 0.012,
+     "p75": 0.012
+    }
+   },
+   "roles": [
+    [
+     "flash",
+     1
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "core",
+     1
+    ],
+    [
+     "screen",
+     1
+    ],
+    [
+     "camera",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ScreenGui",
+     2
+    ],
+    [
+     "Trails",
+     1
+    ],
+    [
+     "small",
+     1
+    ],
+    [
+     "hard",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "1-2 frame white frames as the teleport punctuation",
+     1
+    ],
+    [
+     "flash gaps accelerate (0.2 s -> 0.1 s)",
+     1
+    ],
+    [
+     "streaks wrap the target before the body reappears",
+     1
+    ],
+    [
+     "final white decays through cyan",
+     1
+    ],
+    [
+     "reappear already in the end pose",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "dash_teleport_flying_raijin_naruto"
+   ]
+  },
+  "cat_style:elemental|anime_cel": {
+   "count": 4,
+   "duration_s": {
+    "n": 4,
+    "median": 16.5,
+    "p25": 16.4,
+    "p75": 16.6
+   },
+   "anticipation_to_release": {
+    "n": 2,
+    "median": 3.85,
+    "p25": 1.4,
+    "p75": 6.3
+   },
+   "residue_to_main": {
+    "n": 4,
+    "median": 0.39,
+    "p25": 0.38,
+    "p75": 0.4
+   },
+   "flash_frames": {
+    "n": 2,
+    "median": 4.0,
+    "p25": 0,
+    "p75": 8
+   },
+   "flash_share": 0.5,
+   "layer_count": {
+    "n": 4,
+    "median": 6.5,
+    "p25": 6,
+    "p75": 7
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 3,
+     "median": 0.058,
+     "p25": 0.008,
+     "p75": 0.317
+    },
+    "release": {
+     "n": 4,
+     "median": 0.008,
+     "p25": 0.006,
+     "p75": 0.009
+    },
+    "sustain": {
+     "n": 4,
+     "median": 0.241,
+     "p25": 0.204,
+     "p75": 0.278
+    },
+    "peak": {
+     "n": 4,
+     "median": 0.125,
+     "p25": 0.116,
+     "p75": 0.134
+    },
+    "impact": {
+     "n": 3,
+     "median": 0.024,
+     "p25": 0.014,
+     "p75": 0.097
+    },
+    "quiet_beat": {
+     "n": 1,
+     "median": 0.04,
+     "p25": 0.04,
+     "p75": 0.04
+    },
+    "residue": {
+     "n": 3,
+     "median": 0.274,
+     "p25": 0.199,
+     "p75": 0.813
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.116,
+     "p25": 0.116,
+     "p75": 0.116
+    }
+   },
+   "roles": [
+    [
+     "core",
+     4
+    ],
+    [
+     "camera",
+     4
+    ],
+    [
+     "secondary_strokes",
+     3
+    ],
+    [
+     "light",
+     3
+    ],
+    [
+     "screen",
+     3
+    ],
+    [
+     "smoke",
+     3
+    ],
+    [
+     "ground",
+     2
+    ],
+    [
+     "body",
+     2
+    ],
+    [
+     "flash",
+     1
+    ],
+    [
+     "debris",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ParticleEmitter",
+     5
+    ],
+    [
+     "ColorCorrection",
+     3
+    ],
+    [
+     "Beams",
+     2
+    ],
+    [
+     "ScreenGui",
+     2
+    ],
+    [
+     "Neon",
+     1
+    ],
+    [
+     "ground",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ],
+    [
+     "no",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "world darkens and turns blue in a single frame when the charge appears",
+     1
+    ],
+    [
+     "bolts redrawn on 2s-3s, never tweened",
+     1
+    ],
+    [
+     "ground lit before the hand is revealed",
+     1
+    ],
+    [
+     "close-up re-randomises slower than the wide shot",
+     1
+    ],
+    [
+     "close blast -> radial burst -> ground wave -> glacier (escalating scale every cut)",
+     1
+    ],
+    [
+     "wave accelerates then stops dead",
+     1
+    ],
+    [
+     "glacier held 13 s with slow tilt",
+     1
+    ],
+    [
+     "dark storm sky before the strike",
+     1
+    ],
+    [
+     "0.27 s pure white on contact",
+     1
+    ],
+    [
+     "1.6 s held whiteout",
+     1
+    ],
+    [
+     "strobe then single black frame before the smoke",
+     1
+    ],
+    [
+     "grey smoke residue around the caster",
+     1
+    ],
+    [
+     "speed-line background swap for the approach",
+     1
+    ],
+    [
+     "head-on charge fills the frame",
+     1
+    ],
+    [
+     "opposite elements cancel into a third state (steam)",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "mono",
+     2
+    ],
+    [
+     "analogous",
+     1
+    ],
+    [
+     "complementary",
+     1
+    ]
+   ],
+   "core_white": 0.5,
+   "ids": [
+    "elemental_chidori_naruto",
+    "elemental_ice_glacier_mha",
+    "elemental_kirin_naruto",
+    "elemental_water_dragon_naruto"
+   ]
+  },
+  "cat_style:elemental|realistic": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 19.1,
+    "p25": 19.1,
+    "p75": 19.1
+   },
+   "anticipation_to_release": null,
+   "residue_to_main": {
+    "n": 1,
+    "median": 0.2,
+    "p25": 0.2,
+    "p75": 0.2
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 10,
+    "p25": 10,
+    "p75": 10
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 6,
+    "p25": 6,
+    "p75": 6
+   },
+   "phase_share": {
+    "release": {
+     "n": 1,
+     "median": 0.005,
+     "p25": 0.005,
+     "p75": 0.005
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.314,
+     "p25": 0.314,
+     "p75": 0.314
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.052,
+     "p25": 0.052,
+     "p75": 0.052
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.022,
+     "p25": 0.022,
+     "p75": 0.022
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.033,
+     "p25": 0.033,
+     "p75": 0.033
+    }
+   },
+   "roles": [
+    [
+     "core",
+     1
+    ],
+    [
+     "body",
+     1
+    ],
+    [
+     "smoke",
+     1
+    ],
+    [
+     "screen",
+     1
+    ],
+    [
+     "light",
+     1
+    ],
+    [
+     "camera",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ParticleEmitter",
+     1
+    ],
+    [
+     "second",
+     1
+    ],
+    [
+     "dark",
+     1
+    ],
+    [
+     "ColorCorrection",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ],
+    [
+     "camera",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "ignition to 22% of frame in one frame",
+     1
+    ],
+    [
+     "steady 1.5 s growth after the pop",
+     1
+    ],
+    [
+     "fire jet accelerates at the lens",
+     1
+    ],
+    [
+     "cream whiteout cooling to yellow then orange",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "mono",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "elemental_fire_blast_hp_ootp"
+   ]
+  },
+  "cat_style:elemental|roblox": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 9.7,
+    "p25": 9.7,
+    "p75": 9.7
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 0.1,
+    "p25": 0.1,
+    "p75": 0.1
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 0.4,
+    "p25": 0.4,
+    "p75": 0.4
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 1,
+    "p25": 1,
+    "p75": 1
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 8,
+    "p25": 8,
+    "p75": 8
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.003,
+     "p25": 0.003,
+     "p75": 0.003
+    },
+    "release": {
+     "n": 1,
+     "median": 0.023,
+     "p25": 0.023,
+     "p75": 0.023
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.026,
+     "p25": 0.026,
+     "p75": 0.026
+    },
+    "quiet_beat": {
+     "n": 1,
+     "median": 0.624,
+     "p25": 0.624,
+     "p75": 0.624
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.036,
+     "p25": 0.036,
+     "p75": 0.036
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.273,
+     "p25": 0.273,
+     "p75": 0.273
+    }
+   },
+   "roles": [
+    [
+     "flash",
+     1
+    ],
+    [
+     "core",
+     1
+    ],
+    [
+     "screen",
+     1
+    ],
+    [
+     "camera",
+     1
+    ],
+    [
+     "ground",
+     1
+    ],
+    [
+     "debris",
+     1
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "smoke",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ScreenGui:",
+     1
+    ],
+    [
+     "Beam/cylinder",
+     1
+    ],
+    [
+     "ColorCorrection",
+     1
+    ],
+    [
+     "camera",
+     1
+    ],
+    [
+     "crater",
+     1
+    ],
+    [
+     "8-16",
+     1
+    ],
+    [
+     "short",
+     1
+    ],
+    [
+     "ParticleEmitter",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "black frames then white flash on activation",
+     1
+    ],
+    [
+     "lime -> mint pillar",
+     1
+    ],
+    [
+     "caster close-up cutscene",
+     1
+    ],
+    [
+     "delayed strike with crater",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "triadic",
+     1
+    ]
+   ],
+   "core_white": 0.0,
+   "ids": [
+    "elemental_thunder_dragon_roblox"
+   ]
+  },
+  "cat_style:elemental|stylised_game": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 0.8,
+    "p25": 0.8,
+    "p75": 0.8
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 0.1,
+    "p25": 0.1,
+    "p75": 0.1
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 0.5,
+    "p25": 0.5,
+    "p75": 0.5
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 1,
+    "p25": 1,
+    "p75": 1
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 6,
+    "p25": 6,
+    "p75": 6
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.025,
+     "p25": 0.025,
+     "p75": 0.025
+    },
+    "release": {
+     "n": 1,
+     "median": 0.275,
+     "p25": 0.275,
+     "p75": 0.275
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.275,
+     "p25": 0.275,
+     "p75": 0.275
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.375,
+     "p25": 0.375,
+     "p75": 0.375
+    }
+   },
+   "roles": [
+    [
+     "flash",
+     1
+    ],
+    [
+     "core",
+     1
+    ],
+    [
+     "body",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "light",
+     1
+    ],
+    [
+     "screen",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "1-frame",
+     1
+    ],
+    [
+     "ForceField/Neon",
+     1
+    ],
+    [
+     "ParticleEmitter:Emit(1)",
+     1
+    ],
+    [
+     "ParticleEmitter:Emit(10-16)",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ],
+    [
+     "BillboardGui",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "1-frame contact flash",
+     1
+    ],
+    [
+     "0.25 s ring wind-up before the burst",
+     1
+    ],
+    [
+     "burst peaks at +0.33 s, gone by +0.65 s",
+     1
+    ],
+    [
+     "element-coloured damage number",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "elemental_overloaded_genshin"
+   ]
+  },
+  "cat_style:explosion|anime_cel": {
+   "count": 3,
+   "duration_s": {
+    "n": 3,
+    "median": 14.0,
+    "p25": 10.65,
+    "p75": 19.85
+   },
+   "anticipation_to_release": {
+    "n": 2,
+    "median": 5.8,
+    "p25": 1.6,
+    "p75": 10.0
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 5.0,
+    "p25": 5.0,
+    "p75": 5.0
+   },
+   "flash_frames": {
+    "n": 3,
+    "median": 4,
+    "p25": 1,
+    "p75": 72
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 3,
+    "median": 8,
+    "p25": 8,
+    "p75": 9
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 3,
+     "median": 0.307,
+     "p25": 0.214,
+     "p75": 0.317
+    },
+    "quiet_beat": {
+     "n": 3,
+     "median": 0.059,
+     "p25": 0.021,
+     "p75": 0.077
+    },
+    "release": {
+     "n": 3,
+     "median": 0.021,
+     "p25": 0.006,
+     "p75": 0.021
+    },
+    "impact": {
+     "n": 2,
+     "median": 0.084,
+     "p25": 0.057,
+     "p75": 0.11
+    },
+    "peak": {
+     "n": 3,
+     "median": 0.126,
+     "p25": 0.021,
+     "p75": 0.385
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.236,
+     "p25": 0.236,
+     "p75": 0.236
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.429,
+     "p25": 0.429,
+     "p75": 0.429
+    },
+    "sustain": {
+     "n": 2,
+     "median": 0.275,
+     "p25": 0.127,
+     "p75": 0.423
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     5
+    ],
+    [
+     "core",
+     4
+    ],
+    [
+     "flash",
+     3
+    ],
+    [
+     "body",
+     3
+    ],
+    [
+     "secondary_strokes",
+     2
+    ],
+    [
+     "smoke",
+     2
+    ],
+    [
+     "light",
+     2
+    ],
+    [
+     "ground",
+     1
+    ],
+    [
+     "residue",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "debris",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "MeshPart",
+     4
+    ],
+    [
+     "ColorCorrection",
+     4
+    ],
+    [
+     "ScreenGui",
+     3
+    ],
+    [
+     "ParticleEmitter",
+     2
+    ],
+    [
+     "PointLight",
+     2
+    ],
+    [
+     "Neon",
+     1
+    ],
+    [
+     "flat",
+     1
+    ],
+    [
+     "BillboardGui",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "stacked staggered magic circles",
+     1
+    ],
+    [
+     "cut to calm wide shot",
+     1
+    ],
+    [
+     "point -> star -> ring",
+     1
+    ],
+    [
+     "one white frame",
+     1
+    ],
+    [
+     "held whiteout",
+     1
+    ],
+    [
+     "colour cooling grade",
+     1
+    ],
+    [
+     "squash to dome with horizontal shock ring",
+     1
+    ],
+    [
+     "two opposed colour orbs combine into a third colour",
+     1
+    ],
+    [
+     "held compressed point (star) with dialogue",
+     1
+    ],
+    [
+     "full desaturation silence beat before release",
+     1
+    ],
+    [
+     "erasure mass deletes scenery along a corridor",
+     1
+    ],
+    [
+     "slow 2.4 s tinted whiteout instead of a hard flash",
+     1
+    ],
+    [
+     "spiral smoke tornado with small explosions punctuating it",
+     1
+    ],
+    [
+     "blue cold ground before the orange blast",
+     1
+    ],
+    [
+     "two sketch impact frames separated by a black frame",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     2
+    ],
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "explosion_explosion_konosuba",
+    "explosion_hollow_purple_jjk",
+    "explosion_howitzer_impact_mha"
+   ]
+  },
+  "cat_style:explosion|realistic": {
+   "count": 2,
+   "duration_s": {
+    "n": 2,
+    "median": 19.65,
+    "p25": 2.0,
+    "p75": 37.3
+   },
+   "anticipation_to_release": null,
+   "residue_to_main": {
+    "n": 1,
+    "median": 0.67,
+    "p25": 0.67,
+    "p75": 0.67
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 4,
+    "p25": 4,
+    "p75": 4
+   },
+   "flash_share": 0.5,
+   "layer_count": {
+    "n": 2,
+    "median": 7.0,
+    "p25": 6,
+    "p75": 8
+   },
+   "phase_share": {
+    "release": {
+     "n": 2,
+     "median": 0.021,
+     "p25": 0.007,
+     "p75": 0.035
+    },
+    "impact": {
+     "n": 2,
+     "median": 0.13,
+     "p25": 0.03,
+     "p75": 0.23
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.21,
+     "p25": 0.21,
+     "p75": 0.21
+    },
+    "sustain": {
+     "n": 2,
+     "median": 0.476,
+     "p25": 0.253,
+     "p75": 0.7
+    },
+    "residue": {
+     "n": 2,
+     "median": 0.231,
+     "p25": 0.162,
+     "p75": 0.3
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.003,
+     "p25": 0.003,
+     "p75": 0.003
+    }
+   },
+   "roles": [
+    [
+     "body",
+     3
+    ],
+    [
+     "core",
+     2
+    ],
+    [
+     "smoke",
+     2
+    ],
+    [
+     "light",
+     2
+    ],
+    [
+     "debris",
+     1
+    ],
+    [
+     "ground",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "screen",
+     1
+    ],
+    [
+     "camera",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ParticleEmitter",
+     3
+    ],
+    [
+     "Neon",
+     2
+    ],
+    [
+     "smoke",
+     1
+    ],
+    [
+     "expanding",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ],
+    [
+     "Lighting.Brightness",
+     1
+    ],
+    [
+     "sphere",
+     1
+    ],
+    [
+     "ColorCorrection",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "fire is short (about 0.5 s) and is eaten by debris",
+     1
+    ],
+    [
+     "spiky streak-shaped ejecta, not round puffs",
+     1
+    ],
+    [
+     "plume keeps growing ~1.5 s after the fire is gone",
+     1
+    ],
+    [
+     "ground ripple ring around the blast",
+     1
+    ],
+    [
+     "light first: a static sphere appears before any fire",
+     1
+    ],
+    [
+     "the flash is shown as light on faces (cool cyan), not as the source",
+     1
+    ],
+    [
+     "dark red sphere before the fireball breaks out",
+     1
+    ],
+    [
+     "silence: audio drops from -26 db to below -55 db at ignition and stays",
+     1
+    ],
+    [
+     "long slow boil intercut with reactions",
+     1
+    ],
+    [
+     "backlit ground-level dust wall as the aftermath",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     2
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "explosion_ground_burst_houdini",
+    "explosion_trinity_oppenheimer"
+   ]
+  },
+  "cat_style:explosion|roblox": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 2.4,
+    "p25": 2.4,
+    "p75": 2.4
+   },
+   "anticipation_to_release": null,
+   "residue_to_main": {
+    "n": 1,
+    "median": 1.4,
+    "p25": 1.4,
+    "p75": 1.4
+   },
+   "flash_frames": null,
+   "flash_share": 0.0,
+   "layer_count": {
+    "n": 1,
+    "median": 8,
+    "p25": 8,
+    "p75": 8
+   },
+   "phase_share": {
+    "release": {
+     "n": 1,
+     "median": 0.007,
+     "p25": 0.007,
+     "p75": 0.007
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.147,
+     "p25": 0.147,
+     "p75": 0.147
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.263,
+     "p25": 0.263,
+     "p75": 0.263
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.583,
+     "p25": 0.583,
+     "p75": 0.583
+    }
+   },
+   "roles": [
+    [
+     "core",
+     1
+    ],
+    [
+     "body",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "ground",
+     1
+    ],
+    [
+     "debris",
+     1
+    ],
+    [
+     "residue",
+     1
+    ],
+    [
+     "light",
+     1
+    ],
+    [
+     "flash",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "Neon",
+     1
+    ],
+    [
+     "sphere",
+     1
+    ],
+    [
+     "flung",
+     1
+    ],
+    [
+     "flat",
+     1
+    ],
+    [
+     "small",
+     1
+    ],
+    [
+     "Decal",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ],
+    [
+     "BillboardGui",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "mesh puffs pop in at full size with a white core",
+     1
+    ],
+    [
+     "cell-texture spots appear as it cools",
+     1
+    ],
+    [
+     "charring to black instead of fading out",
+     1
+    ],
+    [
+     "glowing crack decal residue",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "explosion_stylised_roblox"
+   ]
+  },
+  "cat_style:impact|anime_cel": {
+   "count": 4,
+   "duration_s": {
+    "n": 4,
+    "median": 17.35,
+    "p25": 13.1,
+    "p75": 21.6
+   },
+   "anticipation_to_release": {
+    "n": 3,
+    "median": 10.9,
+    "p25": 2.1,
+    "p75": 43.8
+   },
+   "residue_to_main": {
+    "n": 4,
+    "median": 0.31,
+    "p25": 0.21,
+    "p75": 0.41
+   },
+   "flash_frames": {
+    "n": 4,
+    "median": 8.0,
+    "p25": 4,
+    "p75": 12
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 4,
+    "median": 10.0,
+    "p25": 9,
+    "p75": 11
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 3,
+     "median": 0.188,
+     "p25": 0.093,
+     "p75": 0.253
+    },
+    "impact": {
+     "n": 4,
+     "median": 0.067,
+     "p25": 0.045,
+     "p75": 0.088
+    },
+    "quiet_beat": {
+     "n": 3,
+     "median": 0.102,
+     "p25": 0.088,
+     "p75": 0.231
+    },
+    "peak": {
+     "n": 4,
+     "median": 0.141,
+     "p25": 0.136,
+     "p75": 0.145
+    },
+    "residue": {
+     "n": 4,
+     "median": 0.209,
+     "p25": 0.131,
+     "p75": 0.288
+    },
+    "release": {
+     "n": 3,
+     "median": 0.029,
+     "p25": 0.023,
+     "p75": 0.199
+    },
+    "sustain": {
+     "n": 3,
+     "median": 0.236,
+     "p25": 0.111,
+     "p75": 0.332
+    }
+   },
+   "roles": [
+    [
+     "body",
+     8
+    ],
+    [
+     "screen",
+     8
+    ],
+    [
+     "flash",
+     5
+    ],
+    [
+     "secondary_strokes",
+     5
+    ],
+    [
+     "distortion",
+     4
+    ],
+    [
+     "camera",
+     4
+    ],
+    [
+     "core",
+     2
+    ],
+    [
+     "debris",
+     1
+    ],
+    [
+     "residue",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ScreenGui",
+     8
+    ],
+    [
+     "ColorCorrection",
+     4
+    ],
+    [
+     "two",
+     3
+    ],
+    [
+     "ParticleEmitter",
+     2
+    ],
+    [
+     "Beams",
+     2
+    ],
+    [
+     "expanding",
+     2
+    ],
+    [
+     "Beam",
+     2
+    ],
+    [
+     "BlurEffect",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "black, not white, is the flash colour first",
+     1
+    ],
+    [
+     "red is the only hue: spark, edges, lightning rim",
+     1
+    ],
+    [
+     "0.33 s black-out before the inverted white",
+     1
+    ],
+    [
+     "inverted field with the hitters as black silhouettes",
+     1
+    ],
+    [
+     "lightning crackle lingers after colour returns",
+     1
+    ],
+    [
+     "hue-cycling cross flare montage, 9 hues, 0.3-0.7 s each",
+     1
+    ],
+    [
+     "black frame before the first white (dark-then-light pop)",
+     1
+    ],
+    [
+     "0.5 s held white, then a ~2 s silent close-up before contact",
+     1
+    ],
+    [
+     "three impact frames that escalate: sketch-on-white, black+white, pure white",
+     1
+    ],
+    [
+     "0.25 s dark dip right before the final peak",
+     1
+    ],
+    [
+     "two colours meet at a hard seam with white lightning on the seam",
+     1
+    ],
+    [
+     "dome with a spiky white crown",
+     1
+    ],
+    [
+     "duotone character tints between clash shots",
+     1
+    ],
+    [
+     "white ray wash sweeping the landscape",
+     1
+    ],
+    [
+     "long slow fade to dark after the clash",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     2
+    ],
+    [
+     "mono",
+     1
+    ],
+    [
+     "triadic",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "impact_black_flash_jjk",
+    "impact_detroit_smash_mha",
+    "impact_haki_clash_onepiece",
+    "impact_serious_punch_opm"
+   ]
+  },
+  "cat_style:impact|roblox": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 15.1,
+    "p25": 15.1,
+    "p75": 15.1
+   },
+   "anticipation_to_release": null,
+   "residue_to_main": {
+    "n": 1,
+    "median": 0.29,
+    "p25": 0.29,
+    "p75": 0.29
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 14,
+    "p25": 14,
+    "p75": 14
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 10,
+    "p25": 10,
+    "p75": 10
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.561,
+     "p25": 0.561,
+     "p75": 0.561
+    },
+    "release": {
+     "n": 1,
+     "median": 0.101,
+     "p25": 0.101,
+     "p75": 0.101
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.015,
+     "p25": 0.015,
+     "p75": 0.015
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.21,
+     "p25": 0.21,
+     "p75": 0.21
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.033,
+     "p25": 0.033,
+     "p75": 0.033
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.066,
+     "p25": 0.066,
+     "p75": 0.066
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     3
+    ],
+    [
+     "secondary_strokes",
+     2
+    ],
+    [
+     "flash",
+     1
+    ],
+    [
+     "core",
+     1
+    ],
+    [
+     "ground",
+     1
+    ],
+    [
+     "debris",
+     1
+    ],
+    [
+     "camera",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     1
+    ],
+    [
+     "BillboardGui/ParticleEmitter",
+     1
+    ],
+    [
+     "many",
+     1
+    ],
+    [
+     "Beams",
+     1
+    ],
+    [
+     "ScreenGui",
+     1
+    ],
+    [
+     "Neon",
+     1
+    ],
+    [
+     "flat",
+     1
+    ],
+    [
+     "rock-module:",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "space-black emblem cut as the charge",
+     1
+    ],
+    [
+     "eclipse ring in the sky",
+     1
+    ],
+    [
+     "3-panel black/white impact-frame triad at contact",
+     1
+    ],
+    [
+     "rock-slab crater ring",
+     1
+    ],
+    [
+     "cool cyan base ring inside a warm blast",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "impact_galaxy_impact_roblox"
+   ]
+  },
+  "cat_style:impact|stylised_game": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 1.0,
+    "p25": 1.0,
+    "p75": 1.0
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 2.67,
+    "p25": 2.67,
+    "p75": 2.67
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 2.4,
+    "p25": 2.4,
+    "p75": 2.4
+   },
+   "flash_frames": null,
+   "flash_share": 0.0,
+   "layer_count": {
+    "n": 1,
+    "median": 5,
+    "p25": 5,
+    "p75": 5
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.267,
+     "p25": 0.267,
+     "p75": 0.267
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.1,
+     "p25": 0.1,
+     "p75": 0.1
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.117,
+     "p25": 0.117,
+     "p75": 0.117
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.516,
+     "p25": 0.516,
+     "p75": 0.516
+    }
+   },
+   "roles": [
+    [
+     "ground",
+     2
+    ],
+    [
+     "secondary_strokes",
+     2
+    ],
+    [
+     "light",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "single-burst",
+     1
+    ],
+    [
+     "ParticleEmitter",
+     1
+    ],
+    [
+     "second",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ],
+    [
+     "Decal",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "ring is born at ~43% radius and finishes in 0.2 s",
+     1
+    ],
+    [
+     "warm body with a cool thin leading edge",
+     1
+    ],
+    [
+     "fade goes orange -> pink-white, not to grey",
+     1
+    ],
+    [
+     "no screen flash: the local light does the hit",
+     1
+    ],
+    [
+     "scorch decal outlives the ring by 2-3x",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 0.0,
+   "ids": [
+    "impact_ground_slam_malphite_lol"
+   ]
+  },
+  "cat_style:orb_charge|anime_cel": {
+   "count": 2,
+   "duration_s": {
+    "n": 2,
+    "median": 33.85,
+    "p25": 29.0,
+    "p75": 38.7
+   },
+   "anticipation_to_release": null,
+   "residue_to_main": {
+    "n": 2,
+    "median": 0.58,
+    "p25": 0.16,
+    "p75": 1.0
+   },
+   "flash_frames": {
+    "n": 2,
+    "median": 46.5,
+    "p25": 2,
+    "p75": 91
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 2,
+    "median": 8.0,
+    "p25": 8,
+    "p75": 8
+   },
+   "phase_share": {
+    "sustain": {
+     "n": 2,
+     "median": 0.384,
+     "p25": 0.147,
+     "p75": 0.62
+    },
+    "anticipation": {
+     "n": 2,
+     "median": 0.037,
+     "p25": 0.006,
+     "p75": 0.069
+    },
+    "release": {
+     "n": 2,
+     "median": 0.042,
+     "p25": 0.026,
+     "p75": 0.059
+    },
+    "impact": {
+     "n": 2,
+     "median": 0.044,
+     "p25": 0.037,
+     "p75": 0.052
+    },
+    "peak": {
+     "n": 2,
+     "median": 0.155,
+     "p25": 0.124,
+     "p75": 0.186
+    },
+    "dissipation": {
+     "n": 2,
+     "median": 0.071,
+     "p25": 0.059,
+     "p75": 0.082
+    },
+    "residue": {
+     "n": 2,
+     "median": 0.272,
+     "p25": 0.052,
+     "p75": 0.492
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     3
+    ],
+    [
+     "core",
+     2
+    ],
+    [
+     "body",
+     2
+    ],
+    [
+     "flash",
+     2
+    ],
+    [
+     "camera",
+     2
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "residue",
+     1
+    ],
+    [
+     "ground",
+     1
+    ],
+    [
+     "debris",
+     1
+    ],
+    [
+     "light",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     4
+    ],
+    [
+     "Neon",
+     2
+    ],
+    [
+     "ParticleEmitter,",
+     1
+    ],
+    [
+     "flat",
+     1
+    ],
+    [
+     "tween",
+     1
+    ],
+    [
+     "terrain",
+     1
+    ],
+    [
+     "Camera",
+     1
+    ],
+    [
+     "second",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "edge-on white blade-plane band appears before the dome",
+     1
+    ],
+    [
+     "accelerating (ease-in) whiteout rather than an instant flash",
+     1
+    ],
+    [
+     "3.8 s perfectly held white",
+     1
+    ],
+    [
+     "whiteout thins then re-flares",
+     1
+    ],
+    [
+     "fade out through saturated blue",
+     1
+    ],
+    [
+     "power-up flare pushes field from 6% to 58% of frame in 1 frame",
+     1
+    ],
+    [
+     "2-frame black impact frame inside the white",
+     1
+    ],
+    [
+     "b/w strobe of the dome silhouette",
+     1
+    ],
+    [
+     "target goes cyan then crumbles into blobs",
+     1
+    ],
+    [
+     "multiple white pulses afterwards",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "mono",
+     1
+    ],
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "orb_rasenshuriken_naruto",
+    "orb_spirit_bomb_dbz"
+   ]
+  },
+  "cat_style:orb_charge|realistic": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 2.04,
+    "p25": 2.04,
+    "p75": 2.04
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 0.2,
+    "p25": 0.2,
+    "p75": 0.2
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 0.0,
+    "p25": 0.0,
+    "p75": 0.0
+   },
+   "flash_frames": null,
+   "flash_share": 0.0,
+   "layer_count": {
+    "n": 1,
+    "median": 4,
+    "p25": 4,
+    "p75": 4
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.039,
+     "p25": 0.039,
+     "p75": 0.039
+    },
+    "release": {
+     "n": 1,
+     "median": 0.186,
+     "p25": 0.186,
+     "p75": 0.186
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.775,
+     "p25": 0.775,
+     "p75": 0.775
+    }
+   },
+   "roles": [
+    [
+     "core",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "light",
+     1
+    ],
+    [
+     "distortion",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "Attachment",
+     1
+    ],
+    [
+     "ParticleEmitter",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ],
+    [
+     "ViewportFrame/second",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "single point first",
+     1
+    ],
+    [
+     "sparks fall from the start",
+     1
+    ],
+    [
+     "fast-out ring growth: half size in 0.17 s, full in 1.3 s",
+     1
+    ],
+    [
+     "colour deepens then re-brightens",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 0.0,
+   "ids": [
+    "orb_sling_ring_portal_mcu"
+   ]
+  },
+  "cat_style:projectile|anime_cel": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 18.6,
+    "p25": 18.6,
+    "p75": 18.6
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 2.5,
+    "p25": 2.5,
+    "p75": 2.5
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 6.0,
+    "p25": 6.0,
+    "p75": 6.0
+   },
+   "flash_frames": null,
+   "flash_share": 0.0,
+   "layer_count": {
+    "n": 1,
+    "median": 8,
+    "p25": 8,
+    "p75": 8
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.023,
+     "p25": 0.023,
+     "p75": 0.023
+    },
+    "release": {
+     "n": 1,
+     "median": 0.009,
+     "p25": 0.009,
+     "p75": 0.009
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.025,
+     "p25": 0.025,
+     "p75": 0.025
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.027,
+     "p25": 0.027,
+     "p75": 0.027
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.038,
+     "p25": 0.038,
+     "p75": 0.038
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.833,
+     "p25": 0.833,
+     "p75": 0.833
+    }
+   },
+   "roles": [
+    [
+     "body",
+     1
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "core",
+     1
+    ],
+    [
+     "light",
+     1
+    ],
+    [
+     "debris",
+     1
+    ],
+    [
+     "smoke",
+     1
+    ],
+    [
+     "residue",
+     1
+    ],
+    [
+     "camera",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "MeshPart",
+     2
+    ],
+    [
+     "Trail",
+     1
+    ],
+    [
+     "small",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ],
+    [
+     "ParticleEmitter",
+     1
+    ],
+    [
+     "Fire",
+     1
+    ],
+    [
+     "camera",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "arm flames bloom before the throw",
+     1
+    ],
+    [
+     "fist silhouette is the shape language",
+     1
+    ],
+    [
+     "frame fills with flat fire then hard-cuts to the target",
+     1
+    ],
+    [
+     "target turns to silhouettes against flame",
+     1
+    ],
+    [
+     "long burning aftermath in wide shots",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 0.0,
+   "ids": [
+    "projectile_fire_fist_onepiece"
+   ]
+  },
+  "cat_style:projectile|realistic": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 2.9,
+    "p25": 2.9,
+    "p75": 2.9
+   },
+   "anticipation_to_release": null,
+   "residue_to_main": {
+    "n": 1,
+    "median": 3.6,
+    "p25": 3.6,
+    "p75": 3.6
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 7,
+    "p25": 7,
+    "p75": 7
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 5,
+    "p25": 5,
+    "p75": 5
+   },
+   "phase_share": {
+    "release": {
+     "n": 1,
+     "median": 0.028,
+     "p25": 0.028,
+     "p75": 0.028
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.903,
+     "p25": 0.903,
+     "p75": 0.903
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.128,
+     "p25": 0.128,
+     "p75": 0.128
+    }
+   },
+   "roles": [
+    [
+     "core",
+     1
+    ],
+    [
+     "flash",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "light",
+     1
+    ],
+    [
+     "screen",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "Beams",
+     1
+    ],
+    [
+     "Bloom",
+     1
+    ],
+    [
+     "ParticleEmitter",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ],
+    [
+     "ColorCorrection",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "colour swap through white at contact (magenta -> white -> cyan)",
+     1
+    ],
+    [
+     "second colour arrives as particles, not as a beam",
+     1
+    ],
+    [
+     "film-style bloom fringe",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "projectile_spell_clash_hp_ootp"
+   ]
+  },
+  "cat_style:slash|anime_cel": {
+   "count": 6,
+   "duration_s": {
+    "n": 6,
+    "median": 8.89,
+    "p25": 4.6,
+    "p75": 15.7
+   },
+   "anticipation_to_release": {
+    "n": 3,
+    "median": 10.0,
+    "p25": 7.3,
+    "p75": 62.0
+   },
+   "residue_to_main": {
+    "n": 6,
+    "median": 0.35,
+    "p25": 0.17,
+    "p75": 0.95
+   },
+   "flash_frames": {
+    "n": 5,
+    "median": 1,
+    "p25": 1,
+    "p75": 1
+   },
+   "flash_share": 0.83,
+   "layer_count": {
+    "n": 6,
+    "median": 7.0,
+    "p25": 7,
+    "p75": 8
+   },
+   "phase_share": {
+    "release": {
+     "n": 6,
+     "median": 0.023,
+     "p25": 0.018,
+     "p75": 0.035
+    },
+    "quiet_beat": {
+     "n": 5,
+     "median": 0.27,
+     "p25": 0.113,
+     "p75": 0.281
+    },
+    "sustain": {
+     "n": 6,
+     "median": 0.187,
+     "p25": 0.085,
+     "p75": 0.292
+    },
+    "impact": {
+     "n": 6,
+     "median": 0.054,
+     "p25": 0.034,
+     "p75": 0.064
+    },
+    "dissipation": {
+     "n": 3,
+     "median": 0.045,
+     "p25": 0.044,
+     "p75": 0.172
+    },
+    "residue": {
+     "n": 6,
+     "median": 0.2,
+     "p25": 0.138,
+     "p75": 0.479
+    },
+    "anticipation": {
+     "n": 3,
+     "median": 0.357,
+     "p25": 0.348,
+     "p75": 2.966
+    },
+    "peak": {
+     "n": 4,
+     "median": 0.134,
+     "p25": 0.087,
+     "p75": 0.18
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     9
+    ],
+    [
+     "flash",
+     7
+    ],
+    [
+     "secondary_strokes",
+     6
+    ],
+    [
+     "core",
+     6
+    ],
+    [
+     "body",
+     4
+    ],
+    [
+     "camera",
+     4
+    ],
+    [
+     "residue",
+     3
+    ],
+    [
+     "sparks",
+     2
+    ],
+    [
+     "debris",
+     2
+    ],
+    [
+     "ground",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ScreenGui",
+     7
+    ],
+    [
+     "ColorCorrection",
+     6
+    ],
+    [
+     "ParticleEmitter",
+     5
+    ],
+    [
+     "BillboardGui",
+     3
+    ],
+    [
+     "camera",
+     3
+    ],
+    [
+     "thin",
+     2
+    ],
+    [
+     "crescent",
+     2
+    ],
+    [
+     "flipbook",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "flat cel yellow slash masses, not glowing gradients",
+     1
+    ],
+    [
+     "inverted two-tone impact frames between beats",
+     1
+    ],
+    [
+     "1.5 s dark hold before the final mass",
+     1
+    ],
+    [
+     "decay holds lengthen (2s -> 3s -> 4s) as the mass dies",
+     1
+    ],
+    [
+     "reaction insert on the target between swings",
+     1
+    ],
+    [
+     "build is long and dim, the dragon only appears 1.6 s in",
+     1
+    ],
+    [
+     "flat ukiyo-e white highlight shapes instead of glow",
+     1
+    ],
+    [
+     "whitening push-in right before the shatter",
+     1
+    ],
+    [
+     "shatter into droplets then a hard black beat",
+     1
+    ],
+    [
+     "the result (debris whiteout) is shown before the cut lines",
+     1
+    ],
+    [
+     "cuts are thin lines, almost invisible, the damage carries the read",
+     1
+    ],
+    [
+     "value-inverted frames with speed lines",
+     1
+    ],
+    [
+     "colour held back until a single red splash",
+     1
+    ],
+    [
+     "inverted spike frames to open",
+     1
+    ],
+    [
+     "gold 4-point cross flares",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "mono",
+     3
+    ],
+    [
+     "complementary",
+     2
+    ],
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 0.67,
+   "ids": [
+    "slash_asura_onepiece",
+    "slash_constant_flux_demonslayer",
+    "slash_dismantle_jjk",
+    "slash_getsuga_tensho_bleach",
+    "slash_kingofhell_onepiece",
+    "slash_thunderclap_flash_demonslayer"
+   ]
+  },
+  "cat_style:slash|realistic": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 0.45,
+    "p25": 0.45,
+    "p75": 0.45
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 2.0,
+    "p25": 2.0,
+    "p75": 2.0
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 0.1,
+    "p25": 0.1,
+    "p75": 0.1
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 1,
+    "p25": 1,
+    "p75": 1
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 5,
+    "p25": 5,
+    "p75": 5
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.178,
+     "p25": 0.178,
+     "p75": 0.178
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.089,
+     "p25": 0.089,
+     "p75": 0.089
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.667,
+     "p25": 0.667,
+     "p75": 0.667
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.067,
+     "p25": 0.067,
+     "p75": 0.067
+    }
+   },
+   "roles": [
+    [
+     "core",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "light",
+     1
+    ],
+    [
+     "body",
+     1
+    ],
+    [
+     "residue",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ParticleEmitter",
+     2
+    ],
+    [
+     "PointLight",
+     1
+    ],
+    [
+     "Trail",
+     1
+    ],
+    [
+     "second",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "single-frame contact flare",
+     1
+    ],
+    [
+     "spark fan with gravity, not a radial burst",
+     1
+    ],
+    [
+     "white-hot to red cooling along the spark life",
+     1
+    ],
+    [
+     "the world is graded dark and cool so sparks are the brightest pixels",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "slash_darksaber_sparks_mandalorian"
+   ]
+  },
+  "cat_style:slash|roblox": {
+   "count": 3,
+   "duration_s": {
+    "n": 3,
+    "median": 3.3,
+    "p25": 0.8,
+    "p75": 8.1
+   },
+   "anticipation_to_release": {
+    "n": 3,
+    "median": 2.0,
+    "p25": 0.2,
+    "p75": 3.75
+   },
+   "residue_to_main": {
+    "n": 3,
+    "median": 1.77,
+    "p25": 0.08,
+    "p75": 2.2
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 3,
+    "p25": 3,
+    "p75": 3
+   },
+   "flash_share": 0.33,
+   "layer_count": {
+    "n": 3,
+    "median": 6,
+    "p25": 4,
+    "p75": 6
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 3,
+     "median": 0.084,
+     "p25": 0.074,
+     "p75": 0.545
+    },
+    "sustain": {
+     "n": 2,
+     "median": 0.327,
+     "p25": 0.25,
+     "p75": 0.404
+    },
+    "release": {
+     "n": 3,
+     "median": 0.041,
+     "p25": 0.009,
+     "p75": 0.065
+    },
+    "dissipation": {
+     "n": 2,
+     "median": 0.253,
+     "p25": 0.136,
+     "p75": 0.37
+    },
+    "residue": {
+     "n": 3,
+     "median": 0.258,
+     "p25": 0.074,
+     "p75": 0.625
+    },
+    "quiet_beat": {
+     "n": 1,
+     "median": 0.052,
+     "p25": 0.052,
+     "p75": 0.052
+    }
+   },
+   "roles": [
+    [
+     "ground",
+     4
+    ],
+    [
+     "secondary_strokes",
+     3
+    ],
+    [
+     "body",
+     3
+    ],
+    [
+     "light",
+     2
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "core",
+     1
+    ],
+    [
+     "flash",
+     1
+    ],
+    [
+     "debris",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ParticleEmitter",
+     4
+    ],
+    [
+     "flat",
+     3
+    ],
+    [
+     "Beam",
+     2
+    ],
+    [
+     "Trail",
+     1
+    ],
+    [
+     "map:",
+     1
+    ],
+    [
+     "PointLight",
+     1
+    ],
+    [
+     "small",
+     1
+    ],
+    [
+     "several",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "short ignition then long sustained combo",
+     1
+    ],
+    [
+     "sweeping beam slash that accelerates across the frame",
+     1
+    ],
+    [
+     "colour cools from pale gold to orange while it holds",
+     1
+    ],
+    [
+     "spark density does most of the brightness",
+     1
+    ],
+    [
+     "charge then a short dead pause before the swing",
+     1
+    ],
+    [
+     "crescent full size on frame 1, peak on frame 2",
+     1
+    ],
+    [
+     "no growth, only decay",
+     1
+    ],
+    [
+     "ground streak outlives the crescent",
+     1
+    ],
+    [
+     "full size on first frame",
+     1
+    ],
+    [
+     "many strokes at different radii",
+     1
+    ],
+    [
+     "dark copy under bright stroke",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     2
+    ],
+    [
+     "mono",
+     1
+    ]
+   ],
+   "core_white": 0.67,
+   "ids": [
+    "slash_divine_sword_roblox",
+    "slash_lightning_combo_roblox",
+    "slash_wind_twistvfx_roblox"
+   ]
+  },
+  "cat_style:slash|stylised_game": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 7.98,
+    "p25": 7.98,
+    "p75": 7.98
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 4.9,
+    "p25": 4.9,
+    "p75": 4.9
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 0.14,
+    "p25": 0.14,
+    "p75": 0.14
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 1,
+    "p25": 1,
+    "p75": 1
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 7,
+    "p25": 7,
+    "p75": 7
+   },
+   "phase_share": {
+    "sustain": {
+     "n": 1,
+     "median": 0.449,
+     "p25": 0.449,
+     "p75": 0.449
+    },
+    "quiet_beat": {
+     "n": 1,
+     "median": 0.229,
+     "p25": 0.229,
+     "p75": 0.229
+    },
+    "anticipation": {
+     "n": 1,
+     "median": 0.112,
+     "p25": 0.112,
+     "p75": 0.112
+    },
+    "release": {
+     "n": 1,
+     "median": 0.025,
+     "p25": 0.025,
+     "p75": 0.025
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.019,
+     "p25": 0.019,
+     "p75": 0.019
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.02,
+     "p25": 0.02,
+     "p75": 0.02
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.125,
+     "p25": 0.125,
+     "p75": 0.125
+    }
+   },
+   "roles": [
+    [
+     "flash",
+     2
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "screen",
+     1
+    ],
+    [
+     "core",
+     1
+    ],
+    [
+     "camera",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "3-6",
+     1
+    ],
+    [
+     "ParticleEmitter",
+     1
+    ],
+    [
+     "BillboardGui",
+     1
+    ],
+    [
+     "2-3",
+     1
+    ],
+    [
+     "ScreenGui:",
+     1
+    ],
+    [
+     "ColorCorrection",
+     1
+    ],
+    [
+     "scripted",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "regular hit rhythm (~0.5 s) before the finisher",
+     1
+    ],
+    [
+     "dark beat with a single point of colour before the last strike",
+     1
+    ],
+    [
+     "inverted black/white frames at the decisive hit",
+     1
+    ],
+    [
+     "1-frame flash then a coloured wash, not a white hold",
+     1
+    ],
+    [
+     "damage number is staged as part of the impact",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "slash_feixiao_ultimate_hsr"
+   ]
+  },
+  "cat_style:ultimate|anime_cel": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 17.7,
+    "p25": 17.7,
+    "p75": 17.7
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 9.4,
+    "p25": 9.4,
+    "p75": 9.4
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 0.0,
+    "p25": 0.0,
+    "p75": 0.0
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 1,
+    "p25": 1,
+    "p75": 1
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 8,
+    "p25": 8,
+    "p75": 8
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.155,
+     "p25": 0.155,
+     "p75": 0.155
+    },
+    "release": {
+     "n": 1,
+     "median": 0.032,
+     "p25": 0.032,
+     "p75": 0.032
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.356,
+     "p25": 0.356,
+     "p75": 0.356
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.002,
+     "p25": 0.002,
+     "p75": 0.002
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.407,
+     "p25": 0.407,
+     "p75": 0.407
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.017,
+     "p25": 0.017,
+     "p75": 0.017
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     2
+    ],
+    [
+     "body",
+     1
+    ],
+    [
+     "sparks",
+     1
+    ],
+    [
+     "flash",
+     1
+    ],
+    [
+     "core",
+     1
+    ],
+    [
+     "light",
+     1
+    ],
+    [
+     "camera",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     1
+    ],
+    [
+     "ScreenGui",
+     1
+    ],
+    [
+     "inverted",
+     1
+    ],
+    [
+     "ParticleEmitter",
+     1
+    ],
+    [
+     "full-screen",
+     1
+    ],
+    [
+     "large",
+     1
+    ],
+    [
+     "Lighting:",
+     1
+    ],
+    [
+     "Camera",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "white world for 8 frames",
+     1
+    ],
+    [
+     "ink splatter wipe from the edges",
+     1
+    ],
+    [
+     "6 s converging tunnel",
+     1
+    ],
+    [
+     "1-frame white into the void",
+     1
+    ],
+    [
+     "void shown as long held stills",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "ultimate_unlimited_void_jjk"
+   ]
+  },
+  "cat_style:ultimate|roblox": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 69.3,
+    "p25": 69.3,
+    "p75": 69.3
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 13.0,
+    "p25": 13.0,
+    "p75": 13.0
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 0.11,
+    "p25": 0.11,
+    "p75": 0.11
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 1,
+    "p25": 1,
+    "p75": 1
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 7,
+    "p25": 7,
+    "p75": 7
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.04,
+     "p25": 0.04,
+     "p75": 0.04
+    },
+    "quiet_beat": {
+     "n": 1,
+     "median": 0.035,
+     "p25": 0.035,
+     "p75": 0.035
+    },
+    "release": {
+     "n": 1,
+     "median": 0.006,
+     "p25": 0.006,
+     "p75": 0.006
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.583,
+     "p25": 0.583,
+     "p75": 0.583
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.076,
+     "p25": 0.076,
+     "p75": 0.076
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.014,
+     "p25": 0.014,
+     "p75": 0.014
+    },
+    "dissipation": {
+     "n": 1,
+     "median": 0.082,
+     "p25": 0.082,
+     "p75": 0.082
+    },
+    "residue": {
+     "n": 1,
+     "median": 0.094,
+     "p25": 0.094,
+     "p75": 0.094
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     2
+    ],
+    [
+     "smoke",
+     1
+    ],
+    [
+     "body",
+     1
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "core",
+     1
+    ],
+    [
+     "light",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ScreenGui",
+     2
+    ],
+    [
+     "ParticleEmitter",
+     1
+    ],
+    [
+     "ParticleEmitter/Beam",
+     1
+    ],
+    [
+     "ImageLabel",
+     1
+    ],
+    [
+     "black",
+     1
+    ],
+    [
+     "Lighting/Skybox",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "reuses the anime order: white, tunnel, ink, void",
+     1
+    ],
+    [
+     "white phase stretched to 5.2 s (anime: 0.3 s)",
+     1
+    ],
+    [
+     "extra inserts: mandala, bubbles, star burst",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "ultimate_infinite_void_roblox"
+   ]
+  },
+  "cat_style:ultimate|stylised_game": {
+   "count": 1,
+   "duration_s": {
+    "n": 1,
+    "median": 9.7,
+    "p25": 9.7,
+    "p75": 9.7
+   },
+   "anticipation_to_release": {
+    "n": 1,
+    "median": 2.4,
+    "p25": 2.4,
+    "p75": 2.4
+   },
+   "residue_to_main": {
+    "n": 1,
+    "median": 2.8,
+    "p25": 2.8,
+    "p75": 2.8
+   },
+   "flash_frames": {
+    "n": 1,
+    "median": 1,
+    "p25": 1,
+    "p75": 1
+   },
+   "flash_share": 1.0,
+   "layer_count": {
+    "n": 1,
+    "median": 7,
+    "p25": 7,
+    "p75": 7
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 1,
+     "median": 0.034,
+     "p25": 0.034,
+     "p75": 0.034
+    },
+    "quiet_beat": {
+     "n": 1,
+     "median": 0.081,
+     "p25": 0.081,
+     "p75": 0.081
+    },
+    "release": {
+     "n": 1,
+     "median": 0.09,
+     "p25": 0.09,
+     "p75": 0.09
+    },
+    "impact": {
+     "n": 1,
+     "median": 0.045,
+     "p25": 0.045,
+     "p75": 0.045
+    },
+    "peak": {
+     "n": 1,
+     "median": 0.057,
+     "p25": 0.057,
+     "p75": 0.057
+    },
+    "sustain": {
+     "n": 1,
+     "median": 0.67,
+     "p25": 0.67,
+     "p75": 0.67
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     1
+    ],
+    [
+     "camera",
+     1
+    ],
+    [
+     "flash",
+     1
+    ],
+    [
+     "body",
+     1
+    ],
+    [
+     "secondary_strokes",
+     1
+    ],
+    [
+     "core",
+     1
+    ],
+    [
+     "light",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     2
+    ],
+    [
+     "Camera",
+     1
+    ],
+    [
+     "full-screen",
+     1
+    ],
+    [
+     "thin",
+     1
+    ],
+    [
+     "BillboardGui/ScreenGui",
+     1
+    ],
+    [
+     "Beams",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "dim-to-black then frozen frame",
+     1
+    ],
+    [
+     "cinematic cut-in",
+     1
+    ],
+    [
+     "single white frame on the slash line",
+     1
+    ],
+    [
+     "eye sigil in the slit",
+     1
+    ],
+    [
+     "empowered aura state with darker world",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     1
+    ]
+   ],
+   "core_white": 1.0,
+   "ids": [
+    "ultimate_musou_shinsetsu_genshin"
+   ]
+  },
+  "style:anime_cel": {
+   "count": 28,
+   "duration_s": {
+    "n": 28,
+    "median": 17.15,
+    "p25": 10.65,
+    "p75": 27.5
+   },
+   "anticipation_to_release": {
+    "n": 18,
+    "median": 9.65,
+    "p25": 2.6,
+    "p75": 11.0
+   },
+   "residue_to_main": {
+    "n": 26,
+    "median": 0.39,
+    "p25": 0.14,
+    "p75": 1.33
+   },
+   "flash_frames": {
+    "n": 24,
+    "median": 2.0,
+    "p25": 1,
+    "p75": 4
+   },
+   "flash_share": 0.86,
+   "layer_count": {
+    "n": 28,
+    "median": 8.0,
+    "p25": 7,
+    "p75": 9
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 22,
+     "median": 0.234,
+     "p25": 0.069,
+     "p75": 0.317
+    },
+    "impact": {
+     "n": 24,
+     "median": 0.047,
+     "p25": 0.024,
+     "p75": 0.064
+    },
+    "release": {
+     "n": 27,
+     "median": 0.021,
+     "p25": 0.009,
+     "p75": 0.032
+    },
+    "peak": {
+     "n": 26,
+     "median": 0.12,
+     "p25": 0.04,
+     "p75": 0.151
+    },
+    "sustain": {
+     "n": 26,
+     "median": 0.22,
+     "p25": 0.085,
+     "p75": 0.356
+    },
+    "residue": {
+     "n": 23,
+     "median": 0.251,
+     "p25": 0.086,
+     "p75": 0.465
+    },
+    "quiet_beat": {
+     "n": 16,
+     "median": 0.091,
+     "p25": 0.052,
+     "p75": 0.231
+    },
+    "dissipation": {
+     "n": 12,
+     "median": 0.063,
+     "p25": 0.045,
+     "p75": 0.105
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     45
+    ],
+    [
+     "core",
+     32
+    ],
+    [
+     "body",
+     27
+    ],
+    [
+     "flash",
+     26
+    ],
+    [
+     "secondary_strokes",
+     24
+    ],
+    [
+     "camera",
+     21
+    ],
+    [
+     "light",
+     12
+    ],
+    [
+     "residue",
+     10
+    ],
+    [
+     "smoke",
+     9
+    ],
+    [
+     "sparks",
+     8
+    ],
+    [
+     "debris",
+     8
+    ],
+    [
+     "ground",
+     6
+    ],
+    [
+     "distortion",
+     4
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     33
+    ],
+    [
+     "ScreenGui",
+     24
+    ],
+    [
+     "ParticleEmitter",
+     22
+    ],
+    [
+     "MeshPart",
+     11
+    ],
+    [
+     "Neon",
+     8
+    ],
+    [
+     "BillboardGui",
+     8
+    ],
+    [
+     "large",
+     7
+    ],
+    [
+     "camera",
+     7
+    ]
+   ],
+   "signature_beats": [
+    [
+     "single white frame at the blade burst",
+     1
+    ],
+    [
+     "sky changes before the form does",
+     1
+    ],
+    [
+     "dust cyclone with a rotating spiral cloud ring on top",
+     1
+    ],
+    [
+     "long concealment then 2-frame flash reveal",
+     1
+    ],
+    [
+     "glint along the new weapon",
+     1
+    ],
+    [
+     "2.4 s black silence before the change",
+     1
+    ],
+    [
+     "brief world colour swap to night-blue",
+     1
+    ],
+    [
+     "gold rises from the bottom and swallows the frame",
+     1
+    ],
+    [
+     "transformation hidden inside the glow",
+     1
+    ],
+    [
+     "aura flickers on 2s afterwards",
+     1
+    ],
+    [
+     "dark beat + inverted line frame instead of a white flash",
+     1
+    ],
+    [
+     "burst fills the frame in 0.33 s",
+     1
+    ],
+    [
+     "posterised two-tone world inside the beam light",
+     1
+    ],
+    [
+     "scale escalation cuts to orbit",
+     1
+    ],
+    [
+     "beam tail passes as a comet shape",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     12
+    ],
+    [
+     "analogous",
+     8
+    ],
+    [
+     "mono",
+     7
+    ],
+    [
+     "triadic",
+     1
+    ]
+   ],
+   "core_white": 0.75,
+   "ids": [
+    "aura_bankai_release_bleach",
+    "aura_super_saiyan_dbz",
+    "beam_final_flash_dbz",
+    "beam_hollow_purple_jjk",
+    "beam_kamehameha_dbz",
+    "beam_special_beam_cannon_dbz",
+    "dash_teleport_flying_raijin_naruto",
+    "elemental_chidori_naruto",
+    "elemental_ice_glacier_mha",
+    "elemental_kirin_naruto",
+    "elemental_water_dragon_naruto",
+    "explosion_explosion_konosuba",
+    "explosion_hollow_purple_jjk",
+    "explosion_howitzer_impact_mha",
+    "impact_black_flash_jjk",
+    "impact_detroit_smash_mha",
+    "impact_haki_clash_onepiece",
+    "impact_serious_punch_opm",
+    "orb_rasenshuriken_naruto",
+    "orb_spirit_bomb_dbz",
+    "projectile_fire_fist_onepiece",
+    "slash_asura_onepiece",
+    "slash_constant_flux_demonslayer",
+    "slash_dismantle_jjk",
+    "slash_getsuga_tensho_bleach",
+    "slash_kingofhell_onepiece",
+    "slash_thunderclap_flash_demonslayer",
+    "ultimate_unlimited_void_jjk"
+   ]
+  },
+  "style:realistic": {
+   "count": 9,
+   "duration_s": {
+    "n": 9,
+    "median": 3.4,
+    "p25": 2.04,
+    "p75": 19.1
+   },
+   "anticipation_to_release": {
+    "n": 4,
+    "median": 1.3,
+    "p25": 0.6,
+    "p75": 2.0
+   },
+   "residue_to_main": {
+    "n": 8,
+    "median": 0.3,
+    "p25": 0.1,
+    "p75": 0.6
+   },
+   "flash_frames": {
+    "n": 6,
+    "median": 5.5,
+    "p25": 4,
+    "p75": 10
+   },
+   "flash_share": 0.67,
+   "layer_count": {
+    "n": 9,
+    "median": 6,
+    "p25": 5,
+    "p75": 6
+   },
+   "phase_share": {
+    "anticipation": {
+     "n": 5,
+     "median": 0.294,
+     "p25": 0.178,
+     "p75": 0.501
+    },
+    "release": {
+     "n": 8,
+     "median": 0.022,
+     "p25": 0.007,
+     "p75": 0.035
+    },
+    "sustain": {
+     "n": 8,
+     "median": 0.31,
+     "p25": 0.253,
+     "p75": 0.7
+    },
+    "quiet_beat": {
+     "n": 1,
+     "median": 0.052,
+     "p25": 0.052,
+     "p75": 0.052
+    },
+    "impact": {
+     "n": 6,
+     "median": 0.059,
+     "p25": 0.022,
+     "p75": 0.128
+    },
+    "peak": {
+     "n": 4,
+     "median": 0.022,
+     "p25": 0.021,
+     "p75": 0.023
+    },
+    "dissipation": {
+     "n": 5,
+     "median": 0.052,
+     "p25": 0.033,
+     "p75": 0.21
+    },
+    "residue": {
+     "n": 4,
+     "median": 0.15,
+     "p25": 0.138,
+     "p75": 0.162
+    }
+   },
+   "roles": [
+    [
+     "core",
+     11
+    ],
+    [
+     "light",
+     8
+    ],
+    [
+     "sparks",
+     6
+    ],
+    [
+     "body",
+     6
+    ],
+    [
+     "screen",
+     5
+    ],
+    [
+     "smoke",
+     4
+    ],
+    [
+     "secondary_strokes",
+     3
+    ],
+    [
+     "camera",
+     3
+    ],
+    [
+     "debris",
+     2
+    ],
+    [
+     "flash",
+     2
+    ],
+    [
+     "ground",
+     1
+    ],
+    [
+     "distortion",
+     1
+    ],
+    [
+     "residue",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ParticleEmitter",
+     11
+    ],
+    [
+     "PointLight",
+     7
+    ],
+    [
+     "Neon",
+     5
+    ],
+    [
+     "ColorCorrection",
+     5
+    ],
+    [
+     "Beam",
+     2
+    ],
+    [
+     "dark",
+     2
+    ],
+    [
+     "second",
+     2
+    ],
+    [
+     "flat",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "starts tiny at the hands",
+     1
+    ],
+    [
+     "growth accelerates and hard-stops at full size",
+     1
+    ],
+    [
+     "colour deepens as linework densifies",
+     1
+    ],
+    [
+     "plates light up in sequence",
+     1
+    ],
+    [
+     "lights dim right before firing",
+     1
+    ],
+    [
+     "two-stage beam onset",
+     1
+    ],
+    [
+     "cool flash, black gap, warm fireball",
+     1
+    ],
+    [
+     "fireball cools through orange to dark red",
+     1
+    ],
+    [
+     "helical rings on the beam",
+     1
+    ],
+    [
+     "head-on growth accelerating into a surge",
+     1
+    ],
+    [
+     "red sparks against cyan",
+     1
+    ],
+    [
+     "warm residue after a cool beam",
+     1
+    ],
+    [
+     "ignition to 22% of frame in one frame",
+     1
+    ],
+    [
+     "steady 1.5 s growth after the pop",
+     1
+    ],
+    [
+     "fire jet accelerates at the lens",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "complementary",
+     6
+    ],
+    [
+     "analogous",
+     2
+    ],
+    [
+     "mono",
+     1
+    ]
+   ],
+   "core_white": 0.78,
+   "ids": [
+    "aura_mandala_shield_mcu",
+    "beam_atomic_breath_godzilla_minus_one",
+    "beam_atomic_breath_godzilla_vs_kong",
+    "elemental_fire_blast_hp_ootp",
+    "explosion_ground_burst_houdini",
+    "explosion_trinity_oppenheimer",
+    "orb_sling_ring_portal_mcu",
+    "projectile_spell_clash_hp_ootp",
+    "slash_darksaber_sparks_mandalorian"
+   ]
+  },
+  "style:roblox": {
+   "count": 12,
+   "duration_s": {
+    "n": 12,
+    "median": 6.07,
+    "p25": 2.4,
+    "p75": 11.55
+   },
+   "anticipation_to_release": {
+    "n": 8,
+    "median": 8.375,
+    "p25": 2.0,
+    "p75": 15.1
+   },
+   "residue_to_main": {
+    "n": 12,
+    "median": 0.825,
+    "p25": 0.4,
+    "p75": 1.4
+   },
+   "flash_frames": {
+    "n": 8,
+    "median": 2.5,
+    "p25": 2,
+    "p75": 3
+   },
+   "flash_share": 0.67,
+   "layer_count": {
+    "n": 12,
+    "median": 6.5,
+    "p25": 6,
+    "p75": 8
+   },
+   "phase_share": {
+    "release": {
+     "n": 12,
+     "median": 0.018,
+     "p25": 0.009,
+     "p75": 0.048
+    },
+    "dissipation": {
+     "n": 10,
+     "median": 0.109,
+     "p25": 0.062,
+     "p75": 0.263
+    },
+    "peak": {
+     "n": 4,
+     "median": 0.112,
+     "p25": 0.076,
+     "p75": 0.147
+    },
+    "sustain": {
+     "n": 8,
+     "median": 0.387,
+     "p25": 0.25,
+     "p75": 0.437
+    },
+    "residue": {
+     "n": 9,
+     "median": 0.258,
+     "p25": 0.094,
+     "p75": 0.469
+    },
+    "anticipation": {
+     "n": 9,
+     "median": 0.113,
+     "p25": 0.074,
+     "p75": 0.545
+    },
+    "quiet_beat": {
+     "n": 6,
+     "median": 0.051,
+     "p25": 0.035,
+     "p75": 0.173
+    },
+    "impact": {
+     "n": 4,
+     "median": 0.016,
+     "p25": 0.015,
+     "p75": 0.017
+    }
+   },
+   "roles": [
+    [
+     "screen",
+     13
+    ],
+    [
+     "secondary_strokes",
+     11
+    ],
+    [
+     "body",
+     9
+    ],
+    [
+     "core",
+     9
+    ],
+    [
+     "flash",
+     8
+    ],
+    [
+     "ground",
+     8
+    ],
+    [
+     "light",
+     6
+    ],
+    [
+     "sparks",
+     5
+    ],
+    [
+     "debris",
+     5
+    ],
+    [
+     "smoke",
+     3
+    ],
+    [
+     "camera",
+     2
+    ],
+    [
+     "residue",
+     1
+    ]
+   ],
+   "techniques": [
+    [
+     "ParticleEmitter",
+     9
+    ],
+    [
+     "BillboardGui",
+     5
+    ],
+    [
+     "flat",
+     5
+    ],
+    [
+     "Beam",
+     4
+    ],
+    [
+     "PointLight",
+     4
+    ],
+    [
+     "ColorCorrection",
+     4
+    ],
+    [
+     "ScreenGui",
+     4
+    ],
+    [
+     "Neon",
+     3
+    ]
+   ],
+   "signature_beats": [
+    [
+     "each pickup is under 0.5 s",
+     1
+    ],
+    [
+     "pops chain and stack along a coin line",
+     1
+    ],
+    [
+     "hard off at the end of a pop",
+     1
+    ],
+    [
+     "1-frame pop to max, 20% of peak by 0.15 s",
+     1
+    ],
+    [
+     "text + upward chevron carry the meaning",
+     1
+    ],
+    [
+     "arcs orbit and rise",
+     1
+    ],
+    [
+     "multicolour sparkles add reward feel",
+     1
+    ],
+    [
+     "2 s blackout with silhouette",
+     1
+    ],
+    [
+     "burst with expanding sphere",
+     1
+    ],
+    [
+     "pillar then inverted frames",
+     1
+    ],
+    [
+     "crystal blast then loop",
+     1
+    ],
+    [
+     "very long cinematic charge",
+     1
+    ],
+    [
+     "telegraph line along the ground",
+     1
+    ],
+    [
+     "white/black flicker before the blast",
+     1
+    ],
+    [
+     "spikes re-rolled every frame",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     5
+    ],
+    [
+     "mono",
+     3
+    ],
+    [
+     "complementary",
+     3
+    ],
+    [
+     "triadic",
+     1
+    ]
+   ],
+   "core_white": 0.67,
+   "ids": [
+    "ambient_pickup_cash_roblox",
+    "ambient_pickup_level_up_roblox",
+    "aura_transformation_roblox",
+    "beam_excalibur_morgan_roblox",
+    "beam_kamehameha_rework_roblox",
+    "elemental_thunder_dragon_roblox",
+    "explosion_stylised_roblox",
+    "impact_galaxy_impact_roblox",
+    "slash_divine_sword_roblox",
+    "slash_lightning_combo_roblox",
+    "slash_wind_twistvfx_roblox",
+    "ultimate_infinite_void_roblox"
+   ]
+  },
+  "style:stylised_game": {
+   "count": 6,
+   "duration_s": {
+    "n": 6,
+    "median": 5.04,
+    "p25": 1.0,
+    "p75": 9.7
+   },
+   "anticipation_to_release": {
+    "n": 5,
+    "median": 2.67,
+    "p25": 2.4,
+    "p75": 4.9
+   },
+   "residue_to_main": {
+    "n": 6,
+    "median": 2.6,
+    "p25": 0.5,
+    "p75": 7.0
+   },
+   "flash_frames": {
+    "n": 4,
+    "median": 1.0,
+    "p25": 1,
+    "p75": 1
+   },
+   "flash_share": 0.67,
+   "layer_count": {
+    "n": 6,
+    "median": 6.5,
+    "p25": 5,
+    "p75": 7
+   },
+   "phase_share": {
+    "release": {
+     "n": 5,
+     "median": 0.033,
+     "p25": 0.025,
+     "p75": 0.09
+    },
+    "peak": {
+     "n": 3,
+     "median": 0.057,
+     "p25": 0.02,
+     "p75": 0.061
+    },
+    "dissipation": {
+     "n": 4,
+     "median": 0.178,
+     "p25": 0.117,
+     "p75": 0.238
+    },
+    "sustain": {
+     "n": 3,
+     "median": 0.67,
+     "p25": 0.449,
+     "p75": 0.901
+    },
+    "anticipation": {
+     "n": 5,
+     "median": 0.112,
+     "p25": 0.034,
+     "p75": 0.267
+    },
+    "impact": {
+     "n": 4,
+     "median": 0.073,
+     "p25": 0.045,
+     "p75": 0.1
+    },
+    "residue": {
+     "n": 2,
+     "median": 0.321,
+     "p25": 0.125,
+     "p75": 0.516
+    },
+    "quiet_beat": {
+     "n": 2,
+     "median": 0.155,
+     "p25": 0.081,
+     "p75": 0.229
+    }
+   },
+   "roles": [
+    [
+     "core",
+     6
+    ],
+    [
+     "ground",
+     5
+    ],
+    [
+     "flash",
+     5
+    ],
+    [
+     "screen",
+     4
+    ],
+    [
+     "body",
+     4
+    ],
+    [
+     "light",
+     4
+    ],
+    [
+     "secondary_strokes",
+     4
+    ],
+    [
+     "sparks",
+     3
+    ],
+    [
+     "camera",
+     2
+    ]
+   ],
+   "techniques": [
+    [
+     "ColorCorrection",
+     4
+    ],
+    [
+     "ParticleEmitter",
+     4
+    ],
+    [
+     "PointLight",
+     3
+    ],
+    [
+     "BillboardGui",
+     3
+    ],
+    [
+     "thin",
+     2
+    ],
+    [
+     "6-10",
+     1
+    ],
+    [
+     "flat",
+     1
+    ],
+    [
+     "ground",
+     1
+    ]
+   ],
+   "signature_beats": [
+    [
+     "greyscale -> colour cut",
+     1
+    ],
+    [
+     "light shafts peak at 0.4 s then settle to a quiet sustain",
+     1
+    ],
+    [
+     "ground rune keeps the buff readable from above",
+     1
+    ],
+    [
+     "telegraph line that warms yellow to red",
+     1
+    ],
+    [
+     "2-frame peak then fast decay",
+     1
+    ],
+    [
+     "dark core frame inside the bloom",
+     1
+    ],
+    [
+     "star on the target",
+     1
+    ],
+    [
+     "1-frame contact flash",
+     1
+    ],
+    [
+     "0.25 s ring wind-up before the burst",
+     1
+    ],
+    [
+     "burst peaks at +0.33 s, gone by +0.65 s",
+     1
+    ],
+    [
+     "element-coloured damage number",
+     1
+    ],
+    [
+     "ring is born at ~43% radius and finishes in 0.2 s",
+     1
+    ],
+    [
+     "warm body with a cool thin leading edge",
+     1
+    ],
+    [
+     "fade goes orange -> pink-white, not to grey",
+     1
+    ],
+    [
+     "no screen flash: the local light does the hit",
+     1
+    ]
+   ],
+   "accent_relation": [
+    [
+     "analogous",
+     5
+    ],
+    [
+     "complementary",
+     1
+    ]
+   ],
+   "core_white": 0.67,
+   "ids": [
+    "ambient_pickup_revive_lol",
+    "beam_final_spark_lux_wild_rift",
+    "elemental_overloaded_genshin",
+    "impact_ground_slam_malphite_lol",
+    "slash_feixiao_ultimate_hsr",
+    "ultimate_musou_shinsetsu_genshin"
+   ]
+  }
+ }
+}
